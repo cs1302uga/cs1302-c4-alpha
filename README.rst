@@ -39,7 +39,7 @@ Motivation
 ++++++++++
 
 This first CSCI 1302 project for |semester| is designed to help you apply and extend your prerequisite Java
-programming knowledge in a new Unix development environment (i.e., |server|).
+programming knowledge with new concepts from CSCI 1302 in a Unix development environment (i.e., |server|).
 
 If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then you
 already have most of the Java programming knowledge required to complete this project; otherwise, this
