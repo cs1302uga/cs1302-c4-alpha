@@ -7,7 +7,7 @@
 .. notices (need to manually update the urls)
 .. |approved_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202022-green
    :alt: Approved for: |version|
-.. |not_approved_notice| image:: https://img.shields.io/badge/In%20development-Not%20yet%20approved-green
+.. |not_approved_notice| image:: https://img.shields.io/badge/In%20development-Not%20yet%20approved-red
    :alt: In development - Not yet approved
 
 CSCI 1302 - |title| |version|
@@ -41,7 +41,7 @@ students in the |semester| CSCI 1302 classes at the University of Georgia.
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
 .. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
 .. standard footer
-.. footer:: |copyright| See `LICENSE.rst`_ for license information.
+.. footer:: |copyright| See `LICENSE.rst <LICENSE.rst>`_ for license information.
             The content and opinions expressed on this Web page do not necessarily
             reflect the views of nor are they endorsed by the University of Georgia or the University
             System of Georgia.
