@@ -7,7 +7,7 @@ LICENSE
 Except where otherwise noted, the **cs1302-c4-alpha** project is licensed under
 a |license|_ to students and the public.
 
-What follows is a human-readable summary of (and not a substitute for) the `license <license>`_.
+What follows is a human-readable summary of (and not a substitute for) the `license <license>`__.
 If you are a student or member of the public, then you are free to share, copy, and
 redistribute the project material in any medium or format **under the terms listed below**,
 and the licensor cannot revoke these freedoms as long as you follow those license terms:
