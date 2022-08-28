@@ -6,10 +6,18 @@ LICENSE
 .. |license| replace:: license
 .. _license: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 
+|copyright|
+
 Except where otherwise noted, the **cs1302-c4-alpha** project is licensed under
 a |license_full|_ to students and the public.
 
-What follows is a human-readable summary of (and not a substitute for) the |license|_.
+Students and the Public
+=======================
+
+The **cs1302-c4-alpha** project is licensed under a |license_full|_ to students and
+the public.
+
+Here is a human-readable summary of (and not a substitute for) the |license|_.
 If you are a student or member of the public, then you are free to share, copy, and
 redistribute the project material in any medium or format **under the terms listed below**,
 and the licensor cannot revoke these freedoms as long as you follow those license terms:
@@ -38,6 +46,15 @@ domain or where your use is permitted by an applicable |exception_or_limitation|
 warranties are given. The license may not give you all of the permissions necessary
 for your intended use. For example, other rights such |other_rights|_ may limit how
 you use the material.
+
+Instructors
+===========
+
+If you are an instructor teaching at an institute of |higher_education|_, and your
+intended use of the project materials is not possible under the terms of the
+|license|_, then please contact the authors to discuss the possibility of an
+alternative license grant that gives you the permissions necessary for your
+intended use.
 
 .. #############################################################################
 
