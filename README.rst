@@ -38,7 +38,7 @@ Project Preface
 Motivation
 ++++++++++
 
-This first project in |semester| CSCI 1302 is designed to help you apply and extend your prerequisite Java
+This first CSCI 1302 project for |semester| is designed to help you apply and extend your prerequisite Java
 programming knowledge in a new Unix development environment (i.e., |server|).
 
 If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then you
