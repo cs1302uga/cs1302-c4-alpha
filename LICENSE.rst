@@ -8,8 +8,8 @@ LICENSE
 
 |copyright|
 
-Except where otherwise noted, the **cs1302-c4-alpha** project is licensed under
-a |license_full|_ to students and the public.
+Except where otherwise `noted <#instructors>`_, the **cs1302-c4-alpha** project is licensed under
+a |license_full|_ to `students and the public <#students-and-the-public>`_.
 
 Students and the Public
 =======================
