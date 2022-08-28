@@ -51,10 +51,23 @@ Instructors
 ===========
 
 If you are an instructor teaching at an institute of |higher_education|_, and your
-intended use of the project materials is not possible under the terms of the
+intended use of the project materials is not permitted under the terms of the
 |license|_, then please contact the authors to discuss the possibility of an
 alternative license grant that gives you the permissions necessary for your
-intended use.
+intended use. Such alternative license grants are not guaranteed. Contact
+information is provided below.
+
+Contact Information
+===================
+
+If you have a question or comment regarding the license terms described on this
+page, then contact the authors at the following address:
+
+| Dr. Michael E. Cotterell
+| 415 Boyd Research and Education Center
+| School of Computing
+| University of Georgia
+| Athens, GA 30602-7404
 
 .. #############################################################################
 
