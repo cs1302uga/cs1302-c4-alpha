@@ -35,12 +35,21 @@
       i.token.R::after {
           content: "R"
       }
+      @media (min-width: 576px) {
+          #connect-four-exampe { font-size: calc(var(--bs-body-font-size) * 1); }
+      }
+      @media (min-width: 768px) {
+          #connect-four-exampe { font-size: calc(var(--bs-body-font-size) * 1.2); }
+      }
+      @media (min-width: 992px) {
+          #connect-four-exampe { font-size: calc(var(--bs-body-font-size) * 1.5); }
+      }
     </style>
   </head>
   <body class="d-flex flex-column h-100 text-center text-bg-dark py-3 py-md-5">
     <main class="container d-flex flex-column gap-1 px-3 m-auto">
       <div class="d-flex justify-content-center mx-0 mx-sm-3">
-        <pre class="font-monospace w-auto text-start bg-term p-3 rounded shadow" style="line-height: normal; font-size: 0.5em;" aria-label="Visual depiction of a Connect Four grid.">
+        <pre id="connect-four-example" class="font-monospace w-auto text-start bg-term p-3 rounded shadow" style="line-height: normal; font-size: 0.5em;" aria-label="Visual depiction of a Connect Four grid.">
 ┌───┬───┬───┬───┬───┬───┬───┐
 │   │   │   │   │   │   │   │ 0
 ├───┼───┼───┼───┼───┼───┼───┤
