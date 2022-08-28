@@ -117,8 +117,8 @@ Non-Functional Requirements
 Submission Instructions
 +++++++++++++++++++++++
 
-Suggested Checklist
-===================
+Project Checklist
+=================
 
 Appendices
 ==========
