@@ -93,8 +93,8 @@ Project Updates
 +++++++++++++++
 
 If your instructor updates the project's requirements or starter code before the project is due,
-then this section will be updated to include a summary of any changes resulting from an update,
-and, if needed, instructions that describe how to update your working copy of the project with
+then this section will be updated to include a summary of those updates and, if needed, 
+instructions that describe how to update your working copy of the project with
 the latest versions of any changed files.
 
 Project Description
