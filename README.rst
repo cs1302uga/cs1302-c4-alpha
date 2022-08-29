@@ -44,12 +44,13 @@ programming knowledge with new concepts from CSCI 1302 in a Unix development env
 If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then you
 already have most of the Java programming knowledge required to complete this project; otherwise, this
 assignment will help you identify the gaps in your prerequisite programming knowledge so that you can tackle
-those gaps early in the semester.
+those gaps early in the semester. We also recommend completing the 
+`Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw00>`_ before beginning this project.
 
 This project will also require you to apply some of the new concepts covered in CSCI 1302, including
 named packages, exceptions, file input/output (I/O), and Java development in a Unix environment. If you
 have actively engaged with the CSCI 1302 course content offered so far this semester, then you should
-be able to comfortably, but not necesarilly quicly, complete those aspects of the project by applying
+be able to comfortably, but not necesarilly quickly, complete those aspects of the project by applying
 what you have practiced and learned from your content engagement.
 
 Finally, this project may require you to do things that you have never been given explicit directions
