@@ -126,7 +126,7 @@ cs1302.game.ConnectFour
    .. image:: img/GamePhase.READY.svg
 
 :``GamePhase.PLAYABLE``:
-   .. image:: img/GamePhase.PLAYABLE.svg
+   .. image:: img/GamePhase.PLAYABLE.svg?20220830
 
 cs1302.game.ConnectFourDriver
 -----------------------------
