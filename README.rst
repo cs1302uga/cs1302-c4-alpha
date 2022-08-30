@@ -116,6 +116,10 @@ cs1302.game.ConnectFour
 -----------------------
 
 :``GamePhase.NEW``:
+   .. code-block:: java
+
+      ConnectFour game = new ConnectFour(6, 7);
+
    .. image:: img/GamePhase.NEW.svg
 
 :``GamePhase.READY``:
