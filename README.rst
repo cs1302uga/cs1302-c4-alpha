@@ -115,6 +115,9 @@ Functional Requirements
 cs1302.game.ConnectFour
 -----------------------
 
+:``GamePhase.NEW``:
+   .. image:: img/GamePhase.NEW.svg
+
 cs1302.game.ConnectFourDriver
 -----------------------------
 
