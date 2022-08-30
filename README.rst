@@ -117,6 +117,9 @@ cs1302.game.ConnectFour
 
 :``GamePhase.NEW``:
    .. image:: img/GamePhase.NEW.svg
+   
+:``GamePhase.READY``:
+   .. image:: img/GamePhase.READY.svg   
 
 cs1302.game.ConnectFourDriver
 -----------------------------
