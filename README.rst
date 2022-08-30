@@ -170,6 +170,11 @@ found `here <gameutil_api>`_. Once completed, users should be able to run ``cs13
 to play a game of Connect Four. The class's ``main`` method serves as the expected entry point into the
 program.
 
+To compile ``ConnectFourDriver.java``, you need to first (re)compile ``ConnectFour.java``, then
+run the following command::
+
+   $ javac -cp bin:lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFourDriver.java
+
 Non-Functional Requirements
 +++++++++++++++++++++++++++
 
