@@ -162,18 +162,32 @@ cs1302.game.ConnectFourDriver
 -----------------------------
 
 The starter code for this project includes ``src/cs1302/game/ConnectFourDriver.java``, which contains a
-partially implemented ``cs1302.game.ConnectFourDriver`` class (i.e., a class called ``ConnectFourDriver`` in
-a package named ``cs1302.game``). The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour``
-(also included in the starter code) and some classes that we have included in
-``lib/cs1302-gameutil.jar`` -- the API documentation for the classes in ``cs1302-gameutil.jar`` can be
-found `here <gameutil_api>`_. Once completed, users should be able to run ``cs1302.game.ConnectFourDriver``
-to play a game of Connect Four. The class's ``main`` method serves as the expected entry point into the
-program.
+partially implemented ``cs1302.game.ConnectFourDriver`` class:
+
+:Source:
+   ``src/cs1302/game/ConnectFourDriver.java``
+:FQN:
+   ``cs1302.game.ConnectFourDriver``
+:Package Name:
+   ``cs1302.game``
+:Simple Name:
+   ``ConnectFourDriver``
+
+The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour`` (also included in the starter code)
+and some classes that we have included in ``lib/cs1302-gameutil.jar`` -- the API documentation for the
+classes in ``cs1302-gameutil.jar`` can be found `here <gameutil_api>`_.
 
 To compile ``ConnectFourDriver.java``, you need to first (re)compile ``ConnectFour.java``, then
 run the following command::
 
    $ javac -cp bin:lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFourDriver.java
+
+Once compiled, users should be able to run ``cs1302.game.ConnectFourDriver`` to play a game of
+Connect Four. The class's ``main`` method serves as the expected entry point into the program.
+To run the program, you need to first (re)compile ``ConnectFourDriver.java`` as described above,
+then run the following command::
+
+  $ javac -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
 
 Non-Functional Requirements
 +++++++++++++++++++++++++++
