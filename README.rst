@@ -101,7 +101,7 @@ the latest versions of any changed files.
 Project Description
 ===================
 
-[`cs1302.gameutil` API Documentation](https://cs1302uga.github.io/cs1302-c4-alpha/doc)
+.. _gameutil_api: https://cs1302uga.github.io/cs1302-c4-alpha/doc
 
 Introduction
 ++++++++++++
@@ -123,6 +123,10 @@ cs1302.game.ConnectFour
 The starter code for this project includes ``src/cs1302/game/ConnectFour.java``, which contains a
 partially implemented ``cs1302.game.ConnectFour`` class (i.e., a class called ``ConnectFour`` in
 a package named ``cs1302.game``).
+
+The ``ConnectFour`` class depends on some classes that we have included in
+``lib/cs1302-gameutil.jar`` -- the API documentation for the classes in ``cs1302-gameutil.jar``
+can be found `here <gameutil_api>`_.
 
 :Object Phases:
    TODO: describe...
@@ -158,6 +162,16 @@ a package named ``cs1302.game``).
 
 cs1302.game.ConnectFourDriver
 -----------------------------
+
+The starter code for this project includes ``src/cs1302/game/ConnectFourDriver.java``, which contains a
+partially implemented ``cs1302.game.ConnectFourDriver`` class (i.e., a class called ``ConnectFourDriver`` in
+a package named ``cs1302.game``). This class contains the program's ``main`` method, and is the
+expected entry point into your program.
+
+The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour`` (also included in the starter code)
+and some classes that we have included in ``lib/cs1302-gameutil.jar`` -- the API documentation for
+the classes in ``cs1302-gameutil.jar`` can be found `here <gameutil_api>`_.
+
 
 Non-Functional Requirements
 +++++++++++++++++++++++++++
