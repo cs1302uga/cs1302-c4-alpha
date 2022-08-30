@@ -112,6 +112,12 @@ Getting Started
 Functional Requirements
 +++++++++++++++++++++++
 
+cs1302.game.ConnectFour
+-----------------------
+
+cs1302.game.ConnectFourDriver
+-----------------------------
+
 Non-Functional Requirements
 +++++++++++++++++++++++++++
 
