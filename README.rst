@@ -132,10 +132,10 @@ cs1302.game.ConnectFour
 :``GamePhase.PLAYABLE``:
    .. code-block:: java
 
-      game.dropToken(0, 0);
-      game.dropToken(1, 1);
-      game.dropToken(0, 1);
-      game.dropToken(1, 2);
+      game.dropToken(0, 0); // player = 0, col = 0
+      game.dropToken(1, 1); // player = 1, col = 1
+      game.dropToken(0, 1); // player = 0, col = 1
+      game.dropToken(1, 2); // player = 1, col = 2
 
    .. image:: img/GamePhase.PLAYABLE.svg?20220830
 
