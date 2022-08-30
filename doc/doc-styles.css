@@ -1,0 +1,41 @@
+.cs1302 {
+    box-sizing: border-box;
+}
+
+.cs1302.copyright {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.cs1302.figure {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.15rem;
+    --padding-figure: 0.5rem;
+}
+
+.cs1302.figure img {
+    padding: var(--padding-figure);
+}
+
+.cs1302.figure figcaption {
+    display: flex;
+    box-sizing: border-box;
+    padding: var(--padding-figure);
+    background-color: #f8f9fa;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.cs1302.figure figcaption code {
+    margin-top: 0;
+}
