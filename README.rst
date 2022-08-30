@@ -121,6 +121,9 @@ cs1302.game.ConnectFour
 -----------------------
 
 :``GamePhase.NEW``:
+   When a ``ConnectFour`` object is created, the ``rows`` and ``cols`` instance variables
+   are initialized to their supplied values, ...
+
    .. code-block:: java
 
       ConnectFour game = new ConnectFour(6, 7);
