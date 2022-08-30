@@ -120,6 +120,10 @@ requirement's point total is added to your submission grade.
 cs1302.game.ConnectFour
 -----------------------
 
+The starter code for this project includes ``src/cs1302/game/ConnectFour.java``, which contains a
+partially implemented ``cs1302.game.ConnectFour`` class (i.e., a class called ``ConnectFour`` in
+a package named ``cs1302.game``).
+
 :Object Phases:
    TODO: describe...
 
