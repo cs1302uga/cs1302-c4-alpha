@@ -165,6 +165,14 @@ this section, then the requirement's point total is deducted from your submissio
    provided by your instructor. Graders are instructed not to modify source code when they
    attempt to compile a submission.
 
+:Code Style Guidelines (20):
+   Every ``.java`` file that you include as part of your submission for this project must
+   be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
+   individual code style guidelines listed in that document are part of this single
+   non-functional requirement. This requirement is all or nothing.
+
+   .. _styleguide: https://github.com/cs1302uga/cs1302-styleguide
+
 Submission Instructions
 +++++++++++++++++++++++
 
