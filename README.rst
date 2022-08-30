@@ -123,8 +123,8 @@ cs1302.game.ConnectFour
 The starter code for this project includes ``src/cs1302/game/ConnectFour.java``, which contains a
 partially implemented ``cs1302.game.ConnectFour`` class (i.e., a class called ``ConnectFour`` in
 a package named ``cs1302.game``). The ``ConnectFour`` class depends on some classes that we have
-included in ``lib/cs1302-gameutil.jar`` -- the API documentation for the classes in
-``cs1302-gameutil.jar`` can be found `here <gameutil_api>`_.
+included in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes
+in that Java ARchive (JAR) file' however, its API documentation is available `here <gameutil_api>`_.
 
 :Object Phases:
    TODO: describe...
@@ -177,8 +177,9 @@ How to Compile and Run
 **********************
 
 The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour`` (also included in the starter code)
-and some classes that we have included in ``lib/cs1302-gameutil.jar`` -- the API documentation for the
-classes in ``cs1302-gameutil.jar`` can be found `here <gameutil_api>`_.
+and some classes that we have included in ``lib/cs1302-gameutil.jar`` -- you do not have access to source
+code for the classes in that Java ARchive (JAR) file' however, its API documentation is
+available `here <gameutil_api>`_.
 
 To compile ``ConnectFourDriver.java``, you need to first (re)compile ``ConnectFour.java``, then
 run the following command::
