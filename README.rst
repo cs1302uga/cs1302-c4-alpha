@@ -112,6 +112,11 @@ Getting Started
 Functional Requirements
 +++++++++++++++++++++++
 
+A *functional requirement* defines a specific behavior between program inputs and outputs,
+and a collection of functional requirements describes how a program should function. If
+your submission satisfies a functional requirement listed in this section, then the
+requirement's point total is added to your grade.
+
 cs1302.game.ConnectFour
 -----------------------
 
