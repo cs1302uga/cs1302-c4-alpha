@@ -120,6 +120,11 @@ requirement's point total is added to your submission grade.
 cs1302.game.ConnectFour
 -----------------------
 
+:Object Phases:
+   TODO: describe...
+
+   .. image:: img/phases.svg
+
 :``GamePhase.NEW``:
    When a ``ConnectFour`` object is created, the ``rows`` and ``cols`` instance variables
    are initialized to their supplied values, ...
