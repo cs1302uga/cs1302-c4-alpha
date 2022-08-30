@@ -44,7 +44,7 @@ programming knowledge with new concepts from CSCI 1302 in a Unix development env
 If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then you
 already have most of the Java programming knowledge required to complete this project; otherwise, this
 assignment will help you identify the gaps in your prerequisite programming knowledge so that you can tackle
-those gaps early in the semester. We also recommend completing the 
+those gaps early in the semester. We also recommend completing the
 `Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw00>`_ before beginning this project.
 
 This project will also require you to apply some of the new concepts covered in CSCI 1302, including
@@ -94,7 +94,7 @@ Project Updates
 +++++++++++++++
 
 If your instructor updates the project's requirements or starter code before the project is due,
-then this section will be updated to include a summary of those updates and, if needed, 
+then this section will be updated to include a summary of those updates and, if needed,
 instructions that describe how to update your working copy of the project with
 the latest versions of any changed files.
 
@@ -117,9 +117,12 @@ cs1302.game.ConnectFour
 
 :``GamePhase.NEW``:
    .. image:: img/GamePhase.NEW.svg
-   
+
 :``GamePhase.READY``:
-   .. image:: img/GamePhase.READY.svg   
+   .. image:: img/GamePhase.READY.svg
+
+:``GamePhase.PLAYABLE``:
+   .. image:: img/GamePhase.PLAYABLE.svg
 
 cs1302.game.ConnectFourDriver
 -----------------------------
