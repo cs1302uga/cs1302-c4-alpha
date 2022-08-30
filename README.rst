@@ -122,11 +122,9 @@ cs1302.game.ConnectFour
 
 The starter code for this project includes ``src/cs1302/game/ConnectFour.java``, which contains a
 partially implemented ``cs1302.game.ConnectFour`` class (i.e., a class called ``ConnectFour`` in
-a package named ``cs1302.game``).
-
-The ``ConnectFour`` class depends on some classes that we have included in
-``lib/cs1302-gameutil.jar`` -- the API documentation for the classes in ``cs1302-gameutil.jar``
-can be found `here <gameutil_api>`_.
+a package named ``cs1302.game``). The ``ConnectFour`` class depends on some classes that we have
+included in ``lib/cs1302-gameutil.jar`` -- the API documentation for the classes in
+``cs1302-gameutil.jar`` can be found `here <gameutil_api>`_.
 
 :Object Phases:
    TODO: describe...
@@ -165,13 +163,12 @@ cs1302.game.ConnectFourDriver
 
 The starter code for this project includes ``src/cs1302/game/ConnectFourDriver.java``, which contains a
 partially implemented ``cs1302.game.ConnectFourDriver`` class (i.e., a class called ``ConnectFourDriver`` in
-a package named ``cs1302.game``). This class contains the program's ``main`` method, and is the
-expected entry point into your program.
-
-The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour`` (also included in the starter code)
-and some classes that we have included in ``lib/cs1302-gameutil.jar`` -- the API documentation for
-the classes in ``cs1302-gameutil.jar`` can be found `here <gameutil_api>`_.
-
+a package named ``cs1302.game``). The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour``
+(also included in the starter code) and some classes that we have included in
+``lib/cs1302-gameutil.jar`` -- the API documentation for the classes in ``cs1302-gameutil.jar`` can be
+found `here <gameutil_api>`_. Once completed, users should be able to run ``cs1302.game.ConnectFourDriver``
+to play a game of Connect Four. The class's ``main`` method serves as the expected entry point into the
+program.
 
 Non-Functional Requirements
 +++++++++++++++++++++++++++
