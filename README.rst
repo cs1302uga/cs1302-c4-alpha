@@ -123,9 +123,20 @@ cs1302.game.ConnectFour
    .. image:: img/GamePhase.NEW.svg
 
 :``GamePhase.READY``:
+   .. code-block:: java
+
+      game.setPlayerTokens(Token.RED, Token.BLUE);
+
    .. image:: img/GamePhase.READY.svg
 
 :``GamePhase.PLAYABLE``:
+   .. code-block:: java
+
+      game.dropToken(0, 0);
+      game.dropToken(1, 1);
+      game.dropToken(0, 1);
+      game.dropToken(1, 2);
+
    .. image:: img/GamePhase.PLAYABLE.svg?20220830
 
 cs1302.game.ConnectFourDriver
