@@ -153,6 +153,12 @@ cs1302.game.ConnectFourDriver
 Non-Functional Requirements
 +++++++++++++++++++++++++++
 
+A *non-functional requirement* specifies criteria that can be used to judge your submission
+independently from its function or behavior. If functional requirements describe what your
+submission should *do*, then the non-functional requirements describe how your submission is
+supposed to *be*. If your submission does not satisfy a non-functional requirement listed in
+this section, then the requirement's point total is deducted from your submission grade.
+
 Submission Instructions
 +++++++++++++++++++++++
 
