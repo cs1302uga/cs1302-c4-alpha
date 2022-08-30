@@ -159,7 +159,7 @@ submission should *do*, then the non-functional requirements describe how your s
 supposed to *be*. If your submission does not satisfy a non-functional requirement listed in
 this section, then the requirement's point total is deducted from your submission grade.
 
-:Development Environment (100 points):
+:Development Environment (100):
    This project must be implemented in Java 17, and it must compile and run correctly on
    Odin using the specific version of Java 17 that is setup according to the instructions
    provided by your instructor. Graders are instructed not to modify source code when they
