@@ -243,7 +243,7 @@ The details for each phase are provided below:
 
    .. image:: img/GamePhase.NEW.svg
 
-   When an object is assigned the ``GamePhase.NEW`` phase, the following methods are expected to work
+   When a game object is in the ``GamePhase.NEW`` phase, the following methods are expected to work
    without throwing any exceptions:
 
    * ``getRows()``
