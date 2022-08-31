@@ -215,10 +215,16 @@ all the required phases as well as the methods that trigger an object's phase to
 
 .. image:: img/phases.svg
 
-
 :``GamePhase.NEW``:
-   When a ``ConnectFour`` object is created, the ``rows`` and ``cols`` instance variables
-   are initialized to their supplied values, ...
+   When a ``ConnectFour`` object is created, the following steps are performed by the
+   constructor:
+
+   * the object's ``rows`` and ``cols`` instance variables are initialized to their supplied values;
+   * a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns is constructed
+     and assigned to the object's ``grid`` instance variable;
+   * a one-dimensional ``Token`` array of length ``2`` is constructed and assigned to the obect's
+     ``player`` variable; and
+   * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
    .. code-block:: java
 
