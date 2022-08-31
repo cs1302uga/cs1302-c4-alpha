@@ -206,7 +206,7 @@ Connect Four. The class's ``main`` method serves as the expected entry point int
 To run the program, you need to first (re)compile ``ConnectFourDriver.java`` as described above,
 then run the following command::
 
-  $ javac -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
+  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
 
 Specific Requirements
 *********************
