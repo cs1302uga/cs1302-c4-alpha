@@ -105,13 +105,12 @@ Project Description
 ===================
 
 .. _gameutil_api: https://cs1302uga.github.io/cs1302-c4-alpha/doc
-.. _wiki_connect_four: https://en.wikipedia.org/wiki/Connect_Four
 
 Introduction
 ++++++++++++
 
 In this project, you will implement and test a class that represents the popular board game
-`Connect Four <wiki_connect_four>`_. Connect Four is a two-player connection game involving
+`Connect Four <https://en.wikipedia.org/wiki/Connect_Four>`_. Connect Four is a two-player connection game involving
 a two-dimenstional grid of tokens. Here are the basic rules for Connect Four:
 
 * To prepare a new game of Connect Four, the grid is setup to accomodate an acceptable number
@@ -186,7 +185,7 @@ later in the `Non-Functional Requirements <#non-functional-requirements>`_ secti
 
 It should also be noted that the ``ConnectFour`` class depends on some classes that we have included
 in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
-ARchive (JAR) file; however, its API documentation is available `here <gameutil_api>`_. The
+ARchive (JAR) file; however, its API documentation is available `here <gameutil api>`_. The
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
 
