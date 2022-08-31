@@ -198,13 +198,8 @@ To compile ``ConnectFour.java``, execute the following command while directly in
 
    $ javac -cp lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFour.java
 
-Once compiled, you can begin to test the ``ConnectFour`` class using the `driver_reqs`_ class.
-
-Connect Four. The class's ``main`` method serves as the expected entry point into the program.
-To run the program, you need to first (re)compile ``ConnectFour.java`` as described above,
-then run the following command::
-
-  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFour
+Once compiled, you can begin to test the ``ConnectFour`` class by modifying and running the
+`provided driver class <cs1302_game_ConnectFourDriver>`_.
 
 Specific Requirements
 *********************
@@ -241,10 +236,10 @@ Specific Requirements
 
    .. image:: img/GamePhase.PLAYABLE.svg?20220830
 
-.. _driver_reqs:
+.. _cs1302_game_ConnectFourDriver:
 
-``cs1302.game.ConnectFourDriver``
----------------------------------
+cs1302.game.ConnectFourDriver
+-----------------------------
 
 The starter code for this project includes ``src/cs1302/game/ConnectFourDriver.java``, which contains a
 partially implemented ``cs1302.game.ConnectFourDriver`` class:
