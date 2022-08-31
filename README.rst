@@ -199,7 +199,7 @@ To compile ``ConnectFour.java``, execute the following command while directly in
    $ javac -cp lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFour.java
 
 Once compiled, you can begin to test the ``ConnectFour`` class by modifying and running the
-`provided driver class <cs1302_game_ConnectFourDriver>`_.
+`provided driver class <#cs1302gameconnectfourdriver>`_.
 
 Specific Requirements
 *********************
@@ -235,8 +235,6 @@ Specific Requirements
       game.dropToken(1, 2); // player = 1, col = 2
 
    .. image:: img/GamePhase.PLAYABLE.svg?20220830
-
-.. _cs1302_game_ConnectFourDriver:
 
 cs1302.game.ConnectFourDriver
 -----------------------------
