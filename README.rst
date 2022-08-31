@@ -105,7 +105,7 @@ Project Description
 ===================
 
 .. |gameutil_api_here| replace:: here
-.. _gameutil_api: https://cs1302uga.github.io/cs1302-c4-alpha/doc
+.. _gameutil_api_here: https://cs1302uga.github.io/cs1302-c4-alpha/doc
 
 Introduction
 ++++++++++++
