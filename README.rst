@@ -233,7 +233,7 @@ The details for each phase are provided below:
   * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
   Below is an example of some code that constructs a game object with six rows and seven columns followed
-  by a illustration of what the inside of that object should look like when its done being constructed:
+  by an illustration of what the inside of that object should look like when its done being constructed:
 
   .. code-block:: java
 
@@ -241,8 +241,8 @@ The details for each phase are provided below:
 
   .. image:: img/GamePhase.NEW.svg
 
-  When an object is assigned the ``GamePhase.NEW`` phase, the following methods should work without
-  throwing any exceptions:
+  When an object is assigned the ``GamePhase.NEW`` phase, the following methods are expected to work
+  without throwing any exceptions:
 
   * ``getRows()``
   * ``getCols()``
