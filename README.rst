@@ -220,7 +220,7 @@ a game object to change what phase it is in.
 
 The details for each phase are provided below:
 
-* ``GamePhase.NEW``
+* ``GamePhase.NEW``: A newly constructed game is in this phase.
 
   When a ``ConnectFour`` object is created, the following steps are performed by the
   constructor:
