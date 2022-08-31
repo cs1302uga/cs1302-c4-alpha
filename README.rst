@@ -232,14 +232,12 @@ The details for each phase are provided below:
     ``player`` variable; and
   * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
-  Suppose a game object is constructed using the code below:
+  Below is an example of some code that constructs a game object with six rows and seven columns followed
+  by a illustration of what the inside of that object should look like when its done being constructed:
 
   .. code-block:: java
 
      ConnectFour game = new ConnectFour(6, 7);
-
-  The diagram below illustrates what the inside of that object might look like immediately afer
-  its construction:
 
   .. image:: img/GamePhase.NEW.svg
 
