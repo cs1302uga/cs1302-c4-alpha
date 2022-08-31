@@ -236,7 +236,7 @@ The details for each phase are provided below:
 
   .. code-block:: java
 
-     ConnectFourGame game = new ConnectFour(6, 7);
+     ConnectFour game = new ConnectFour(6, 7);
 
   The diagram below illustrates what the inside of that object might look like immediately afer
   its construction:
