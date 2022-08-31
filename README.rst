@@ -1,6 +1,8 @@
 .. project information
 .. |title| replace:: C4 Alpha
-.. |slug| replace:: **cs1302-c4-alpha**
+.. |slug| replace:: cs1302-c4-alpha
+.. |ttslug| replace:: ``cs1302-c4-alpha``
+.. |course| replace:: CSCI 1302
 .. |semester| replace:: Fall 2022
 .. |version| replace:: v2022.fa
 .. |server| replace:: Odin
@@ -14,17 +16,18 @@
 .. |not_approved_notice| image:: https://img.shields.io/badge/In%20development-Not%20yet%20approved-red
    :alt: In development - Not yet approved
 
-CSCI 1302 - |title| |version|
+|course| - |title| |version|
 #############################
 
 .. #|approved_notice|
 
 |not_approved_notice| |website|_
 
-This document contains the description for the |slug| project assigned to the
-students in the |semester| CSCI 1302 classes at the University of Georgia.
+This document contains the description for the |title| project assigned to the
+students in the |semester| |course| classes at the University of Georgia.
 
-**You are expected to read the entirety of this file before beginning your project.**
+**Students who are assigned this project are expected to read the entirety of this project
+description file before beginning their project.**
 
 ----
 
@@ -38,8 +41,8 @@ Project Preface
 Motivation
 ++++++++++
 
-This first CSCI 1302 project for |semester| is designed to help you apply and extend your prerequisite Java
-programming knowledge with new concepts from CSCI 1302 in a Unix development environment (i.e., |server|).
+This first |course| project for |semester| is designed to help you apply and extend your prerequisite Java
+programming knowledge with new concepts from |course| in a Unix development environment (i.e., |server|).
 
 If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then you
 already have most of the Java programming knowledge required to complete this project; otherwise, this
@@ -47,9 +50,9 @@ assignment will help you identify the gaps in your prerequisite programming know
 those gaps early in the semester. We also recommend completing the
 `Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw00>`_ before beginning this project.
 
-This project will also require you to apply some of the new concepts covered in CSCI 1302, including
+This project will also require you to apply some of the new concepts covered in |course|, including
 named packages, exceptions, file input/output (I/O), and Java development in a Unix environment. If you
-have actively engaged with the CSCI 1302 course content offered so far this semester, then you should
+have actively engaged with the |course| course content offered so far this semester, then you should
 be able to comfortably, but not necesarilly quickly, complete those aspects of the project by applying
 what you have practiced and learned from your content engagement.
 
@@ -64,12 +67,12 @@ Academic Honesty
 
 All students at the University of Georgia explicitly agree to abide by the UGA student honor code
 when they sign the application for their admission to the University. Additionally, all
-students enrolled in a CSCI 1302 course section in |semester| are subject to the
-Academic Honesty policy included in the |semester| CSCI 1302 course syllabus. Furthermore, anyone with
+students enrolled in a |course| course section in |semester| are subject to the
+Academic Honesty policy included in the |semester| |course| course syllabus. Furthermore, anyone with
 access to this project description document is expected to respect the copyright and licensing
 terms provided or linked to at the bottom of this document.
 
-With academic honesty in mind, we ask all |semester| CSCI 1302 students not to fork this repository
+With academic honesty in mind, we ask all |semester| |course| students not to fork this repository
 on GitHub. Doing so may make your copy of the project publicly visible, and that would violate
 several of the policies described earlier. Instead of forking the repository, please follow the
 instructions provided later in this document to acquire a copy of the project description and
@@ -102,16 +105,50 @@ Project Description
 ===================
 
 .. _gameutil_api: https://cs1302uga.github.io/cs1302-c4-alpha/doc
+.. _wiki_connect_four: https://en.wikipedia.org/wiki/Connect_Four
 
 Introduction
 ++++++++++++
 
-In this project, you will implement a command-line version of the popular board game 
-`Connect Four <https://en.wikipedia.org/wiki/Connect_Four>`_.
+In this project, you will implement and test a class that represents the popular board game
+`Connect Four <wiki_connect_four>`_. Connect Four is a two-player connection game involving
+a two-dimenstional grid of tokens. Here are the basic rules for Connect Four:
 
+* To prepare a new game of Connect Four, the grid is setup to accomodate an acceptable number
+  of rows and columns; however, it should not yet contain any tokens.
+* To get ready to play, both players are assigned a unique token.
+* To play the game, both players take turns "dropping" copies of their token into non-full
+  columns in the grid. When a token is dropped, it falls to the lowest position in the
+  column that does not yet contain a token.
+* To win the game, a player must strategically drop their tokens so that four of them connect
+  inside the grid -- they are allowed to connect horizontally, vertically, and diagonally.
+* The game is over once all positions in the grid a filled or when a player wins the game.
+
+The class that you will implement and test will be expected to provide the high-level
+functionality described above via its constructor and instance methods -- the specific details
+about what is required are included later in this document. What you are about to read may
+seem counterintuitive, but **you will not be writing any code for this project to let users
+interactively play a game of Connect Four**; instead, you will implement and test a class that,
+once fully implemented, can be used to make writing such an interactive program easier.
 
 Getting Started
 +++++++++++++++
+
+**You will not be startng from scratch.** Instead, starter code is provided that you will
+need to download in order to get started, then modify and test to meet the project's
+requirements. To download the starter code, follow these instructions:
+
+1. Login to |server|.
+2. If you have not done so, create a directory to store all of your |course| projects.
+3. Change to your |course| projects directory.
+4. Execute the following command to download the starter code into a subdirectory called |ttslug|::
+
+   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-c4-alpha.git
+
+5. Change to the |ttslug| directory that was just created, then use the ``tree`` command to
+   verify that you now have a copy of the starter code.
+
+.. _freqs:
 
 Functional Requirements
 +++++++++++++++++++++++
@@ -210,6 +247,8 @@ then run the following command::
 
 Specific Requirements
 *********************
+
+.. _nfreqs:
 
 Non-Functional Requirements
 +++++++++++++++++++++++++++
