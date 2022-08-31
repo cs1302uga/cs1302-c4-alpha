@@ -165,25 +165,48 @@ and a collection of functional requirements describes how a program should funct
 your submission satisfies a functional requirement listed in this section, then the
 requirement's point total is added to your submission grade.
 
-cs1302.game.ConnectFour
------------------------
+.. _connect_four_reqs:
 
-The starter code for this project includes ``src/cs1302/game/ConnectFour.java``, which contains a
-partially implemented ``cs1302.game.ConnectFour`` class:
+``cs1302.game.ConnectFour``
+---------------------------
+
+The ``cs1302.game.ConnectFour`` class is one of the classes that you are responsible for
+implementing and testng. When you downloaded the starter code, a partially implemented version of
+this class was included under the project's ``src`` directory:
+
+:Source: ``src/cs1302/game/ConnectFour.java``
+:FQN: ``cs1302.game.ConnectFour``
+:Package Name: ``cs1302.game``
+:Simple Name: ``ConnectFour``
+
+When you implement this class, you will not have much leeway in terms of the class's overall design;
+however, you are free to add additional instance methods, as needed, to improve readability and
+code reuse. The specific details regarding what you are explicitly not permitted to do are explained
+later in the `Non-Functional Requirements: Structure <nfreqs_structure>`_ section.
+
+It should also be noted that the ``ConnectFour`` class depends on some classes that we have included
+in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
+ARchive (JAR) file; however, its API documentation is available `here <gameutil_api>`_. The
+compilation instructions that we include below will ensure that these dependencies are available
+on the class path so that the compiler can find them.
+
+To compile ``ConnectFour.java``, first ensure that our directly inside the |ttslug| directory, then
+execute the following command::
+
+   $ javac -cp lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFour.java
+
+Once compiled, you can begin to test the ``ConnectFour`` class using the `driver_reqs`_ class.
+
+Connect Four. The class's ``main`` method serves as the expected entry point into the program.
+To run the program, you need to first (re)compile ``ConnectFour.java`` as described above,
+then run the following command::
+
+  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFour
+Instructions that describe
 
 
-:Source:
-   ``src/cs1302/game/ConnectFour.java``
-:FQN:
-   ``cs1302.game.ConnectFour``
-:Package Name:
-   ``cs1302.game``
-:Simple Name:
-   ``ConnectFour``
-
-The ``ConnectFour`` class depends on some classes that we have included in ``lib/cs1302-gameutil.jar`` -- you
-do not have access to source code for the classes in that Java ARchive (JAR) file; however, its API
-documentation is available `here <gameutil_api>`_.
+will be discussed later thare discussed You are not aYou are not permitted to modify the signature of the constructor or any of the provided methods; however, you
+are allowed to Your implementation of this class
 
 :Object Phases:
    TODO: describe...
@@ -217,8 +240,10 @@ documentation is available `here <gameutil_api>`_.
 
    .. image:: img/GamePhase.PLAYABLE.svg?20220830
 
-cs1302.game.ConnectFourDriver
------------------------------
+.. _driver_reqs:
+
+``cs1302.game.ConnectFourDriver``
+---------------------------------
 
 The starter code for this project includes ``src/cs1302/game/ConnectFourDriver.java``, which contains a
 partially implemented ``cs1302.game.ConnectFourDriver`` class:
