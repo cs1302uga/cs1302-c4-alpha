@@ -246,11 +246,19 @@ The details for each phase are provided below:
    When a game object is in the ``GamePhase.NEW`` phase, the following methods are expected to work
    without throwing any exceptions:
 
-   * ``getRows()``
-   * ``getCols()``
+   * ``getRows``
+   * ``getCols``
    * ...
 
 :``GamePhase.READY``:
+   **A game that is ready to be played is in this phase.**
+
+   A game object in the ``GamePhase.NEW`` phase should move into the ``GamePhase.READY`` phase when
+   its ``setPlayerTokens`` method is called for the first time. Below is an example of some code that
+   sets the player tokens of a game object in the ``GamePhase.NEW`` phase followed by an illustration
+   of what the inside of that object should look immediately after:
+
+
    .. code-block:: java
 
       game.setPlayerTokens(Token.RED, Token.BLUE);
