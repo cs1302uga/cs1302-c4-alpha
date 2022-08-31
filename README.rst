@@ -106,6 +106,10 @@ Project Description
 Introduction
 ++++++++++++
 
+In this project, you will implement a command-line version of the popular board game 
+`Connect Four <https://en.wikipedia.org/wiki/Connect_Four>`_.
+
+
 Getting Started
 +++++++++++++++
 
