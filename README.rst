@@ -220,33 +220,35 @@ a game object to change what phase it is in.
 
 The details for each phase are provided below:
 
-* ``GamePhase.NEW``: A newly constructed game is in this phase.
+:``GamePhase.NEW``:
 
-  When a ``ConnectFour`` object is created, the following steps are performed by the
-  constructor:
+   **A newly constructed game is in this phase.**
 
-  * the object's ``rows`` and ``cols`` instance variables are initialized to their supplied values;
-  * a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns is constructed
-    and assigned to the object's ``grid`` instance variable;
-  * a one-dimensional ``Token`` array of length ``2`` is constructed and assigned to the obect's
-    ``player`` variable; and
-  * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
+   When a ``ConnectFour`` object is created, the following steps are performed by the
+   constructor:
 
-  Below is an example of some code that constructs a game object with six rows and seven columns followed
-  by an illustration of what the inside of that object should look like when its done being constructed:
+   * the object's ``rows`` and ``cols`` instance variables are initialized to their supplied values;
+   * a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns is constructed
+     and assigned to the object's ``grid`` instance variable;
+   * a one-dimensional ``Token`` array of length ``2`` is constructed and assigned to the obect's
+     ``player`` variable; and
+   * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
-  .. code-block:: java
+   Below is an example of some code that constructs a game object with six rows and seven columns followed
+   by an illustration of what the inside of that object should look like when its done being constructed:
 
-     ConnectFour game = new ConnectFour(6, 7);
+   .. code-block:: java
 
-  .. image:: img/GamePhase.NEW.svg
+      ConnectFour game = new ConnectFour(6, 7);
 
-  When an object is assigned the ``GamePhase.NEW`` phase, the following methods are expected to work
-  without throwing any exceptions:
+   .. image:: img/GamePhase.NEW.svg
 
-  * ``getRows()``
-  * ``getCols()``
-  * ...
+   When an object is assigned the ``GamePhase.NEW`` phase, the following methods are expected to work
+   without throwing any exceptions:
+
+   * ``getRows()``
+   * ``getCols()``
+   * ...
 
 :``GamePhase.READY``:
    .. code-block:: java
