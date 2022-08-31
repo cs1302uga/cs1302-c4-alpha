@@ -190,8 +190,8 @@ ARchive (JAR) file; however, API documentation for those classes is provided |ga
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
 
-To compile ``ConnectFour.java``, first ensure that our directly inside the |ttslug| directory, then
-execute the following command::
+To compile ``ConnectFour.java``, execute the following command while directly inside the
+|ttslug| directory::
 
    $ javac -cp lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFour.java
 
