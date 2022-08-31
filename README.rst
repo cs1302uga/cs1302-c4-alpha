@@ -253,14 +253,13 @@ The details for each phase are provided below:
 :``GamePhase.READY``:
    **A game that is ready to be played is in this phase.**
 
-   A game object in the ``GamePhase.NEW`` phase should move into the ``GamePhase.READY`` phase when
-   its ``setPlayerTokens`` method is called for the first time.
+   A game object that is in the ``GamePhase.NEW`` phase should move into the ``GamePhase.READY``
+   phase when its ``setPlayerTokens`` method is called for the first time.
 
    Below is an example of some code that sets the player tokens of a game object in the
    ``GamePhase.NEW`` phase followed by an illustration of what the inside of that object
    should look like immediately after the code has executed and the object is in the
    ``GamePhase.READY`` phase:
-
 
    .. code-block:: java
 
@@ -269,6 +268,16 @@ The details for each phase are provided below:
    .. image:: img/GamePhase.READY.svg
 
 :``GamePhase.PLAYABLE``:
+   **A game that is being played is in this phase.**
+
+   A game object that is in the ``GamePhase.READY`` phase should move into the ``GamePhase.PLAYABLE``
+   phase when its ``dropToken`` method is called for the first time.
+
+   Below is an example of some code that drops several tokens into the grid of a game object
+   in the ``GamePhase.READY`` phase followed by an illustration of what the inside of that object
+   should look like immediately after the code has executed -- please note that the object is in
+   ``GamePhase.PLAYABLE`` phase immediately after the first line has executed:
+
    .. code-block:: java
 
       game.dropToken(0, 0); // player = 0, col = 0
