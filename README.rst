@@ -146,7 +146,14 @@ requirements. To download the starter code, follow these instructions:
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-c4-alpha.git
 
 5. Change to the |ttslug| directory that was just created, then use the ``tree`` command to
-   verify that you now have a copy of the starter code.
+   verify that you now have a copy of the starter code under ``src``::
+
+     $ tree src
+     src
+     └── cs1302
+         └── game
+             ├── ConnectFour.java
+             └── ConnectFourDriver.java
 
 .. _freqs:
 
