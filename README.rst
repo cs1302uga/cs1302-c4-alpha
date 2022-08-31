@@ -190,6 +190,9 @@ ARchive (JAR) file; however, API documentation for those classes is provided |ga
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
 
+How to Compile and Run
+**********************
+
 To compile ``ConnectFour.java``, execute the following command while directly inside the
 |ttslug| directory::
 
