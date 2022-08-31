@@ -182,11 +182,11 @@ this class was included under the project's ``src`` directory:
 When you implement this class, you will not have much leeway in terms of the class's overall design;
 however, you are free to add additional instance methods, as needed, to improve readability and
 code reuse. The specific details regarding what you are explicitly not permitted to do are explained
-later in the `Non-Functional Requirements: Structure <nfreqs_structure>`_ section.
+later in the `Non-Functional Requirements <nfreqs>`_ section.
 
 It should also be noted that the ``ConnectFour`` class depends on some classes that we have included
 in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
-ARchive (JAR) file; however, its API documentation is available `here <gameutil_api>`__. The
+ARchive (JAR) file; however, its API documentation is available `here <gameutil_api>`_. The
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
 
