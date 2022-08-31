@@ -290,6 +290,10 @@ The details for each phase are provided below:
 :``GamePhase.OVER``:
    **A game that has ended is in this phase.**
 
+   A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the ``GamePhase.OVER``
+   phase when its ``isWinner`` method is called and one of the following conditions are met: i)
+   the grid full; or ii) the method is about to return ``true`` because a player has won.
+
 cs1302.game.ConnectFourDriver
 -----------------------------
 
