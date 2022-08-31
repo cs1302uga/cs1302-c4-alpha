@@ -210,11 +210,11 @@ Specific Requirements
 Your implementation of ``cs1302.game.ConnectFour`` is expected to support the multiple phases
 defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, it
 will be assigned a phase, and that object's phase might change over time as methods are called
-on it. It is also appropriate to say that an object is *in* a phase if that object is assigned
-that phase. At any given moment, the object's behavior will depend on what phase it in in.
+on it. We say that an object is *in* a phase if that object is assigned that phase. At any
+given moment, a game object's behavior will depend on what phase it is in.
 
-Here is a high-level overview that shows all the required phases as well as the methods that
-trigger an object to change what phase is assigned to it:
+Here is a high-level overview of all the required phases and the methods that trigger
+a game object to change what phase it is in.
 
 .. image:: img/phases.svg
 
