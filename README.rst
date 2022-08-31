@@ -209,11 +209,14 @@ Specific Requirements
 
 Your implementation of ``cs1302.game.ConnectFour`` is expected to support the multiple phases
 defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, it
-will be in one phase, and that object's phase might change as methods are called on it. The
-object's behavior will depend on what phase it is in. Here is a high-level overview that shows
-all the required phases as well as the methods that trigger an object's phase to change:
+will be assigned a phase, and that object's phase might change over time as methods are called
+on it. At any given moment, the object's behavior will depend on what phase it is in. Here
+is a high-level overview that shows all the required phases as well as the methods that
+trigger an object to change what phase is assigned to it:
 
 .. image:: img/phases.svg
+
+The details for each phase are provided below:
 
 :``GamePhase.NEW``:
    When a ``ConnectFour`` object is created, the following steps are performed by the
@@ -226,11 +229,17 @@ all the required phases as well as the methods that trigger an object's phase to
      ``player`` variable; and
    * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
-   .. code-block:: java
-
-      ConnectFour game = new ConnectFour(6, 7);
+   Here is an example that depicts what the inside of a game object might look like immediately after
+   is is constructed -- this object is said to be assigned the ``GamePhase.NEW`` phase:
 
    .. image:: img/GamePhase.NEW.svg
+
+   When an object is assigned the ``GamePhase.NEW`` phase, the following methods should work without
+   throwing any exceptions:
+
+   * ``getRows()``
+   * ``getCols()``
+   * ...
 
 :``GamePhase.READY``:
    .. code-block:: java
