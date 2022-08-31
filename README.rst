@@ -287,6 +287,9 @@ The details for each phase are provided below:
 
    .. image:: img/GamePhase.PLAYABLE.svg?20220830
 
+:``GamePhase.OVER``:
+   **A game that has ended is in this phase.**
+
 cs1302.game.ConnectFourDriver
 -----------------------------
 
