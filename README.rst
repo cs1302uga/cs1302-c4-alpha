@@ -232,8 +232,14 @@ The details for each phase are provided below:
     ``player`` variable; and
   * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
-  Here is an example that depicts what the inside of a game object might look like immediately after
-  is is constructed -- this object is said to be assigned the ``GamePhase.NEW`` phase:
+  Suppose a game object is constructed using the code below:
+
+  .. code-block:: java
+
+     ConnectFourGame game = new ConnectFour(6, 7);
+
+  The diagram below illustrates what the inside of that object might look like immediately afer
+  its construction:
 
   .. image:: img/GamePhase.NEW.svg
 
