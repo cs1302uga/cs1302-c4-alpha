@@ -222,27 +222,27 @@ The details for each phase are provided below:
 
 * ``GamePhase.NEW``
 
-   When a ``ConnectFour`` object is created, the following steps are performed by the
-   constructor:
+  When a ``ConnectFour`` object is created, the following steps are performed by the
+  constructor:
 
-   * the object's ``rows`` and ``cols`` instance variables are initialized to their supplied values;
-   * a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns is constructed
-     and assigned to the object's ``grid`` instance variable;
-   * a one-dimensional ``Token`` array of length ``2`` is constructed and assigned to the obect's
-     ``player`` variable; and
-   * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
+  * the object's ``rows`` and ``cols`` instance variables are initialized to their supplied values;
+  * a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns is constructed
+    and assigned to the object's ``grid`` instance variable;
+  * a one-dimensional ``Token`` array of length ``2`` is constructed and assigned to the obect's
+    ``player`` variable; and
+  * ``GamePhase.NEW`` is assigned to the object's ``phase`` variable.
 
-   Here is an example that depicts what the inside of a game object might look like immediately after
-   is is constructed -- this object is said to be assigned the ``GamePhase.NEW`` phase:
+  Here is an example that depicts what the inside of a game object might look like immediately after
+  is is constructed -- this object is said to be assigned the ``GamePhase.NEW`` phase:
 
-   .. image:: img/GamePhase.NEW.svg
+  .. image:: img/GamePhase.NEW.svg
 
-   When an object is assigned the ``GamePhase.NEW`` phase, the following methods should work without
-   throwing any exceptions:
+  When an object is assigned the ``GamePhase.NEW`` phase, the following methods should work without
+  throwing any exceptions:
 
-   * ``getRows()``
-   * ``getCols()``
-   * ...
+  * ``getRows()``
+  * ``getCols()``
+  * ...
 
 :``GamePhase.READY``:
    .. code-block:: java
