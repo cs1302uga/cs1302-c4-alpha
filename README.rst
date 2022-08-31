@@ -190,8 +190,8 @@ ARchive (JAR) file; however, API documentation for those classes is provided |ga
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
 
-How to Compile and Run
-**********************
+How to Compile
+**************
 
 To compile ``ConnectFour.java``, execute the following command while directly inside the
 |ttslug| directory::
@@ -205,11 +205,9 @@ To run the program, you need to first (re)compile ``ConnectFour.java`` as descri
 then run the following command::
 
   $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFour
-Instructions that describe
 
-
-will be discussed later thare discussed You are not aYou are not permitted to modify the signature of the constructor or any of the provided methods; however, you
-are allowed to Your implementation of this class
+Specific Requirements
+*********************
 
 :Object Phases:
    TODO: describe...
