@@ -186,7 +186,7 @@ later in the `Non-Functional Requirements <#non-functional-requirements>`_ secti
 
 It should also be noted that the ``ConnectFour`` class depends on some classes that we have included
 in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
-ARchive (JAR) file; however, API documentation for those classes is provided |gameuil_api_here|_. The
+ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
 
