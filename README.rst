@@ -204,10 +204,17 @@ Once compiled, you can begin to test the ``ConnectFour`` class by modifying and 
 Specific Requirements
 *********************
 
-:Object Phases:
-   TODO: describe...
+.. |GamePhase| replace:: ``cs1302.gameutil.GamePhase``
+.. _GamePhase: https://cs1302uga.github.io/cs1302-c4-alpha/doc/cs1302/gameutil/GamePhase.html
 
-   .. image:: img/phases.svg
+Your implementation of ``cs1302.game.ConnectFour`` is expected to support the multiple phases
+defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, it
+will be in one phase, and that object's phase might change as methods are called on it. The
+object's behavior will depend on what phase it is in. Here is a high-level overview that shows
+all the required phases as well as the methods that trigger an object's phase to change:
+
+.. image:: img/phases.svg
+
 
 :``GamePhase.NEW``:
    When a ``ConnectFour`` object is created, the ``rows`` and ``cols`` instance variables
