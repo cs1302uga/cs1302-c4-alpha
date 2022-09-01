@@ -208,17 +208,16 @@ Game Phases
 .. _GamePhase: https://cs1302uga.github.io/cs1302-c4-alpha/doc/cs1302/gameutil/GamePhase.html
 
 Your implementation of ``cs1302.game.ConnectFour`` is expected to support the multiple phases
-defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, it
-will be assigned a phase, and that object's phase might change over time as methods are called
-on it. We say that an object is *in* a phase if that object is assigned that phase. At any
-given moment, a game object's behavior will depend on what phase it is in.
-
-Here is a high-level overview of all the required phases and the methods that trigger
-a game object to change what phase it is in.
+defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, its
+said to be in the ``GamePhase.NEW`` phase -- that just means that ``GamePhase.NEW`` is assigned
+to the object's ``phase`` instance variable. The game object may move into other phases as methods
+are called on it. The behavior of some methods depend on the phase the object is in when called.
+Here is a high-level overview of all the required phases and the methods that trigger a game
+object to change what phase it is in:
 
 .. image:: img/phases.svg
 
-The details for each phase are provided below:
+The details for each game phase are provided below:
 
 :``GamePhase.NEW``:
 
@@ -332,35 +331,35 @@ Specific Requirements
 cs1302.game.ConnectFourDriver
 -----------------------------
 
-The starter code for this project includes ``src/cs1302/game/ConnectFourDriver.java``, which contains a
-partially implemented ``cs1302.game.ConnectFourDriver`` class:
+The ``cs1302.game.ConnectFourDriver`` class is where you will write code to test your
+``cs1302.game.ConnectFour`` class. When you downloaded the starter code, a partially
+implemented version of this class was included under the project's ``src`` directory:
 
-:Source:
-   ``src/cs1302/game/ConnectFourDriver.java``
-:FQN:
-   ``cs1302.game.ConnectFourDriver``
-:Package Name:
-   ``cs1302.game``
-:Simple Name:
-   ``ConnectFourDriver``
+:Source: ``src/cs1302/game/ConnectFourDriver.java``
+:FQN: ``cs1302.game.ConnectFourDriver``
+:Package Name: ``cs1302.game``
+:Simple Name: ``ConnectFourDriver``
+
+You should use this driver class to help you test the constructor and methods of
+your ``ConectFour`` class under different scenarios. In many respects, you have a lot
+og lee way The specific details regarding what you are explicitly not permitted to do are explained
+later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
+
+It should also be noted that the ``ConnectFourDriver`` class depends on some classes that we have included
+in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
+ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
+compilation instructions that we include below will ensure that these dependencies are available
+on the class path so that the compiler can find them.
 
 How to Compile and Run
 **********************
 
-The ``ConnectFourDriver`` class depends on ``cs1302.game.ConnectFour`` (also included in the starter code)
-and some classes that we have included in ``lib/cs1302-gameutil.jar`` -- you do not have access to source
-code for the classes in that Java ARchive (JAR) file; however, its API documentation is
-available `here <gameutil_api>`_.
-
 To compile ``ConnectFourDriver.java``, you need to first (re)compile ``ConnectFour.java``, then
-run the following command::
+run the following command directly inside the |ttslug| directory::
 
    $ javac -cp bin:lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFourDriver.java
 
-Once compiled, users should be able to run ``cs1302.game.ConnectFourDriver`` to play a game of
-Connect Four. The class's ``main`` method serves as the expected entry point into the program.
-To run the program, you need to first (re)compile ``ConnectFourDriver.java`` as described above,
-then run the following command::
+Once compiled, you can run ``cs1302.game.ConnectFourDriver`` using ``java``::
 
   $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
 
