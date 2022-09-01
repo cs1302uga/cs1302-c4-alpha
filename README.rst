@@ -93,19 +93,13 @@ the following learning outcomes:
 =====  =========  ===========
 LO1.a  |lo_full|  Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
 =====  =========  ===========
-
-:LO1.b |lo_part|:
-   Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like environment.
-:LO1.c |lo_full|:
-   Create and modify text files and source code using a powerful terminal-based text editor such as
-   Emacs or Vi.
-:LO1.d |lo_part|:
-   Use shell commands to compile new and existing software solutions that are organized into
-   multi-level packages and have external dependencies.
-:LO2.b: (Partial) Define, throw, and propagate exceptions appropriately in a software solution.
-:LO3.a: Create and update source code that adheres to established style guidelines.
-:LO3.b: (Partial) Create class, interface, method, and inline documentation that satisfies a set of requirements.
-:LO7.c: (Partial) Use common abstract data types and structures, including lists, queues, arrays, and stacks in solving typical problems.
+LO1.b  |lo_part|  Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like environment.
+LO1.c  |lo_full|  Create and modify text files and source code using a powerful terminal-based text editor such as Emacs or Vi.
+LO1.d  |lo_part|  Use shell commands to compile new and existing software solutions that are organized into multi-level packages and have external dependencies.
+LO2.b: |lo_part|  Define, throw, and propagate exceptions appropriately in a software solution.
+LO3.a: |lo_full|  Create and update source code that adheres to established style guidelines.
+LO3.b: |lo_part|  Create class, interface, method, and inline documentation that satisfies a set of requirements.
+LO7.c: |lo_part|  Use common abstract data types and structures, including lists, queues, arrays, and stacks in solving typical problems.
 
 Project Updates
 +++++++++++++++
