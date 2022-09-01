@@ -227,12 +227,24 @@ The details for each game phase are provided below:
    then set the ``rows`` and ``cols`` to their supplied values and initialize the remaining instance
    variables to the initial values described below:
 
-   :``grid``: a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns;
-   :``player``: a one-dimensional ``Token`` array of length ``2``;
-   :``numDropped``: the ``int`` value ``0``;
-   :``lastDroppedRow``: the ``int`` value ``-1``;
-   :``lastDroppedCol``: the ``int`` value ``-1``; and
-   :``phase``: ``GamePhase.NEW``.
+   .. list-table:: Frozen Delights!
+      :widths: 25 75
+      :header-rows: 1
+
+   * - Variable
+     - Initial Value
+   * - ``grid``
+     - a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns
+   * - ``player``
+     - a one-dimensional ``Token`` array of length ``2``
+   * - ``numDropped``
+     - the ``int`` value ``0``
+   * - ``lastDroppedRow``
+     - the ``int`` value ``-1``
+   * - ``lastDroppedCol``
+     - the ``int`` value ``-1``
+   * - ``phase``
+     - ``GamePhase.NEW``
 
    Below is an example of some code that constructs a game object with six rows and seven columns followed
    by an illustration of what the inside of that object should look like when its done being constructed:
