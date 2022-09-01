@@ -469,6 +469,15 @@ take to complete the project.
    2. Read through the entire project description, including any appendices, and write down questions
       as you go.
 
+   3. Read it again! This time, you may be able to answer some of your own questions.
+
+2. **Planning:** (Finish before Tuesday, Feb. 1st)
+
+   1. If you have not yet done so, `download the starter code <#getting-started>`_.
+
+3.
+
+
 
 Appendices
 ==========
