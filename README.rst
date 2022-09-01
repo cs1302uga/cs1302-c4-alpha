@@ -224,20 +224,21 @@ The details for each game phase are provided below:
    **A newly constructed game is in this phase.**
 
    When a ``ConnectFour`` object is created, the constructor should check for any exceptional cases,
-   then set the ``rows`` and ``cols`` to their supplied values and initialize the remaining instance
-   variables to the initial values described below:
+   then initialize the object's instance variables to the the values described below:
 
    .. table::
 
       ==================  ====================================================================================
       Variable            Initial Value
       ==================  ====================================================================================
-      ``grid``            a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns;
-      ``player``          a one-dimensional ``Token`` array of length ``2``;
-      ``numDropped``      the ``int`` value ``0``;
-      ``lastDroppedRow``  the ``int`` value ``-1``;
-      ``lastDroppedCol``  the ``int`` value ``-1``; and
-      ``phase``           ``GamePhase.NEW``.
+      ``rows``            the value of the ``rows`` constructor parameter
+      ``cols``            the value of the ``cols`` constructor parameter
+      ``grid``            a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns
+      ``player``          a one-dimensional ``Token`` array of length ``2``
+      ``numDropped``      the ``int`` value ``0``
+      ``lastDroppedRow``  the ``int`` value ``-1``
+      ``lastDroppedCol``  the ``int`` value ``-1``
+      ``phase``           ``GamePhase.NEW``
       ==================  ====================================================================================
 
    Below is an example of some code that constructs a game object with six rows and seven columns followed
