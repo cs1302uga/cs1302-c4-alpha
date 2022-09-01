@@ -83,6 +83,21 @@ public class ConnectFour {
         throw new UnsupportedOperationException("getCols: not yet implemented.");
     } // getCols
 
+    /**                                                                                                           
+     * Return whether {@code row} and {@code col} specify a location inside this game's grid.                     
+     *                                                                                                            
+     * @param row the position's row index                                                                        
+     * @param col the positions's column index                                                                    
+     * @return {@code true} if {@code row} and {@code col} specify a location inside this game's                  
+     *     grid and {@code false} otherwise                                                                       
+     */
+    public boolean isInBounds(int row, int col) {
+        //
+        // replace the entire contents of this method with your implementation
+        //
+        throw new UnsupportedOperationException("isInBounds: not yet implemented.");
+    } // isInBounds   
+
     /**
      * Return the grid {@linkplain cs1302.gameutil.Token token} located at the specified position
      * or {@code null} if no token has been dropped into that position.
