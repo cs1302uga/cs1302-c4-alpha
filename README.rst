@@ -226,8 +226,8 @@ The details for each game phase are provided below:
    When a ``ConnectFour`` object is created, the constructor should check for any exceptional cases,
    then initialize the object's instance variables to the the values described below:
 
-   :``rows``:            the value of the ``rows`` constructor parameter
-   :``cols``:            the value of the ``cols`` constructor parameter
+   :``rows``:            the supplied value of the ``rows`` constructor parameter
+   :``cols``:            the supplied value of the ``cols`` constructor parameter
    :``grid``:            a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns
    :``player``:          a one-dimensional ``Token`` array of length ``2``
    :``numDropped``:      the ``int`` value ``0``
