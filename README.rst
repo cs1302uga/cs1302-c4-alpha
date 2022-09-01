@@ -201,8 +201,8 @@ To compile ``ConnectFour.java``, execute the following command while directly in
 Once compiled, you can begin to test the ``ConnectFour`` class by modifying and running the
 `provided driver class <#cs1302gameconnectfourdriver>`_.
 
-Specific Requirements
-*********************
+Game Phases
+***********
 
 .. |GamePhase| replace:: ``cs1302.gameutil.GamePhase``
 .. _GamePhase: https://cs1302uga.github.io/cs1302-c4-alpha/doc/cs1302/gameutil/GamePhase.html
@@ -312,6 +312,9 @@ The details for each phase are provided below:
       } else if (game.isWinner(1)) {
           System.out.println("second player has won!");
       } // if
+
+Specific Requirements
+*********************
 
 cs1302.game.ConnectFourDriver
 -----------------------------
