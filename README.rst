@@ -294,6 +294,25 @@ The details for each phase are provided below:
    phase when its ``isWinner`` method is called and one of the following conditions are met: i)
    the grid full; or ii) the method is about to return ``true`` because a player has won.
 
+   Below is an example of some code that drops a winning token into the grid pf a game object in the
+   ``GamePhase.PLAYABLE`` phase and checks for that win using the object's ``isWinner`` method followed
+   by an illustration of what the inside of that object should look like immediately after the code has
+   executed -- please note that the object is in ``GamePhase.OVER`` phase immediately after the line
+   containing the call to ``isWinner(1)`` has executed:
+
+   .. code-block:: java
+
+      game.dropToken(0, 2); // first player, column 2
+      game.dropToken(1, 3); // second player, column 3
+      game.dropToken(0, 3); // first player, column 3
+      game.dropToken(1, 4); // first player, column 4
+
+      if (game.isWinner(0)) {
+          System.out.println("first player has won!");
+      } else if (game.isWinner(1)) {
+          System.out.println("second player has won!");
+      } // if
+
 cs1302.game.ConnectFourDriver
 -----------------------------
 
