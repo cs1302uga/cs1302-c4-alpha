@@ -52,7 +52,7 @@ public class ConnectFour {
         //
         // replace the entire contents of this constructor with your implementation
         //
-        throw new UnsupportedOperationException("constructor: not yet implemented.");
+        //throw new UnsupportedOperationException("constructor: not yet implemented.");
     } // ConnectFour
 
     //----------------------------------------------------------------------------------------------
