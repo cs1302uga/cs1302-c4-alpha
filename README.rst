@@ -268,6 +268,7 @@ The details for each game phase are provided below:
       game.setPlayerTokens(Token.RED, Token.BLUE);
 
    .. image:: img/GamePhase.READY.svg
+      :width: 100%
 
 :``GamePhase.PLAYABLE``:
    **A game that is being played is in this phase.**
