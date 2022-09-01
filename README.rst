@@ -227,7 +227,6 @@ The details for each game phase are provided below:
    then initialize the object's instance variables to the the values described below:
 
    .. table::
-      :width: 100%
       :widths: auto
 
       ==================  ====================================================================================
