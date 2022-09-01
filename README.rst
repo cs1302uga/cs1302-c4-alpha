@@ -465,6 +465,7 @@ take to complete the project.
 * **Preparation:** (Finish before Monday, Jan. 31st)
 
   * Start reading the project description.
+
   * Read through the entire project description, including any appendices, and write down questions
     as you go.
 
