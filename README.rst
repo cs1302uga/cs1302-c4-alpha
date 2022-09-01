@@ -134,7 +134,7 @@ once fully implemented, can be used to make writing such an interactive program 
 Getting Started
 +++++++++++++++
 
-**You will not be startng from scratch.** Instead, starter code is provided that you will
+**You will not be starting from scratch.** Instead, starter code is provided that you will
 need to download in order to get started, then modify and test to meet the project's
 requirements. To download the starter code, follow these instructions:
 
