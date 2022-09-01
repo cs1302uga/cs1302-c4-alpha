@@ -342,7 +342,7 @@ Specific Requirements
 
 :``ConnectFour(int, int)`` (10):
    The ``ConnectFour`` constructor is expected to behave in accordance with the API documentation
-   included in the starter code and the expectations described in the `Game Phases <#gamephases>`_
+   included in the starter code and the expectations described in the `Game Phases <#game-phases>`_
    section presented earlier in this document.
 
    :``getRows()`` (2):
