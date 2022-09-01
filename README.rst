@@ -456,7 +456,10 @@ possible; however, doing this the day or night the project is due is probably no
 Project Checklist
 =================
 
-.. |check_y| unicode:: 0x2611
+.. |check_y| raw:: html
+
+   <input checked=""  type="checkbox">
+
 .. |check_n| unicode:: 0x2610
 
 To help you with planning out this project, here are some suggested steps you can take that your
