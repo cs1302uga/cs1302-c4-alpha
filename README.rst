@@ -433,7 +433,7 @@ Submission Instructions
 You will submit your project on |server|. Before you submit, make sure that your project files are
 located in a directory called |ttslug| -- if you followed the instructions provided earlier in this
 document to download the project, then that is your directory name. To submit, change into the
-parent of your project directory (i.e., one directory above it), then complet the steps below:
+parent of your project directory (i.e., one directory above it), then complete the steps below:
 
 1. Check your code style -- we know that you have done this frequently, but it does not hurt to
    double check it before you submit::
