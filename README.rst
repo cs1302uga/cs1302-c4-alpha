@@ -284,28 +284,28 @@ The details for each game phase are provided below:
 
    .. code-block:: java
 
-      game.dropToken(0, 0); // player = 0, col = 0
+      game.dropToken(0, 0); // first player, column 0
 
    .. image:: img/GamePhase.PLAYABLE.1.svg
       :width: 100%
 
    .. code-block:: java
 
-      game.dropToken(1, 1); // player = 1, col = 1
+      game.dropToken(1, 1); // second player, column 1
 
    .. image:: img/GamePhase.PLAYABLE.2.svg
       :width: 100%
 
    .. code-block:: java
 
-      game.dropToken(0, 1); // player = 0, col = 1
+      game.dropToken(0, 1); // first player, column 1
 
    .. image:: img/GamePhase.PLAYABLE.3.svg
       :width: 100%
 
    .. code-block:: java
 
-      game.dropToken(1, 2); // player = 1, col = 2
+      game.dropToken(1, 2); // second player, column 2
 
    .. image:: img/GamePhase.PLAYABLE.4.svg
       :width: 100%
