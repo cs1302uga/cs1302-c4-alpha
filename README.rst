@@ -245,13 +245,6 @@ The details for each game phase are provided below:
    .. image:: img/GamePhase.NEW.svg
       :width: 100%
 
-   When a game object is in the ``GamePhase.NEW`` phase, the following methods are expected to work
-   without throwing any exceptions:
-
-   * ``getRows``
-   * ``getCols``
-   * ...
-
 :``GamePhase.READY``:
    **A game that is ready to be played is in this phase.**
 
