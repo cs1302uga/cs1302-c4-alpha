@@ -6,6 +6,7 @@
 .. |semester| replace:: Fall 2022
 .. |version| replace:: v2022.fa
 .. |server| replace:: Odin
+.. |discussion_board| replace:: Piazza
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
@@ -23,11 +24,9 @@
 
 |not_approved_notice| |website|_
 
-This document contains the description for the |title| project assigned to the
-students in the |semester| |course| classes at the University of Georgia.
-
-**Students who are assigned this project are expected to read the entirety of this project
-description file before beginning their project.**
+This document contains the description for the |title| project assigned to the students in the
+|semester| |course| classes at the University of Georgia. **Students who are assigned this project
+are expected to read the entirety of this project description file before beginning their project.**
 
 ----
 
@@ -41,39 +40,41 @@ Project Preface
 Motivation
 ++++++++++
 
-This first |course| project for |semester| is designed to help you apply and extend your prerequisite Java
-programming knowledge with new concepts from |course| in a Unix development environment (i.e., |server|).
+This first |course| project for |semester| is designed to help you apply and extend your
+prerequisite Java programming knowledge with new concepts from |course| in a Unix development
+environment (i.e., |server|).
 
-If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then you
-already have most of the Java programming knowledge required to complete this project; otherwise, this
-assignment will help you identify the gaps in your prerequisite programming knowledge so that you can tackle
-those gaps early in the semester. We also recommend completing the
+If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequisite course), then
+you already have most of the Java programming knowledge required to complete this project;
+otherwise, this assignment will help you identify the gaps in your prerequisite programming
+knowledge so that you can tackle those gaps early in the semester. We also recommend completing the
 `Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw00>`_ before beginning this project.
 
 This project will also require you to apply some of the new concepts covered in |course|, including
-named packages, exceptions, file input/output (I/O), and Java development in a Unix environment. If you
-have actively engaged with the |course| course content offered so far this semester, then you should
-be able to comfortably, but not necesarilly quickly, complete those aspects of the project by applying
-what you have practiced and learned from your content engagement.
+named packages, exception (creating and handling), and Java development in a Unix environment. If
+you have actively engaged with the |course| course content offered so far this semester, then you
+should be able to comfortably, but not necesarilly quickly, complete those aspects of the project by
+applying what you have practiced and learned from your content engagement.
 
-Finally, this project may require you to do things that you have never been given explicit directions
-or instructions for -- this is just a part of software development. In such cases, you may need need
-to do some research to help you plan your solution. That being said, we have intentionally written this
-project description document so that it hopefully answers the majority of your questions -- if not, then
-please do not hesitate to ask a question on the course Piazza or during office hours.
+Finally, this project may require you to do things that you have never been given explicit
+directions or instructions for -- this is just a part of software development. In such cases, you
+may need need to do some research to help you plan your solution. That being said, we have
+carefully prepared this project description document so that it hopefully answers the majority of
+your questions -- if not, then please do not hesitate to ask a question on the course
+|discussion_board| or during office hours.
 
 Academic Honesty
 ++++++++++++++++
 
 All students at the University of Georgia explicitly agree to abide by the UGA student honor code
-when they sign the application for their admission to the University. Additionally, all
-students enrolled in a |course| course section in |semester| are subject to the
-Academic Honesty policy included in the |semester| |course| course syllabus. Furthermore, anyone with
-access to this project description document is expected to respect the copyright and licensing
-terms provided or linked to at the bottom of this document.
+when they sign the application for their admission to the University. Additionally, all students
+enrolled in a |course| course section in |semester| are subject to the Academic Honesty policy
+included in the |semester| |course| course syllabus. Furthermore, anyone with access to this
+project description document is expected to respect the copyright and licensing terms provided or
+linked to at the bottom of this document.
 
 With academic honesty in mind, we ask all |semester| |course| students not to fork this repository
-on GitHub. Doing so may make your copy of the project publicly visible, and that would violate
+on GitHub. Doing so may make your copy of the project publicly visible, and that can  violate
 several of the policies described earlier. Instead of forking the repository, please follow the
 instructions provided later in this document to acquire a copy of the project description and
 starter code.
@@ -81,12 +82,18 @@ starter code.
 Course-Specific Learning Outcomes
 +++++++++++++++++++++++++++++++++
 
+.. |lo_full| replace:: 🔷
+.. |lo_part| replace:: 🔹
+
 If you work on and complete this project, then you will gain exposure and practice with
 the following learning outcomes:
 
-:LO1.a: Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
-:LO1.b: (Partial) Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like environment.
-:LO1.c: Create and modify text files and source code using a powerful terminal-based text editor such as Emacs or Vi.
+:LO1.a: |lo_full| Navigate and modify files, directories, and permissions in a multi-user Unix-like
+        environment.
+:LO1.b: (Partial) Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like
+        environment.
+:LO1.c: Create and modify text files and source code using a powerful terminal-based text editor
+        such as Emacs or Vi.
 :LO1.d: (Partial) Use shell commands to compile new and existing software solutions that are organized into multi-level packages and have external dependencies.
 :LO2.b: (Partial) Define, throw, and propagate exceptions appropriately in a software solution.
 :LO3.a: Create and update source code that adheres to established style guidelines.
