@@ -276,19 +276,36 @@ The details for each game phase are provided below:
    A game object that is in the ``GamePhase.READY`` phase should move into the ``GamePhase.PLAYABLE``
    phase when its ``dropToken`` method is called for the first time.
 
-   Below is an example of some code that drops several tokens into the grid of a game object
-   in the ``GamePhase.READY`` phase followed by an illustration of what the inside of that object
-   should look like immediately after the code has executed -- please note that the object is in
-   ``GamePhase.PLAYABLE`` phase immediately after the first line has executed:
+   Below in example of some code that drops several tokens into the grid of a game object
+   in the ``GamePhase.READY`` phase. Each line of code is followed by an illustration of what
+   the inside of that object should look like immediately after the line has executed
+   -- please note that the object is in ``GamePhase.PLAYABLE`` phase immediately after
+   the first line has executed:
 
    .. code-block:: java
 
       game.dropToken(0, 0); // player = 0, col = 0
+
+   .. image:: img/GamePhase.PLAYABLE.1.svg
+
+   .. code-block:: java
+
       game.dropToken(1, 1); // player = 1, col = 1
+
+   .. image:: img/GamePhase.PLAYABLE.2.svg
+
+   .. code-block:: java
+
       game.dropToken(0, 1); // player = 0, col = 1
+
+
+   .. image:: img/GamePhase.PLAYABLE.3.svg
+
+   .. code-block:: java
+
       game.dropToken(1, 2); // player = 1, col = 2
 
-   .. image:: img/GamePhase.PLAYABLE.svg?20220830
+   .. image:: img/GamePhase.PLAYABLE.4.svg
 
 :``GamePhase.OVER``:
    **A game that has ended is in this phase.**
