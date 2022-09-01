@@ -25,8 +25,11 @@ public class ConnectFour {
     private int rows;        // number of grid rows
     private int cols;        // number of grid columns
     private Token[][] grid;  // 2D array of tokens in the grid
-    private Token[] player;  // 1D array of player tokens
-    private GamePhase phase; // game phase
+    private Token[] player;  // 1D array of player tokens (length 2)
+    private int numDropped;  // number of tokens dropped so far
+    private int lastDropRow; // row index of the most recent drop
+    private int lastDropCol; // column index of the most recent drop
+    private GamePhase phase; // current game phase
 
     //----------------------------------------------------------------------------------------------
     // CONSTRUCTOR
@@ -57,18 +60,6 @@ public class ConnectFour {
     //----------------------------------------------------------------------------------------------
 
     /**
-     * Return the number of columns in the game's grid.
-     *
-     * @return the number of columns
-     */
-    public int getCols() {
-        //
-        // replace the entire contents of this method with your implementation
-        //
-        throw new UnsupportedOperationException("getCols: not yet implemented.");
-    } // getCols
-
-    /**
      * Return the number of rows in the game's grid.
      *
      * @return the number of rows
@@ -79,6 +70,18 @@ public class ConnectFour {
         //
         throw new UnsupportedOperationException("getRows: not yet implemented.");
     } // getRows
+
+    /**
+     * Return the number of columns in the game's grid.
+     *
+     * @return the number of columns
+     */
+    public int getCols() {
+        //
+        // replace the entire contents of this method with your implementation
+        //
+        throw new UnsupportedOperationException("getCols: not yet implemented.");
+    } // getCols
 
     /**
      * Return the grid {@linkplain cs1302.gameutil.Token token} located at the specified position
@@ -124,7 +127,7 @@ public class ConnectFour {
      * @param player the player ({@code 0} for first player and {@code 1} for second player)
      * @return the token for the specified player
      * @throws IllegalArgumentException if {@code player} is neither {@code 0} nor {@code 1}
-     * @throws IllegalStateException is {@link #getPhase getPhase()} returns
+     * @throws IllegalStateException if {@link #getPhase getPhase()} returns
      *     {@link cs1302.gameutil.GamePhase#NEW}.
      */
     public Token getPlayerToken(int player) {
@@ -133,6 +136,50 @@ public class ConnectFour {
         //
         throw new UnsupportedOperationException("getPlayerToken: not yet implemented.");
     } // getPlayerToken
+
+    /**
+     * Return the number of tokens that have been dropped into this game's grid so far.
+     *
+     * @return the number of dropped tokens
+     * @throws IllegalStateException if {@link #getPhase getPhase()} returns
+     *     {@link cs1302.gameutil.GamePhase#NEW} or {@link cs1302.gameutil.GamePhase#READY}.
+     */
+    public int getNumDropped() {
+        //
+        // replace the entire contents of this method with your implementation
+        //
+        throw new UnsupportedOperationException("getNumDropped: not yet implemented.");
+    } // getNumDropped
+
+    /**
+     * Return the row index of the last (i.e., the most recent) token dropped into this
+     * game's grid.
+     *
+     * @return the row index of the last drop
+     * @throws IllegalStateException if {@link #getPhase getPhase()} returns
+     *     {@link cs1302.gameutil.GamePhase#NEW} or {@link cs1302.gameutil.GamePhase#READY}.
+     */
+    public int getLastDropRow() {
+        //
+        // replace the entire contents of this method with your implementation
+        //
+        throw new UnsupportedOperationException("getLastDropRow: not yet implemented.");
+    } // getLastDropRow
+
+    /**
+     * Return the col index of the last (i.e., the most recent) token dropped into this
+     * game's grid.
+     *
+     * @return the column index of the last drop
+     * @throws IllegalStateException if {@link #getPhase getPhase()} returns
+     *     {@link cs1302.gameutil.GamePhase#NEW} or {@link cs1302.gameutil.GamePhase#READY}.
+     */
+    public int getLastDropCol() {
+        //
+        // replace the entire contents of this method with your implementation
+        //
+        throw new UnsupportedOperationException("getLastDropCol: not yet implemented.");
+    } // getLastDropCol
 
     /**
      * Return the current game phase.
@@ -147,7 +194,8 @@ public class ConnectFour {
     } // getPhase
 
     /**
-     * Drop a player's token into a specific column in the grid.
+     * Drop a player's token into a specific column in the grid. This method should not enforce turn
+     * order -- that is the players' responsibility should they desire an polite and honest game.
      *
      * @param player the player ({@code 0} for first player and {@code 1} for second player)
      * @param col the grid column where the token will be dropped
@@ -204,43 +252,71 @@ public class ConnectFour {
 
     /**
      * <strong>DO NOT MODIFY:</strong>
-     * Set the tokens in this game's grid to the tokens described in the specified
-     * file. This method assumes the grid size matches this game's grid size, and
-     * that all tokens are specified. Here is an example of what the contents of
-     * a valid file might look like for a grid with 6 rows and 7 columns:
+     * Construct a {@link cs1302.game.ConnectFour} game object from the description provided in the
+     * the specified file. This method assumes the following about the contents of the file:
+     *
+     * 1) the first two entries in the file denote the {@code rows} and {@code cols} that should be
+     *    passed into the {@link cs1302.game.ConnectFour} constructor;
+     * 2) the next two entries denote the token names for the first and second player;
+     * 3) if present, the next {@code (rows * cols + 2)}-many entries specify the contents of the
+     *    grid and the location of the last drop -- of these, the first {@code (rows * cols)}-many
+     *    entries denote the grid and the last two entries denote the row and column index of the
+     *    last drop.
+     *
+     * The descriptions are assumed to be always be valid. If the game is won, then it must due to
+     * the last drop.
+     *
+     * <p> Here is an example of what the contents of a valid file might look like for a game with a
+     * 6-by-7 grid:
      *
      * <pre>
-     * 6 7
-     * null null null null null null null
-     * null null null null null null null
-     * null null null null null null null
-     * null null null null null null null
-     * BLUE null  RED null null null null
-     * RED  BLUE  RED BLUE null null null
+     * 6 7 RED BLUE
+     * 3 3 3 3 3 3 3
+     * 3 3 3 3 3 3 3
+     * 3 3 0 3 3 3 3
+     * 3 3 0 3 3 3 3
+     * 1 3 0 3 3 3 3
+     * 0 1 0 1 1 3 3
+     * 2 2
      * </pre>
      *
      * <p>
      * <strong>NOTE:</strong> This method should not be modified!
      *
-     * @param filename path to a file describing a game grid
+     * @param filename path to a file describing a game
+     * @return game object constructed from the file
      * @throws java.io.FileNotFoundException if the specified file cannot be found
      */
-    public void setTokensFromFile(String filename) throws java.io.FileNotFoundException {
-        java.io.File file = new java.io.File(filename);               // create file object
-        java.util.Scanner fileScanner = new java.util.Scanner(file);  // setup a scanner
+    public static ConnectFour fromFile(String filename) throws java.io.FileNotFoundException {
+        java.io.File file = new java.io.File(filename);
+        java.util.Scanner fileScanner = new java.util.Scanner(file);
         // first two entries in file specify the grid size
-        int rows = fileScanner.nextInt();                             // 1st number is row count
-        int cols = fileScanner.nextInt();                             // 2nd number is column count
-        // subsequent entries are either null or some valid token name
-        for (int row = 0; row < this.getRows(); row++) {              // loop over expected rows
-            for (int col = 0; col < this.getCols(); col++) {          // loop over expected cols
-                String tokenName = fileScanner.next();                // read a token name
-                Token token = tokenName.equals("null")                // determing what to place
-                    ? null
-                    : Token.valueOf(tokenName);
-                this.grid[row][col] = token;                          // set token in grid
+        int rows = fileScanner.nextInt();
+        int cols = fileScanner.nextInt();
+        // next two entries are the player's token names
+        Token token0 = Token.valueOf(fileScanner.next());
+        Token token1 = Token.valueOf(fileScanner.next());
+        // construct the game object and set the player tokens
+        ConnectFour game = new ConnectFour(rows, cols);
+        game.setPlayerTokens(token0, token1);
+        if (fileScanner.hasNext()) {
+            // next (rows * cols)-many entries denote the grid
+            for (int row = rows - 1; row >= 0; row--) {
+                for (int col = 0; col < cols; col++) {
+                    int player = fileScanner.nextInt();
+                    if (player != 3) {
+                        game.dropToken(player, col);
+                    } // if
+                } // for
             } // for
-        } // for
-    } // setTokensFromFile
+            // last two entries denote the position of the latest drop
+            game.lastDropRow = fileScanner.nextInt();
+            game.lastDropCol = fileScanner.nextInt();
+            // trigger phase change if game is won or full
+            game.isWinner(0);
+            game.isWinner(1);
+        } // if
+        return game;
+    } // fromFile
 
 } // ConnectFour
