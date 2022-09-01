@@ -534,10 +534,10 @@ Review
 
 :Target: Finish before Wednesday, Feb. 9th.
 
-   1. Do one final pass through the project document to make sure that you didn't miss anything.
-   2. Run your code through your test cases one last time.
-   3. Check your code style one last time.
-   4. Submit your code on Odin.
+1. Do one final pass through the project document to make sure that you didn't miss anything.
+2. Run your code through your test cases one last time.
+3. Check your code style one last time.
+4. Submit your code on Odin.
 
 Appendices
 ==========
