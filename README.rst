@@ -88,7 +88,7 @@ Course-Specific Learning Outcomes
 If you work on and complete this project, then you will gain exposure and practice with
 the following learning outcomes:
 
-:LO1.a: |lo_full| Navigate and modify files, directories, and permissions in a multi-user Unix-like
+:LO1.a |lo_full|: Navigate and modify files, directories, and permissions in a multi-user Unix-like
         environment.
 :LO1.b: (Partial) Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like
         environment.
