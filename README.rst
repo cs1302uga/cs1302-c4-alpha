@@ -456,6 +456,17 @@ possible; however, doing this the day or night the project is due is probably no
 Project Checklist
 =================
 
+.. |check_y| unicode:: 0x2611
+.. |check_n| unicode:: 0x2610
+
+To help you with planning out this project, here are some suggested steps you can take that your
+instructors believe will help you complete the project more easily. Some of the items in this
+checklist may not make sense until you have read the entire project description. These steps are
+suggesions and, therefore, do not constitute an exhaustive list of the steps that you may need to
+take to complete the project.
+
+* |check_y| Test...
+
 Appendices
 ==========
 
