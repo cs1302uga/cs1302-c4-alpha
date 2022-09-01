@@ -447,6 +447,9 @@ parent of your project directory (i.e., one directory above it), then complet th
 
      $ submit cs1302-c4-alpha csci-1302
 
+3. Inspect the output of the last command to verify that your project was submitted. Your
+   |ttslug| directory should now contain a ``rec`` (receipt) file.
+
 If you have any problems submitting your project then please contact your instructor as soon as
 possible; however, doing this the day or night the project is due is probably not the best idea.
 
