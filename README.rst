@@ -328,8 +328,8 @@ The details for each game phase are provided below:
    Below is an example of some code that drops a winning token into the grid of the game object
    depricted above, then checks for that win using the object's ``isWinner`` method. The code is
    followed by an illustration of what the inside of that object should look like immediately after
-   the code has executed -- please note that the object is in ``GamePhase.OVER`` phase immediately after the line
-   containing the call to ``isWinner(1)`` has executed:
+   the code has executed -- please note that the object moves inro the ``GamePhase.OVER`` phase
+   immediately after the call to ``isWinner(1)`` has executed:
 
    .. code-block:: java
 
