@@ -430,6 +430,26 @@ this section, then the requirement's point total is deducted from your submissio
 Submission Instructions
 +++++++++++++++++++++++
 
+You will submit your project on |server|. Before you submit, make sure that your project files are
+located in a directory called |ttslug| -- if you followed the instructions provided earlier in this
+document to download the project, then that is your directory name. To submit, change into the
+parent of your project directory (i.e., one directory above it), then complet the steps below:
+
+1. Check your code style -- we know that you have done this frequently, but it does not hurt to
+   double check it before you submit::
+
+     $ check1302 |slug|
+
+   If there are style violations, then fix them and retest your code!
+
+2. Once you have no style guide violations and your code compiles and works, you can submit your
+   work using the following command::
+
+     $ submit |slug| csci-1302
+
+If you have any problems submitting your project then please contact your instructor as soon as
+possible; however, doing this the day or night the project is due is probably not the best idea.
+
 Project Checklist
 =================
 
