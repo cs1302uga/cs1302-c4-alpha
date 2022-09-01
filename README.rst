@@ -314,27 +314,35 @@ The details for each game phase are provided below:
    **A game that has ended is in this phase.**
 
    A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the ``GamePhase.OVER``
-   phase when its ``isWinner`` method is called and one of the following conditions are met: i)
-   the grid full; or ii) the method is about to return ``true`` because a player has won.
+   phase when its ``isWinner`` method is called and one of the following conditions are met:
 
-   Below is an example of some code that drops a winning token into the grid pf a game object in the
-   ``GamePhase.PLAYABLE`` phase and checks for that win using the object's ``isWinner`` method followed
-   by an illustration of what the inside of that object should look like immediately after the code has
-   executed -- please note that the object is in ``GamePhase.OVER`` phase immediately after the line
+   * the grid full; or
+   * the method is about to return ``true`` because a player has won.
+
+   Consider the following illustration of a game object that is current in the
+   ``GamePhase.PLAYABLE`` phase:
+
+   .. image:: img/GamePhase.OVER.PRE.svg
+      :width: 100%
+
+   Below is an example of some code that drops a winning token into the grid of the game object
+   depricted above, then checks for that win using the object's ``isWinner`` method. The code is
+   followed by an illustration of what the inside of that object should look like immediately after
+   the code has executed -- please note that the object is in ``GamePhase.OVER`` phase immediately after the line
    containing the call to ``isWinner(1)`` has executed:
 
    .. code-block:: java
 
-      game.dropToken(0, 2); // first player, column 2
-      game.dropToken(1, 3); // second player, column 3
-      game.dropToken(0, 3); // first player, column 3
-      game.dropToken(1, 4); // first player, column 4
+      game.dropToken(1, 4); // second player, column 4
 
       if (game.isWinner(0)) {
           System.out.println("first player has won!");
       } else if (game.isWinner(1)) {
-          System.out.println("second player has won!");
+          System.out.println("second player has won!"); // this one!
       } // if
+
+   .. image:: img/GamePhase.OVER.POST.svg
+      :width: 100%
 
 Specific Requirements
 *********************
