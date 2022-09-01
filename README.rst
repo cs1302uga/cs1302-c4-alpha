@@ -462,12 +462,12 @@ checklist may not make sense until you have read the entire project description.
 suggesions and, therefore, do not constitute an exhaustive list of the steps that you may need to
 take to complete the project.
 
-* **Preparation:** (Finish before Monday, Jan. 31st)
+1. **Preparation:** (Finish before Monday, Jan. 31st)
 
-  * Start reading the project description.
+   1. Start reading the project description.
 
-  * Read through the entire project description, including any appendices, and write down questions
-    as you go.
+   2. Read through the entire project description, including any appendices, and write down questions
+      as you go.
 
 
 Appendices
