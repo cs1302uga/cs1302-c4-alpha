@@ -462,65 +462,77 @@ checklist may not make sense until you have read the entire project description.
 suggesions and, therefore, do not constitute an exhaustive list of the steps that you may need to
 take to complete the project.
 
-1. **Preparation:** (Finish before Monday, Jan. 31st)
+Preparation
++++++++++++
 
-   1. Start reading the project description.
+:Target: Finish before Monday, Jan. 31st.
 
-   2. Read through the entire project description, including any `appendices <#appendices>`_,
-      **and write down questions as you go**.
+1. Start reading the project description.
 
-   3. Read it again! This time, you may be able to answer some of your own questions.
+2. Read through the entire project description, including any `appendices <#appendices>`_,
+   **and write down questions as you go**.
 
-2. **Planning:** (Finish before Tuesday, Feb. 1st)
+3. Read it again! This time, you may be able to answer some of your own questions.
 
-   1. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
+Planning
+++++++++
 
-   2. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
-      **do not write any code yet!** Instead, try to list out the high-level steps for
-      the constructor and methods using bullet points.
+:Target: Finish before Tuesday, Feb. 1st.
 
-   3. Read through the notes you just wrote. If you see that the steps you wrote for one method
-      include a sequence of steps in another method, then consider whether you can have one
-      method can call the other -- that's code reuse! If you see the exact same steps in several
-      methods, then consider factoring out the common parts into a single method that you can
-      call in several places -- that's code reuse and refactoring!
+1. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
 
-   4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``, then
-      modify the ``main`` method so that it calls ``testConstructor()``. After that, compile
-      ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
-      aspects of the ``ConectFour(int, int)`` constructor once you begin to implement it.
+2. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
+   **do not write any code yet!** Instead, try to list out the high-level steps for
+   the constructor and methods using bullet points.
 
-3. **Implementing:** (Finish before Monday, Feb. 7th)
+3. Read through the notes you just wrote. If you see that the steps you wrote for one method
+   include a sequence of steps in another method, then consider whether you can have one
+   method can call the other -- that's code reuse! If you see the exact same steps in several
+   methods, then consider factoring out the common parts into a single method that you can
+   call in several places -- that's code reuse and refactoring!
 
-   1. Implement the ``ConectFour(int, int)`` constructor, ensure it's written with good code style,
-      then test it by running the ``cs1302.game.ConnectFourDriver`` class.
+4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``, then
+   modify the ``main`` method so that it calls ``testConstructor()``. After that, compile
+   ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
+   aspects of the ``ConectFour(int, int)`` constructor once you begin to implement it.
 
-      * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
-        implementation under different scenarios -- be sure to call those methods in
-        ``testConstructor()`` so that they get executed along with the other tests. Repeat this as
-        needed.
+Implementing
+++++++++++++
 
-      * There are some aspects of the constructor that you should test later. For example, you
-        can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
-        method.
+:Target: Finish before Monday, Feb. 7th
 
-   2. Implement the ``getRows()`` method, ensure it's written with good code style, then test it
-      by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
-      consistent with your constructor tests.
+1. Implement the ``ConectFour(int, int)`` constructor, ensure it's written with good code style,
+   then test it by running the ``cs1302.game.ConnectFourDriver`` class.
 
-      * When you add and call your test method(s) for ``getRows()``, you should NOT
-        comment out existing tests. You should always run all tests that you have each time you
-        run ``cs1302.game.ConnectFourDriver`` just in case a recent change breaks something that
-        you previously thought was working.
+   * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
+     implementation under different scenarios -- be sure to call those methods in
+     ``testConstructor()`` so that they get executed along with the other tests. Repeat this as
+     needed.
 
-   3. Implement the ``getCols()`` method, ensure that it's written with good code style, then test
-      it by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
-      consistent with your existing tests.
+   * There are some aspects of the constructor that you should test later. For example, you
+     can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
+     method.
 
-   4. Repeat this process to implement, style check, and test the remaining methods in the order
-      that they appear in the starter code.
+2. Implement the ``getRows()`` method, ensure it's written with good code style, then test it
+   by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
+   consistent with your constructor tests.
 
-4. **Review** (Finish before Wednesday, Feb. 9th)
+   * When you add and call your test method(s) for ``getRows()``, you should NOT
+     comment out existing tests. You should always run all tests that you have each time you
+     run ``cs1302.game.ConnectFourDriver`` just in case a recent change breaks something that
+     you previously thought was working.
+
+3. Implement the ``getCols()`` method, ensure that it's written with good code style, then test
+   it by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
+   consistent with your existing tests.
+
+4. Repeat this process to implement, style check, and test the remaining methods in the order
+   that they appear in the starter code.
+
+Review
+++++++
+
+:Target: Finish before Wednesday, Feb. 9th.
 
    1. Do one final pass through the project document to make sure that you didn't miss anything.
    2. Run your code through your test cases one last time.
