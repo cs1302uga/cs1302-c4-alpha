@@ -465,7 +465,11 @@ checklist may not make sense until you have read the entire project description.
 suggesions and, therefore, do not constitute an exhaustive list of the steps that you may need to
 take to complete the project.
 
-* |check_y| Test...
+
+
+* |check_y| Start reading the project description.
+* |check_n| Read through the entire project description, including any appendices, and write down
+  questions as you go.
 
 Appendices
 ==========
