@@ -82,14 +82,14 @@ starter code.
 Course-Specific Learning Outcomes
 +++++++++++++++++++++++++++++++++
 
-.. |lo_full| replace:: 🔷
-.. |lo_part| replace:: 🔹
+.. |lo_full| replace:: 🌟
+.. |lo_part| replace:: ⭐
 
 If you work on and complete this project, then you will gain exposure and practice with
 the following learning outcomes:
 
 =====  =========  ===========
-#      Rating     Description
+#      Exposure   Description
 =====  =========  ===========
 LO1.a  |lo_full|  Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
 =====  =========  ===========
