@@ -88,13 +88,16 @@ Course-Specific Learning Outcomes
 If you work on and complete this project, then you will gain exposure and practice with
 the following learning outcomes:
 
-:LO1.a |lo_full|: Navigate and modify files, directories, and permissions in a multi-user Unix-like
-        environment.
-:LO1.b: (Partial) Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like
-        environment.
-:LO1.c: Create and modify text files and source code using a powerful terminal-based text editor
-        such as Emacs or Vi.
-:LO1.d: (Partial) Use shell commands to compile new and existing software solutions that are organized into multi-level packages and have external dependencies.
+:LO1.a |lo_full|:
+   Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
+:LO1.b |lo_part|:
+   Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like environment.
+:LO1.c |lo_full|:
+   Create and modify text files and source code using a powerful terminal-based text editor such as
+   Emacs or Vi.
+:LO1.d |lo_part|:
+   Use shell commands to compile new and existing software solutions that are organized into
+   multi-level packages and have external dependencies.
 :LO2.b: (Partial) Define, throw, and propagate exceptions appropriately in a software solution.
 :LO3.a: Create and update source code that adheres to established style guidelines.
 :LO3.b: (Partial) Create class, interface, method, and inline documentation that satisfies a set of requirements.
