@@ -316,6 +316,19 @@ The details for each phase are provided below:
 Specific Requirements
 *********************
 
+:``ConnectFour(int, int)`` (10):
+   The ``ConnectFour`` constructor is expected to behave in accordance with the API documentation
+   included in the starter code and the expectations described in the `Game Phases <#gamephases>`_
+   section presented earlier in this document.
+
+   :``getRows()`` (2):
+      TODO
+
+   :``getCols()`` (2):
+      TODO
+
+
+
 cs1302.game.ConnectFourDriver
 -----------------------------
 
