@@ -319,7 +319,7 @@ The details for each game phase are provided below:
    * the grid full; or
    * the method is about to return ``true`` because a player has won.
 
-   Consider the following illustration of a game object that is current in the
+   Consider the following illustration of a game object that is currently in the
    ``GamePhase.PLAYABLE`` phase:
 
    .. image:: img/GamePhase.OVER.PRE.svg
