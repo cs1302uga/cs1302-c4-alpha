@@ -514,7 +514,11 @@ submission should *do*, then the non-functional requirements describe how your s
 supposed to *be*. If your submission does not satisfy a non-functional requirement listed in
 this section, then the requirement's point total is deducted from your submission grade.
 
-:Environment and Structure (100):
+.. |compile_deducton| replace:: 100
+.. |style_deducton_each| replace:: 5
+.. |style_deducton_max| replace:: 20
+
+:Environment and Structure (|compile_deducton|):
    This project must must compile and run correctly on |server| using the specific version of
    Java that is enabled by the CSCI 1302 shell profile, and your directory structure and
    package structure should match the structure of the starter code.
@@ -536,9 +540,9 @@ this section, then the requirement's point total is deducted from your submissio
      submission.
 
    If a problem is encountered for your submission that is explicitly described above, then
-   100 points will be subtracted from your earned point total; however, if the problem is
-   compilation-related or structure-related and NOT explicitly described above, then it will be
-   handled on an individual basis.
+   |compile_deducton| points will be subtracted from your earned point total; however, if the
+   problem is compilation-related or structure-related and NOT explicitly described above, then
+   it will be handled on an individual basis.
 
 :Code Style (20):
    Every ``.java`` file that you include as part of your submission for this project must
@@ -546,9 +550,9 @@ this section, then the requirement's point total is deducted from your submissio
    individual code style guidelines listed in the style guide document are considered for
    this requirement.
 
-   If ``check1302`` on |server| reports any style violations for your submission, then 20
-   points will be subtracted from your earned point total, regardless of the number of
-   violations.
+   If ``check1302`` on |server| reports any style violations for your submission, then
+   |style_deduction_each| points will be subtracted from your earned point total **for each
+   violation**, up to a maximum deduction of |style_deduction_max| points.
 
    .. _styleguide: https://github.com/cs1302uga/cs1302-styleguide
 
