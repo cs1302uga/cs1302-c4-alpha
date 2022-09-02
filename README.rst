@@ -421,6 +421,7 @@ Consider the following illustration of a game object that is currently in the
 ``GamePhase.PLAYABLE`` phase:
 
 .. image:: img/GamePhase.OVER.PRE.svg
+   :width: 100%
 
 Below is an example of some code that drops a winning token into the grid of the game object
 depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
