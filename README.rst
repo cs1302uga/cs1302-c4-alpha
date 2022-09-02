@@ -519,7 +519,7 @@ this section, then the requirement's point total is deducted from your submissio
 .. |style_deducton_max| replace:: 20
 
 Environment and Structure (|compile_deducton|)
-**********************************************
+----------------------------------------------
 
 This project must must compile and run correctly on |server| using the specific version of
 Java that is enabled by the CSCI 1302 shell profile, and your directory structure and
@@ -547,7 +547,7 @@ problem is compilation-related or structure-related and NOT explicitly described
 it will be handled on an individual basis.
 
 Code Style (|style_deduction_max|)
-**********************************
+----------------------------------
 
 Every ``.java`` file that you include as part of your submission for this project must
 be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
