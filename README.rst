@@ -563,6 +563,11 @@ Appendices
 Frequently Asked Questions
 ++++++++++++++++++++++++++
 
+* **What is a Java ARchive (JAR) file?**
+
+
+
+
 .. #############################################################################
 
 .. copyright and license information
