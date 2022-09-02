@@ -228,47 +228,48 @@ object to change what phase it is in:
 
 The details for each game phase are provided below:
 
-:``GamePhase.NEW``:
+``GamePhase.NEW``
+-----------------
 
-   **A newly constructed game is in this phase.**
+**A newly constructed game is in this phase.**
 
-   When a ``ConnectFour`` object is created, the constructor should check for any exceptional cases,
-   then initialize the object's instance variables to the the values described below:
+When a ``ConnectFour`` object is created, the constructor should check for any exceptional cases,
+then initialize the object's instance variables to the the values described below:
 
-   :``rows``:            the supplied value of the ``rows`` constructor parameter
-   :``cols``:            the supplied value of the ``cols`` constructor parameter
-   :``grid``:            a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns
-   :``player``:          a one-dimensional ``Token`` array of length ``2``
-   :``numDropped``:      the ``int`` value ``0``
-   :``lastDroppedRow``:  the ``int`` value ``-1``
-   :``lastDroppedCol``:  the ``int`` value ``-1``
-   :``phase``:           ``GamePhase.NEW``
+:``rows``:            the supplied value of the ``rows`` constructor parameter
+:``cols``:            the supplied value of the ``cols`` constructor parameter
+:``grid``:            a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns
+:``player``:          a one-dimensional ``Token`` array of length ``2``
+:``numDropped``:      the ``int`` value ``0``
+:``lastDroppedRow``:  the ``int`` value ``-1``
+:``lastDroppedCol``:  the ``int`` value ``-1``
+:``phase``:           ``GamePhase.NEW``
 
-   Below is an example of some code that constructs a game object with six rows and seven columns followed
-   by an illustration of what the inside of that object should look like when its done being constructed:
+Below is an example of some code that constructs a game object with six rows and seven columns followed
+by an illustration of what the inside of that object should look like when its done being constructed:
 
-   .. code-block:: java
+.. code-block:: java
 
-      ConnectFour game = new ConnectFour(6, 7);
+   ConnectFour game = new ConnectFour(6, 7);
 
-   .. image:: img/GamePhase.NEW.png
+.. image:: img/GamePhase.NEW.png
 
 :``GamePhase.READY``:
-   **A game that is ready to be played is in this phase.**
+**A game that is ready to be played is in this phase.**
 
-   A game object that is in the ``GamePhase.NEW`` phase should move into the ``GamePhase.READY``
-   phase when its ``setPlayerTokens`` method is called for the first time.
+A game object that is in the ``GamePhase.NEW`` phase should move into the ``GamePhase.READY``
+phase when its ``setPlayerTokens`` method is called for the first time.
 
-   Below is an example of some code that sets the player tokens of a game object in the
-   ``GamePhase.NEW`` phase followed by an illustration of what the inside of that object
-   should look like immediately after the code has executed and the object is in the
-   ``GamePhase.READY`` phase:
+Below is an example of some code that sets the player tokens of a game object in the
+``GamePhase.NEW`` phase followed by an illustration of what the inside of that object
+should look like immediately after the code has executed and the object is in the
+``GamePhase.READY`` phase:
 
-   .. code-block:: java
+.. code-block:: java
 
-      game.setPlayerTokens(Token.RED, Token.BLUE);
+   game.setPlayerTokens(Token.RED, Token.BLUE);
 
-   .. image:: img/GamePhase.READY.png
+.. image:: img/GamePhase.READY.png
 
 :``GamePhase.PLAYABLE``:
    **A game that is being played is in this phase.**
