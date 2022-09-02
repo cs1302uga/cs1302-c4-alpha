@@ -562,7 +562,7 @@ Frequently Asked Questions
 .. |copy| unicode:: U+000A9 .. COPYRIGHT SIGN
 .. |copyright| replace:: Copyright |copy| Michael E. Cotterell, Bradley J. Barnes, and the University of Georgia.
 .. standard footer
-.. footer:: |copyright| See `LICENSE.rst <LICENSE.rst>`_ for license information.
-            The content and opinions expressed on this Web page do not necessarily
-            reflect the views of nor are they endorsed by the University of Georgia or the University
-            System of Georgia.
+.. footer:: |copyright| See `LICENSE.rst <LICENSE.rst>`_ for license
+            information. The content and opinions expressed on this Web page do
+            not necessarily reflect the views of nor are they endorsed by the
+            University of Georgia or the University System of Georgia.
