@@ -276,6 +276,9 @@ Review
 3. Check your |code_style|_ one last time.
 4. `Submit your code <#submission-instructions>`_ on Odin.
 
+Project Requirements
+====================
+
 .. _freqs:
 
 Functional Requirements
