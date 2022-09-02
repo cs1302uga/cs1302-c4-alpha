@@ -526,7 +526,7 @@ this section, then the requirement's point total is deducted from your submissio
    * The location of the default package for source code should be a direct sub-directory of
      |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
      versions of the ones in the starter code -- **you should NOT add any additional source code files**.
-     Both``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
+     Both ``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
      using the commands provided in the compilation instructions that are included earlier in this
      document.
 
