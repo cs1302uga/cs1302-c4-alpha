@@ -548,7 +548,7 @@ this section, then the requirement's point total is deducted from your submissio
    individual code style guidelines listed in the style guide document are considered for
    this requirement.
 
-   If ``check130`` on |server| reports any style violations for your submission, then 20
+   If ``check1302`` on |server| reports any style violations for your submission, then 20
    points will be subtracted from your earned point total, regardless of the number of
    violations.
 
