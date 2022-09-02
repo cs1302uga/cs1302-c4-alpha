@@ -251,7 +251,7 @@ The details for each game phase are provided below:
 
       ConnectFour game = new ConnectFour(6, 7);
 
-   .. image:: img/GamePhase.NEW.svg
+   .. image:: img/GamePhase.NEW.png
 
 :``GamePhase.READY``:
    **A game that is ready to be played is in this phase.**
@@ -268,7 +268,7 @@ The details for each game phase are provided below:
 
       game.setPlayerTokens(Token.RED, Token.BLUE);
 
-   .. image:: img/GamePhase.READY.svg
+   .. image:: img/GamePhase.READY.png
 
 :``GamePhase.PLAYABLE``:
    **A game that is being played is in this phase.**
@@ -286,25 +286,25 @@ The details for each game phase are provided below:
 
       game.dropToken(0, 0); // first player, column 0
 
-   .. image:: img/GamePhase.PLAYABLE.1.svg
+   .. image:: img/GamePhase.PLAYABLE.1.png
 
    .. code-block:: java
 
       game.dropToken(1, 1); // second player, column 1
 
-   .. image:: img/GamePhase.PLAYABLE.2.svg
+   .. image:: img/GamePhase.PLAYABLE.2.png
 
    .. code-block:: java
 
       game.dropToken(0, 1); // first player, column 1
 
-   .. image:: img/GamePhase.PLAYABLE.3.svg
+   .. image:: img/GamePhase.PLAYABLE.3.png
 
    .. code-block:: java
 
       game.dropToken(1, 2); // second player, column 2
 
-   .. image:: img/GamePhase.PLAYABLE.4.svg
+   .. image:: img/GamePhase.PLAYABLE.4.png
 
 :``GamePhase.OVER``:
    **A game that has ended is in this phase.**
@@ -319,7 +319,7 @@ The details for each game phase are provided below:
    Consider the following illustration of a game object that is currently in the
    ``GamePhase.PLAYABLE`` phase:
 
-   .. image:: img/GamePhase.OVER.PRE.svg
+   .. image:: img/GamePhase.OVER.PRE.png
 
    Below is an example of some code that drops a winning token into the grid of the game object
    depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
@@ -335,7 +335,7 @@ The details for each game phase are provided below:
           System.out.println("second player has won!");
       } // if
 
-   .. image:: img/GamePhase.OVER.POST.svg
+   .. image:: img/GamePhase.OVER.POST.png
 
 Specific Requirements
 *********************
