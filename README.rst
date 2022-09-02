@@ -533,8 +533,7 @@ this section, then the requirement's point total is deducted from your submissio
    * The location of the default package for compiled code should be a sub-directory of |ttslug|
      called ``bin``. If you include compiled code with your submission, then it will be ignored.
      Graders are instructed to recompile your submission on |server| code prior to testing your
-     submission. Since the code that you submit is expected to compile, the graders will, in most
-     cases, not modify your source code to resolve a compilation issue.
+     submission.
 
    If a problem is encountered for your submission that is explicitly described above, then
    100 points will be subtracted from your earned point total; however, if the problem is
