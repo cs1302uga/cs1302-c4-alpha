@@ -465,10 +465,18 @@ checklist may not make sense until you have read the entire project description.
 suggestions and, therefore, do not constitute an exhaustive list of the steps that you may need to
 take to complete the project.
 
-Preparation
-+++++++++++
+.. |code_style| replace:: code style
+.. _code_style: https://github.com/cs1302uga/cs1302-styleguide/#when-and-how-to-check
 
-:Target: Finish before Monday, Jan. 31st.
+.. |date_target_prep| replace:: Monday, Jan. 31st
+.. |date_target_plan| replace:: Tuesday, Feb. 1st
+.. |date_target_impl| replace:: Monday, Feb. 7th
+.. |date_target_revu| replace:: Wednesday, Feb. 9th
+
+Prepare
++++++++
+
+:Target: Finish before |date_target_prep|.
 
 1. Start reading the project description.
 
@@ -477,10 +485,10 @@ Preparation
 
 3. Read it again! This time, you may be able to answer some of your own questions.
 
-Planning
-++++++++
+Plan
+++++
 
-:Target: Finish before Tuesday, Feb. 1st.
+:Target: Finish before |date_target_plan|.
 
 1. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
 
@@ -499,13 +507,13 @@ Planning
    ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
    aspects of the ``ConnectFour(int, int)`` constructor once you begin to implement it.
 
-Implementing
-++++++++++++
+Implement
++++++++++
 
-:Target: Finish before Monday, Feb. 7th
+:Target: Finish before |date_target_impl|.
 
-1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good code style,
-   then test it by running the ``cs1302.game.ConnectFourDriver`` class.
+1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good
+   |code_style|_, then test it by running the ``cs1302.game.ConnectFourDriver`` class.
 
    * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
      implementation under different scenarios -- be sure to call those methods in
@@ -516,7 +524,7 @@ Implementing
      can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
      method.
 
-2. Implement the ``getRows()`` method, ensure it's written with good code style, then test it
+2. Implement the ``getRows()`` method, ensure it's written with good |code_style|_, then test it
    by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
    consistent with your constructor tests.
 
@@ -525,25 +533,28 @@ Implementing
      run ``cs1302.game.ConnectFourDriver`` just in case a recent change breaks something that
      you previously thought was working.
 
-3. Implement the ``getCols()`` method, ensure that it's written with good code style, then test
+3. Implement the ``getCols()`` method, ensure that it's written with good |code_style|_, then test
    it by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
    consistent with your existing tests.
 
-4. Repeat this process to implement, style check, and test the remaining methods in the order
-   that they appear in the starter code.
+4. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
+   order that they appear in the starter code.
 
 Review
 ++++++
 
-:Target: Finish before Wednesday, Feb. 9th.
+:Target: Finish before |date_target_revu|.
 
 1. Do one final pass through the project document to make sure that you didn't miss anything.
 2. Run your code through your test cases one last time.
-3. Check your code style one last time.
-4. Submit your code on Odin.
+3. Check your |code_style|_ one last time.
+4. Submit your code on Odin .
 
 Appendices
 ==========
+
+Frequently Asked Questions
+++++++++++++++++++++++++++
 
 .. #############################################################################
 
