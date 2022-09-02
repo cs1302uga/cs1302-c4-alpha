@@ -514,11 +514,11 @@ submission should *do*, then the non-functional requirements describe how your s
 supposed to *be*. If your submission does not satisfy a non-functional requirement listed in
 this section, then the requirement's point total is deducted from your submission grade.
 
-.. |compile_deducton| replace:: 100
-.. |style_deducton_each| replace:: 5
-.. |style_deducton_max| replace:: 20
+.. |compile_points| replace:: 100
+.. |style_points_each| replace:: 5
+.. |style_points_max| replace:: 20
 
-Environment and Structure (|compile_deducton|)
+Environment and Structure (|compile_points|)
 ----------------------------------------------
 
 This project must must compile and run correctly on |server| using the specific version of
@@ -542,11 +542,11 @@ package structure should match the structure of the starter code.
   submission.
 
 If a problem is encountered for your submission that is explicitly described above, then
-|compile_deducton| points will be subtracted from your earned point total; however, if the
+|compile_points| points will be subtracted from your earned point total; however, if the
 problem is compilation-related or structure-related and NOT explicitly described above, then
 it will be handled on an individual basis.
 
-Code Style (|style_deduction_max|)
+Code Style (|style_points_max|)
 ----------------------------------
 
 Every ``.java`` file that you include as part of your submission for this project must
@@ -555,8 +555,8 @@ individual code style guidelines listed in the style guide document are consider
 this requirement.
 
 If ``check1302`` on |server| reports any style violations for your submission, then
-|style_deduction_each| points will be subtracted from your earned point total **for each
-violation**, up to a maximum deduction of |style_deduction_max| points.
+|style_points_each| points will be subtracted from your earned point total **for each
+violation**, up to a maximum deduction of |style_points_max| points.
 
 .. _styleguide: https://github.com/cs1302uga/cs1302-styleguide
 
