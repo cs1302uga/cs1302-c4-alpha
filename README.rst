@@ -229,7 +229,7 @@ object to change what phase it is in:
 The details for each game phase are provided below:
 
 ``GamePhase.NEW``
------------------
+~~~~~~~~~~~~~~~~~
 
 **A newly constructed game is in this phase.**
 
