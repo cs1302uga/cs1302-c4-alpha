@@ -316,9 +316,10 @@ public class ConnectFour {
         game.setPlayerTokens(token0, token1);
         if (fileScanner.hasNext()) {
             // next (rows * cols)-many entries denote the grid
+            int player = 3; // assume null
             for (int row = rows - 1; row >= 0; row--) {
                 for (int col = 0; col < cols; col++) {
-                    int player = fileScanner.nextInt();
+                    player = fileScanner.nextInt();
                     if (player != 3) {
                         game.dropToken(player, col);
                     } // if
@@ -328,8 +329,7 @@ public class ConnectFour {
             game.lastDropRow = fileScanner.nextInt();
             game.lastDropCol = fileScanner.nextInt();
             // trigger phase change if game is won or full
-            game.isWinner(0);
-            game.isWinner(1);
+            game.isWinner(player);
         } // if
         return game;
     } // fromFile
