@@ -537,7 +537,7 @@ this section, then the requirement's point total is deducted from your submissio
 
    If a problem is encountered for your submission that is explicitly described above, then
    100 points will be subtracted from your earned point total; however, if the problem is
-   compilation-related or structure-related and NOT explicitly described above, will be
+   compilation-related or structure-related and NOT explicitly described above, then it will be
    handled on an individual basis.
 
 :Code Style (20):
