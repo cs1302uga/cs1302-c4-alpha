@@ -230,7 +230,9 @@ public class ConnectFour {
     /**
      * Return {@code true} if the last token dropped via {@link #dropToken} created a
      * <em>connect four</em>. A <em>connect four</em> is a sequence of four equal tokens (i.e., they
-     * have the same color) -- this sequence can occur horizontally, vertically, or  diagonally.
+     * have the same color) -- this sequence can occur horizontally, vertically, or diagonally.
+     * If the grid is full or the last drop created a <em>connect four</em>, then this method
+     * changes the game's phase to {@link cs1302.gameutil.GamePhase#OVER}.
      *
      * <p>
      * <strong>NOTE:</strong> The only instance variable that this method might change, if
