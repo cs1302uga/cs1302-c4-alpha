@@ -210,8 +210,6 @@ To compile ``ConnectFour.java``, execute the following command while directly in
 Once compiled, you can begin to test the ``ConnectFour`` class by modifying and running the
 `provided driver class <#cs1302gameconnectfourdriver>`_.
 
-## TODO: Change the link above.
-
 Game Phases
 ***********
 
