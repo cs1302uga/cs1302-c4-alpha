@@ -164,6 +164,100 @@ requirements. To download the starter code, follow these instructions:
              ├── ConnectFour.java
              └── ConnectFourDriver.java
 
+Project Checklist
+=================
+
+To help you with planning out this project, here are some suggested steps you can take that your
+instructors believe will help you complete the project more easily. Some of the items in this
+checklist may not make sense until you have read the entire project description. These steps are
+suggestions and, therefore, do not constitute an exhaustive list of the steps that you may need to
+take to complete the project.
+
+.. |code_style| replace:: code style
+.. _code_style: https://github.com/cs1302uga/cs1302-styleguide/#when-and-how-to-check
+
+.. |date_target_prep| replace:: Monday, Jan. 31st
+.. |date_target_plan| replace:: Tuesday, Feb. 1st
+.. |date_target_impl| replace:: Monday, Feb. 7th
+.. |date_target_revu| replace:: Wednesday, Feb. 9th
+
+Prepare
++++++++
+
+:Target: Finish before |date_target_prep|.
+
+1. Start reading the project description.
+
+2. Read through the entire project description, including any `appendices <#appendices>`_,
+   **and write down questions as you go**.
+
+3. Read it again! This time, you may be able to answer some of your own questions.
+
+Plan
+++++
+
+:Target: Finish before |date_target_plan|.
+
+1. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
+
+2. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
+   **do not write any code yet!** Instead, try to list out the high-level steps for
+   the constructor and methods using bullet points.
+
+3. Read through the notes you just wrote. If you see that the steps you wrote for one method
+   include a sequence of steps in another method, then consider whether you can have one
+   method can call the other -- that's code reuse! If you see the exact same steps in several
+   methods, then consider factoring out the common parts into a single method that you can
+   call in several places -- that's code reuse and refactoring!
+
+4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``, then
+   modify the ``main`` method so that it calls ``testConstructor()``. After that, compile
+   ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
+   aspects of the ``ConnectFour(int, int)`` constructor once you begin to implement it.
+
+Implement
++++++++++
+
+:Target: Finish before |date_target_impl|.
+
+1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good
+   |code_style|_, then test it by running the ``cs1302.game.ConnectFourDriver`` class.
+
+   * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
+     implementation under different scenarios -- be sure to call those methods in
+     ``testConstructor()`` so that they get executed along with the other tests. Repeat this as
+     needed.
+
+   * There are some aspects of the constructor that you should test later. For example, you
+     can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
+     method.
+
+2. Implement the ``getRows()`` method, ensure it's written with good |code_style|_, then test it
+   by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
+   consistent with your constructor tests.
+
+   * When you add and call your test method(s) for ``getRows()``, you should NOT
+     comment out existing tests. You should always run all tests that you have each time you
+     run ``cs1302.game.ConnectFourDriver`` just in case a recent change breaks something that
+     you previously thought was working.
+
+3. Implement the ``getCols()`` method, ensure that it's written with good |code_style|_, then test
+   it by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
+   consistent with your existing tests.
+
+4. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
+   order that they appear in the starter code.
+
+Review
+++++++
+
+:Target: Finish before |date_target_revu|.
+
+1. Do one final pass through the project document to make sure that you didn't miss anything.
+2. Run your code through your test cases one last time.
+3. Check your |code_style|_ one last time.
+4. `Submit your code <#submission-instructions>`_ on Odin.
+
 .. _freqs:
 
 Functional Requirements
@@ -453,99 +547,6 @@ parent of your project directory (i.e., one directory above it), then complete t
 If you have any problems submitting your project then please contact your instructor as soon as
 possible; however, doing this the day or night the project is due is probably not the best idea.
 
-Project Checklist
-=================
-
-To help you with planning out this project, here are some suggested steps you can take that your
-instructors believe will help you complete the project more easily. Some of the items in this
-checklist may not make sense until you have read the entire project description. These steps are
-suggestions and, therefore, do not constitute an exhaustive list of the steps that you may need to
-take to complete the project.
-
-.. |code_style| replace:: code style
-.. _code_style: https://github.com/cs1302uga/cs1302-styleguide/#when-and-how-to-check
-
-.. |date_target_prep| replace:: Monday, Jan. 31st
-.. |date_target_plan| replace:: Tuesday, Feb. 1st
-.. |date_target_impl| replace:: Monday, Feb. 7th
-.. |date_target_revu| replace:: Wednesday, Feb. 9th
-
-Prepare
-+++++++
-
-:Target: Finish before |date_target_prep|.
-
-1. Start reading the project description.
-
-2. Read through the entire project description, including any `appendices <#appendices>`_,
-   **and write down questions as you go**.
-
-3. Read it again! This time, you may be able to answer some of your own questions.
-
-Plan
-++++
-
-:Target: Finish before |date_target_plan|.
-
-1. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
-
-2. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
-   **do not write any code yet!** Instead, try to list out the high-level steps for
-   the constructor and methods using bullet points.
-
-3. Read through the notes you just wrote. If you see that the steps you wrote for one method
-   include a sequence of steps in another method, then consider whether you can have one
-   method can call the other -- that's code reuse! If you see the exact same steps in several
-   methods, then consider factoring out the common parts into a single method that you can
-   call in several places -- that's code reuse and refactoring!
-
-4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``, then
-   modify the ``main`` method so that it calls ``testConstructor()``. After that, compile
-   ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
-   aspects of the ``ConnectFour(int, int)`` constructor once you begin to implement it.
-
-Implement
-+++++++++
-
-:Target: Finish before |date_target_impl|.
-
-1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good
-   |code_style|_, then test it by running the ``cs1302.game.ConnectFourDriver`` class.
-
-   * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
-     implementation under different scenarios -- be sure to call those methods in
-     ``testConstructor()`` so that they get executed along with the other tests. Repeat this as
-     needed.
-
-   * There are some aspects of the constructor that you should test later. For example, you
-     can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
-     method.
-
-2. Implement the ``getRows()`` method, ensure it's written with good |code_style|_, then test it
-   by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
-   consistent with your constructor tests.
-
-   * When you add and call your test method(s) for ``getRows()``, you should NOT
-     comment out existing tests. You should always run all tests that you have each time you
-     run ``cs1302.game.ConnectFourDriver`` just in case a recent change breaks something that
-     you previously thought was working.
-
-3. Implement the ``getCols()`` method, ensure that it's written with good |code_style|_, then test
-   it by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
-   consistent with your existing tests.
-
-4. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
-   order that they appear in the starter code.
-
-Review
-++++++
-
-:Target: Finish before |date_target_revu|.
-
-1. Do one final pass through the project document to make sure that you didn't miss anything.
-2. Run your code through your test cases one last time.
-3. Check your |code_style|_ one last time.
-4. `Submit your code <#submission-instructions>`_ on Odin.
 
 Appendices
 ==========
