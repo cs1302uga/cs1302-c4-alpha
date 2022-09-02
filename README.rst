@@ -270,8 +270,8 @@ requirement's point total is added to your submission grade.
 
 .. _connect_four_reqs:
 
-``cs1302.game.ConnectFour``
----------------------------
+cs1302.game.ConnectFour
+-----------------------
 
 The ``cs1302.game.ConnectFour`` class is one of the classes that you are responsible for
 implementing and testing. When you downloaded the starter code, a partially implemented version of
@@ -518,43 +518,47 @@ this section, then the requirement's point total is deducted from your submissio
 .. |style_deducton_each| replace:: 5
 .. |style_deducton_max| replace:: 20
 
-:Environment and Structure (|compile_deducton|):
-   This project must must compile and run correctly on |server| using the specific version of
-   Java that is enabled by the CSCI 1302 shell profile, and your directory structure and
-   package structure should match the structure of the starter code.
+Environment and Structure (|compile_deducton|)
+**********************************************
 
-   * You should NOT modify the location of any of the provided ``.java`` files.
+This project must must compile and run correctly on |server| using the specific version of
+Java that is enabled by the CSCI 1302 shell profile, and your directory structure and
+package structure should match the structure of the starter code.
 
-   * You should NOT modify the package statement in any of the provided ``.java`` files.
+* You should NOT modify the location of any of the provided ``.java`` files.
 
-   * The location of the default package for source code should be a direct sub-directory of
-     |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
-     versions of the ones in the starter code -- **you should NOT add any additional source code files**.
-     Both ``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
-     using the commands provided in the compilation instructions that are included earlier in this
-     document.
+* You should NOT modify the package statement in any of the provided ``.java`` files.
 
-   * The location of the default package for compiled code should be a sub-directory of |ttslug|
-     called ``bin``. If you include compiled code with your submission, then it will be ignored.
-     Graders are instructed to recompile your submission on |server| code prior to testing your
-     submission.
+* The location of the default package for source code should be a direct sub-directory of
+  |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
+  versions of the ones in the starter code -- **you should NOT add any additional source code files**.
+  Both ``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
+  using the commands provided in the compilation instructions that are included earlier in this
+  document.
 
-   If a problem is encountered for your submission that is explicitly described above, then
-   |compile_deducton| points will be subtracted from your earned point total; however, if the
-   problem is compilation-related or structure-related and NOT explicitly described above, then
-   it will be handled on an individual basis.
+* The location of the default package for compiled code should be a sub-directory of |ttslug|
+  called ``bin``. If you include compiled code with your submission, then it will be ignored.
+  Graders are instructed to recompile your submission on |server| code prior to testing your
+  submission.
 
-:Code Style (20):
-   Every ``.java`` file that you include as part of your submission for this project must
-   be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
-   individual code style guidelines listed in the style guide document are considered for
-   this requirement.
+If a problem is encountered for your submission that is explicitly described above, then
+|compile_deducton| points will be subtracted from your earned point total; however, if the
+problem is compilation-related or structure-related and NOT explicitly described above, then
+it will be handled on an individual basis.
 
-   If ``check1302`` on |server| reports any style violations for your submission, then
-   |style_deduction_each| points will be subtracted from your earned point total **for each
-   violation**, up to a maximum deduction of |style_deduction_max| points.
+Code Style (|style_deduction_max|)
+**********************************
 
-   .. _styleguide: https://github.com/cs1302uga/cs1302-styleguide
+Every ``.java`` file that you include as part of your submission for this project must
+be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
+individual code style guidelines listed in the style guide document are considered for
+this requirement.
+
+If ``check1302`` on |server| reports any style violations for your submission, then
+|style_deduction_each| points will be subtracted from your earned point total **for each
+violation**, up to a maximum deduction of |style_deduction_max| points.
+
+.. _styleguide: https://github.com/cs1302uga/cs1302-styleguide
 
 Submission Instructions
 +++++++++++++++++++++++
