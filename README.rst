@@ -210,8 +210,12 @@ To compile ``ConnectFour.java``, execute the following command while directly in
 Once compiled, you can begin to test the ``ConnectFour`` class by modifying and running the
 `provided driver class <#cs1302gameconnectfourdriver>`_.
 
+## TODO: Change the link above.
+
 Game Phases
 ***********
+
+## TODO: Change the images to be png instead of svg.
 
 .. |GamePhase| replace:: ``cs1302.gameutil.GamePhase``
 .. _GamePhase: https://cs1302uga.github.io/cs1302-c4-alpha/doc/cs1302/gameutil/GamePhase.html
@@ -314,6 +318,8 @@ The details for each game phase are provided below:
 
 :``GamePhase.OVER``:
    **A game that has ended is in this phase.**
+
+##TODO: change ``isWinner`` in this section.
 
    A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the ``GamePhase.OVER``
    phase when its ``isWinner`` method is called and one of the following conditions are met:
