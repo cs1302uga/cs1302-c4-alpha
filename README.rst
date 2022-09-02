@@ -254,7 +254,6 @@ The details for each game phase are provided below:
       ConnectFour game = new ConnectFour(6, 7);
 
    .. image:: img/GamePhase.NEW.svg
-      :width: 100%
 
 :``GamePhase.READY``:
    **A game that is ready to be played is in this phase.**
