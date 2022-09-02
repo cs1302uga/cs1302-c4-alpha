@@ -36,7 +36,7 @@
 
 .. #|approved_notice|
 
-|not_approved_notice| |website|_
+|approved_notice| |website|_
 
 This document contains the description for the |title| project assigned to the students in the
 |semester| |course| classes at the University of Georgia. **Students who are assigned this project
