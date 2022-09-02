@@ -137,7 +137,8 @@ functionality described above via its constructor and instance methods -- the sp
 about what is required are included later in this document. What you are about to read may
 seem counter-intuitive, but **you will not be writing any code for this project to let users
 interactively play a game of Connect Four**; instead, you will implement and test a class that,
-once fully implemented, can be used to make writing such an interactive program easier.
+once fully implemented, can be used to make writing such an interactive program easier. This is
+similar to what you did in the Tic-Tac-Toe assignment earlier this semester.
 
 Getting Started
 +++++++++++++++
