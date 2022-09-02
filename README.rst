@@ -451,7 +451,7 @@ Specific Requirements
 *********************
 
 :Implementation (100 points):
-   Your ``cs1302.game.ConnectFour`` implemention is expected to function as described in the API
+   Your ``cs1302.game.ConnectFour`` implementation is expected to function as described in the API
    documentation included in the starter code and as described in the `Game Phases <#game-phases>`_
    section presented earlier in this document. To be clear, your program should not only meet these
    expectations under normal conditions; it should also meet them under exceptional conditions -- some
@@ -514,20 +514,42 @@ submission should *do*, then the non-functional requirements describe how your s
 supposed to *be*. If your submission does not satisfy a non-functional requirement listed in
 this section, then the requirement's point total is deducted from your submission grade.
 
-:Structure (10/100):
-   TODO.
+:Environment and Structure (100):
+   This project must must compile and run correctly on |server| using the specific version of
+   Java that is enabled by the CSCI 1302 shell profile.
 
-:Environment (100):
-   This project must be implemented in Java 17, and it must compile and run correctly on
-   Odin using the specific version of Java 17 that is setup according to the instructions
-   provided by your instructor. Graders are instructed not to modify source code when they
-   attempt to compile a submission.
+   Your directory structure and package structure should match the structure of the starter code.
+   You should not modify the location of any of the provided ``.java`` files. You should also
+   not modify the package statement in any of the provided ``.java`` file.
+
+   The location of the default package for source code should be a direct sub-directory of
+   |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
+   versions of the ones in the starter code -- **you should NOT add any additional source code files**.
+   Both``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
+   using the commands provided in the compilation instructions that are included earlier in this
+   document. Since the code that you submit is expected to compile, the graders will, in most
+   cases, not modify your source code to resolve a compilation issue.
+
+   The location of the default package for compiled code should be a sub-directory of |ttslug|
+   called ``bin``. If you include compiled code with your submission, then it will be ignored.
+   Graders are instructed to recompile your submission on |server| code prior to testing your
+   submission.
+
+   If a problem is encountered for your submission that is explicitly described above, then
+   100 points will be subtracted from your earned point total; however, if the problem is
+   compilation-related or structure-related and NOT explicitly described above, then 10 points
+   or 100 points will be subtracted from your earned point total, depending on the severity
+   of the issue.
 
 :Code Style (20):
    Every ``.java`` file that you include as part of your submission for this project must
    be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
-   individual code style guidelines listed in that document are part of this single
-   non-functional requirement. This requirement is all or nothing.
+   individual code style guidelines listed in the style guide document are considered for
+   this this requirement.
+
+   If ``check130`` on |server| reports any style violations for your submission, then 20
+   points will be subtracted from your earned point total, regardless of the number of
+   violations.
 
    .. _styleguide: https://github.com/cs1302uga/cs1302-styleguide
 
@@ -556,7 +578,6 @@ parent of your project directory (i.e., one directory above it), then complete t
 
 If you have any problems submitting your project then please contact your instructor as soon as
 possible; however, doing this the day or night the project is due is probably not the best idea.
-
 
 Appendices
 ==========
