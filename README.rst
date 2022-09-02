@@ -226,7 +226,7 @@ are called on it. The behavior of some methods depend on the phase the object is
 Here is a high-level overview of all the required phases and the methods that trigger a game
 object to change what phase it is in:
 
-.. image:: img/phases.svg
+.. image:: img/phases.png
 
 The details for each game phase are provided below:
 
