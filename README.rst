@@ -450,16 +450,17 @@ phase immediately after the last call to ``isLastDropConnectFour()`` has execute
 Specific Requirements
 *********************
 
-:``ConnectFour(int, int)`` (10):
-   The ``ConnectFour`` constructor is expected to behave in accordance with the API documentation
-   included in the starter code and the expectations described in the `Game Phases <#game-phases>`_
-   section presented earlier in this document.
+:Implementation (100 points):
+   Your ``cs1302.game.ConnectFour`` implemention is expected to function as described in the API
+   documentation included in the starter code and as described in the `Game Phases <#game-phases>`_
+   section presented earlier in this document. To be clear, your program should not only meet these
+   expectations under normal conditions; it should also meet them under exceptional conditions -- some
+   of the sample test cases we provided in the starter code demonstrate how to test a behavior when
+   an exception is involved.
 
-   :``getRows()`` (2):
-      TODO
-
-   :``getCols()`` (2):
-      TODO
+   After the due date, it will be tested using several test cases that you will not have access to ahead
+   of time. The test methods that you write in your ``cs1302.game.ConnectFourDriver`` class will help you
+   prepare your implementation, but they will not be used to determine your grade.
 
 cs1302.game.ConnectFourDriver
 -----------------------------
