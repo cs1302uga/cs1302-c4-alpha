@@ -17,10 +17,10 @@
 .. |due_date_3_points| replace:: +0
 
 .. checklist dates
-.. |date_target_prep| replace:: Monday, Jan. 31st
-.. |date_target_plan| replace:: Tuesday, Feb. 1st
-.. |date_target_impl| replace:: Monday, Feb. 7th
-.. |date_target_revu| replace:: Wednesday, Feb. 9th
+.. |date_target_prep| replace:: Wednesday, Sep. 7th
+.. |date_target_plan| replace:: Sunday, Sep. 11th
+.. |date_target_impl| replace:: Friday, Sep. 17th
+.. |date_target_revu| replace:: Saturday, Sep. 18th
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
