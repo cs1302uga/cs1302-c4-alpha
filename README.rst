@@ -8,6 +8,20 @@
 .. |server| replace:: Odin
 .. |discussion_board| replace:: Piazza
 
+.. due dates
+.. |due_date_1| replace:: Sunday, Sep. 18th
+.. |due_date_1_points| replace:: +10
+.. |due_date_2| replace:: Monday, Sep. 19th
+.. |due_date_2_points| replace:: +5
+.. |due_date_3| replace:: Tuesday, Sep. 20th
+.. |due_date_3_points| replace:: +0
+
+.. checklist dates
+.. |date_target_prep| replace:: Monday, Jan. 31st
+.. |date_target_plan| replace:: Tuesday, Feb. 1st
+.. |date_target_impl| replace:: Monday, Feb. 7th
+.. |date_target_revu| replace:: Wednesday, Feb. 9th
+
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
    :alt: cs1302uga.github.io/cs1302-c4-alpha
@@ -27,6 +41,15 @@
 This document contains the description for the |title| project assigned to the students in the
 |semester| |course| classes at the University of Georgia. **Students who are assigned this project
 are expected to read the entirety of this project description file before beginning their project.**
+
+There are different deadline options for this project. Students who perform their final submission
+via the ``submit`` command before the date/times listed below automatically receive some
+Submission-Based (SB) extra credit. The late penalty does not start applying until after the final
+date listed.
+
+* |due_date_1|  @ 11:55 PM EST (|due_date_1_points| SB Extra Credit)
+* |due_date_2|  @ 11:55 PM EST (|due_date_2_points| SB Extra Credit)
+* |due_date_3|  @ 11:55 PM EST (|due_date_3_points| SB Extra Credit)
 
 ----
 
@@ -175,11 +198,6 @@ take to complete the project.
 
 .. |code_style| replace:: code style
 .. _code_style: https://github.com/cs1302uga/cs1302-styleguide/#when-and-how-to-check
-
-.. |date_target_prep| replace:: Monday, Jan. 31st
-.. |date_target_plan| replace:: Tuesday, Feb. 1st
-.. |date_target_impl| replace:: Monday, Feb. 7th
-.. |date_target_revu| replace:: Wednesday, Feb. 9th
 
 Prepare
 +++++++
