@@ -228,18 +228,27 @@ public class ConnectFour {
     } // dropToken
 
     /**
-     * Return true if the specified player has won the game.
+     * Return {@code true} if the last token dropped via {@link #dropToken} created a
+     * <em>connect four</em>. A <em>connect four</em> is a sequence of four equal tokens (i.e., they
+     * have the same color) -- this sequence can occur horizontally, vertically, or  diagonally.
      *
-     * @param player the player
-     * @return {@code true} is the player has won the game, else {@code false}
-     * @throws IllegalArgumentException if {@code player} is neither {@code 0} nor {@code 1}
+     * <p>
+     * <strong>NOTE:</strong> The only instance variable that this method might change, if
+     * applicable, is ``phase``.
+     *
+     * <p>
+     * <strong>NOTE:</strong> If you want to use this method to determin a winner, then you must
+     * call it after each call to {@link #dropToken}.
+     *
+     * @return {@code true} if the last token dropped created a <em>connect four</em>, else
+     *     {@code false}
      */
-    public boolean isWinner(int player) {
+    public boolean isLastDropConnectFour() {
         //
         // replace the entire contents of this method with your implementation
         //
         throw new UnsupportedOperationException("isWinner: not yet implemented.");
-    } // isWinner
+    } // isLastDropConnectFour
 
     //----------------------------------------------------------------------------------------------
     // ADDITIONAL METHODS: If you create any additional methods, then they should be placed in the
@@ -316,10 +325,9 @@ public class ConnectFour {
         game.setPlayerTokens(token0, token1);
         if (fileScanner.hasNext()) {
             // next (rows * cols)-many entries denote the grid
-            int player = 3; // assume null
             for (int row = rows - 1; row >= 0; row--) {
                 for (int col = 0; col < cols; col++) {
-                    player = fileScanner.nextInt();
+                    int player = fileScanner.nextInt();
                     if (player != 3) {
                         game.dropToken(player, col);
                     } // if
@@ -329,7 +337,7 @@ public class ConnectFour {
             game.lastDropRow = fileScanner.nextInt();
             game.lastDropCol = fileScanner.nextInt();
             // trigger phase change if game is won or full
-            game.isWinner(player);
+            game.isLastDropConnectFour();
         } // if
         return game;
     } // fromFile
