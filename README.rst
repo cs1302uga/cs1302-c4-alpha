@@ -500,7 +500,7 @@ Once compiled, you can run ``cs1302.game.ConnectFourDriver`` using ``java``::
 Specific Requirements
 *********************
 
-There are functional requirements for ``cs1302.game.ConnectFourDriver``. Just keep in mind that
+There are no functional requirements for ``cs1302.game.ConnectFourDriver``. Just keep in mind that
 you are expected to use it to help you test your code.
 
 .. _nfreqs:
