@@ -254,7 +254,9 @@ by an illustration of what the inside of that object should look like when its d
 
 .. image:: img/GamePhase.NEW.png
 
-:``GamePhase.READY``:
+``GamePhase.READY``
+~~~~~~~~~~~~~~~~~~~
+
 **A game that is ready to be played is in this phase.**
 
 A game object that is in the ``GamePhase.NEW`` phase should move into the ``GamePhase.READY``
@@ -271,72 +273,76 @@ should look like immediately after the code has executed and the object is in th
 
 .. image:: img/GamePhase.READY.png
 
-:``GamePhase.PLAYABLE``:
-   **A game that is being played is in this phase.**
+``GamePhase.PLAYABLE``
+~~~~~~~~~~~~~~~~~~~~~~
 
-   A game object that is in the ``GamePhase.READY`` phase should move into the ``GamePhase.PLAYABLE``
-   phase when its ``dropToken`` method is called for the first time.
+**A game that is being played is in this phase.**
 
-   Below in example of some code that drops several tokens into the grid of a game object
-   in the ``GamePhase.READY`` phase. Each line of code is followed by an illustration of what
-   the inside of that object should look like immediately after the line has executed
-   -- please note that the object is in ``GamePhase.PLAYABLE`` phase immediately after
-   the first line has executed:
+A game object that is in the ``GamePhase.READY`` phase should move into the ``GamePhase.PLAYABLE``
+phase when its ``dropToken`` method is called for the first time.
 
-   .. code-block:: java
+Below in example of some code that drops several tokens into the grid of a game object
+in the ``GamePhase.READY`` phase. Each line of code is followed by an illustration of what
+the inside of that object should look like immediately after the line has executed
+-- please note that the object is in ``GamePhase.PLAYABLE`` phase immediately after
+the first line has executed:
 
-      game.dropToken(0, 0); // first player, column 0
+.. code-block:: java
 
-   .. image:: img/GamePhase.PLAYABLE.1.png
+   game.dropToken(0, 0); // first player, column 0
 
-   .. code-block:: java
+.. image:: img/GamePhase.PLAYABLE.1.png
 
-      game.dropToken(1, 1); // second player, column 1
+.. code-block:: java
 
-   .. image:: img/GamePhase.PLAYABLE.2.png
+   game.dropToken(1, 1); // second player, column 1
 
-   .. code-block:: java
+.. image:: img/GamePhase.PLAYABLE.2.png
 
-      game.dropToken(0, 1); // first player, column 1
+.. code-block:: java
 
-   .. image:: img/GamePhase.PLAYABLE.3.png
+   game.dropToken(0, 1); // first player, column 1
 
-   .. code-block:: java
+.. image:: img/GamePhase.PLAYABLE.3.png
 
-      game.dropToken(1, 2); // second player, column 2
+.. code-block:: java
 
-   .. image:: img/GamePhase.PLAYABLE.4.png
+   game.dropToken(1, 2); // second player, column 2
 
-:``GamePhase.OVER``:
-   **A game that has ended is in this phase.**
+.. image:: img/GamePhase.PLAYABLE.4.png
 
-   A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the ``GamePhase.OVER``
-   phase when its ``isLastDropConnectFour`` method is called and one of the following conditions
-   are met:
+``GamePhase.OVER``
+~~~~~~~~~~~~~~~~~~
 
-   * the grid full; or
-   * the method is about to return ``true`` because the last drop created a *connect four*.
+**A game that has ended is in this phase.**
 
-   Consider the following illustration of a game object that is currently in the
-   ``GamePhase.PLAYABLE`` phase:
+A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the ``GamePhase.OVER``
+phase when its ``isLastDropConnectFour`` method is called and one of the following conditions
+are met:
 
-   .. image:: img/GamePhase.OVER.PRE.png
+* the grid full; or
+* the method is about to return ``true`` because the last drop created a *connect four*.
 
-   Below is an example of some code that drops a winning token into the grid of the game object
-   depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
-   The code is followed by an illustration of what the inside of that object should look like
-   immediately after the code has executed -- please note that the object moves into the ``GamePhase.OVER``
-   phase immediately after the last call to ``isLastDropConnectFour()`` has executed:
+Consider the following illustration of a game object that is currently in the
+``GamePhase.PLAYABLE`` phase:
 
-   .. code-block:: java
+.. image:: img/GamePhase.OVER.PRE.png
 
-      game.dropToken(1, 4); // second player, column 4
+Below is an example of some code that drops a winning token into the grid of the game object
+depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
+The code is followed by an illustration of what the inside of that object should look like
+immediately after the code has executed -- please note that the object moves into the ``GamePhase.OVER``
+phase immediately after the last call to ``isLastDropConnectFour()`` has executed:
 
-      if (game.isLastDropConnectFour()) {
-          System.out.println("second player has won!");
-      } // if
+.. code-block:: java
 
-   .. image:: img/GamePhase.OVER.POST.png
+   game.dropToken(1, 4); // second player, column 4
+
+   if (game.isLastDropConnectFour()) {
+       System.out.println("second player has won!");
+   } // if
+
+.. image:: img/GamePhase.OVER.POST.png
 
 Specific Requirements
 *********************
