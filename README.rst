@@ -594,8 +594,19 @@ Frequently Asked Questions
 
 * **What is a Java ARchive (JAR) file?**
 
+In Java, ``.jar`` files are Java™ Archive (JAR) files that bundle multiple files into a single
+compressed file. Typically a JAR file contains the package directories and ``.class`` files for
+a library. This is just like the ``bin`` directory that you are used to, except it is all bundled
+into a single file. For example, the ``lib/cs1302-gameutil.jar`` file contains the package directories
+and ``.class`` files for the classes and enumerations defined in ``cs1302.gameutil`` package. If you
+are in the |ttslug| directory, then you can use the following command to take a peek into the
+archive::
 
+  $ jar -tf lib/cs1302-gameutil.jar
 
+You should notice that the top-level directory in the JAR file is ``cs1302``, which means that
+the JAR file itself can serve as the default package for compiled code -- this is why we use ``-cp``
+in examples given elsewhere in this project description.
 
 .. #############################################################################
 
