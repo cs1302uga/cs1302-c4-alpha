@@ -213,8 +213,6 @@ Once compiled, you can begin to test the ``ConnectFour`` class by modifying and 
 Game Phases
 ***********
 
-## TODO: Change the images to be png instead of svg.
-
 .. |GamePhase| replace:: ``cs1302.gameutil.GamePhase``
 .. _GamePhase: https://cs1302uga.github.io/cs1302-c4-alpha/doc/cs1302/gameutil/GamePhase.html
 
@@ -254,6 +252,7 @@ The details for each game phase are provided below:
       ConnectFour game = new ConnectFour(6, 7);
 
    .. image:: img/GamePhase.NEW.svg
+      :width: 100%
 
 :``GamePhase.READY``:
    **A game that is ready to be played is in this phase.**
@@ -316,13 +315,12 @@ The details for each game phase are provided below:
 :``GamePhase.OVER``:
    **A game that has ended is in this phase.**
 
-##TODO: change ``isWinner`` in this section.
-
    A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the ``GamePhase.OVER``
-   phase when its ``isWinner`` method is called and one of the following conditions are met:
+   phase when its ``isLastDropConnectFour`` method is called and one of the following conditions
+   are met:
 
    * the grid full; or
-   * the method is about to return ``true`` because a player has won.
+   * the method is about to return ``true`` because the last drop created a *connect four*.
 
    Consider the following illustration of a game object that is currently in the
    ``GamePhase.PLAYABLE`` phase:
@@ -331,19 +329,17 @@ The details for each game phase are provided below:
       :width: 100%
 
    Below is an example of some code that drops a winning token into the grid of the game object
-   depicted above, then checks for that win using the object's ``isWinner`` method. The code is
-   followed by an illustration of what the inside of that object should look like immediately after
-   the code has executed -- please note that the object moves into the ``GamePhase.OVER`` phase
-   immediately after the call to ``isWinner(1)`` has executed:
+   depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
+   The code is followed by an illustration of what the inside of that object should look like
+   immediately after the code has executed -- please note that the object moves into the ``GamePhase.OVER``
+   phase immediately after the last call to ``isLastDropConnectFour()`` has executed:
 
    .. code-block:: java
 
       game.dropToken(1, 4); // second player, column 4
 
-      if (game.isWinner(0)) {
-          System.out.println("first player has won!");
-      } else if (game.isWinner(1)) {
-          System.out.println("second player has won!"); // this one!
+      if (game.isLastDropConnectFour()) {
+          System.out.println("second player has won!");
       } // if
 
    .. image:: img/GamePhase.OVER.POST.svg
@@ -362,8 +358,6 @@ Specific Requirements
 
    :``getCols()`` (2):
       TODO
-
-
 
 cs1302.game.ConnectFourDriver
 -----------------------------
