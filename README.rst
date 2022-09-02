@@ -516,24 +516,24 @@ this section, then the requirement's point total is deducted from your submissio
 
 :Environment and Structure (100):
    This project must must compile and run correctly on |server| using the specific version of
-   Java that is enabled by the CSCI 1302 shell profile.
+   Java that is enabled by the CSCI 1302 shell profile, and your directory structure and
+   package structure should match the structure of the starter code.
 
-   Your directory structure and package structure should match the structure of the starter code.
-   You should not modify the location of any of the provided ``.java`` files. You should also
-   not modify the package statement in any of the provided ``.java`` file.
+   * You should not modify the location of any of the provided ``.java`` files. You should
+     also not modify the package statement in any of the provided ``.java`` file.
 
-   The location of the default package for source code should be a direct sub-directory of
-   |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
-   versions of the ones in the starter code -- **you should NOT add any additional source code files**.
-   Both``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
-   using the commands provided in the compilation instructions that are included earlier in this
-   document. Since the code that you submit is expected to compile, the graders will, in most
-   cases, not modify your source code to resolve a compilation issue.
+   * The location of the default package for source code should be a direct sub-directory of
+     |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
+     versions of the ones in the starter code -- **you should NOT add any additional source code files**.
+     Both``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
+     using the commands provided in the compilation instructions that are included earlier in this
+     document. Since the code that you submit is expected to compile, the graders will, in most
+     cases, not modify your source code to resolve a compilation issue.
 
-   The location of the default package for compiled code should be a sub-directory of |ttslug|
-   called ``bin``. If you include compiled code with your submission, then it will be ignored.
-   Graders are instructed to recompile your submission on |server| code prior to testing your
-   submission.
+   * The location of the default package for compiled code should be a sub-directory of |ttslug|
+     called ``bin``. If you include compiled code with your submission, then it will be ignored.
+     Graders are instructed to recompile your submission on |server| code prior to testing your
+     submission.
 
    If a problem is encountered for your submission that is explicitly described above, then
    100 points will be subtracted from your earned point total; however, if the problem is
