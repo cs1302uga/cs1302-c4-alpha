@@ -87,7 +87,7 @@ public class ConnectFour {
      * Return whether {@code row} and {@code col} specify a location inside this game's grid.
      *
      * @param row the position's row index
-     * @param col the positions's column index
+     * @param col the position's column index
      * @return {@code true} if {@code row} and {@code col} specify a location inside this game's
      *     grid and {@code false} otherwise
      */
