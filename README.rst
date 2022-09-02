@@ -319,6 +319,7 @@ Here is a high-level overview of all the required phases and the methods that tr
 object to change what phase it is in:
 
 .. image:: img/phases.png
+   :width: 100%
 
 The details for each game phase are provided below:
 
@@ -347,6 +348,7 @@ by an illustration of what the inside of that object should look like when its d
    ConnectFour game = new ConnectFour(6, 7);
 
 .. image:: img/GamePhase.NEW.png
+   :width: 100%
 
 ``GamePhase.READY``
 ~~~~~~~~~~~~~~~~~~~
@@ -366,6 +368,7 @@ should look like immediately after the code has executed and the object is in th
    game.setPlayerTokens(Token.RED, Token.BLUE);
 
 .. image:: img/GamePhase.READY.png
+   :width: 100%
 
 ``GamePhase.PLAYABLE``
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -386,24 +389,28 @@ the first line has executed:
    game.dropToken(0, 0); // first player, column 0
 
 .. image:: img/GamePhase.PLAYABLE.1.png
+   :width: 100%
 
 .. code-block:: java
 
    game.dropToken(1, 1); // second player, column 1
 
 .. image:: img/GamePhase.PLAYABLE.2.png
+   :width: 100%
 
 .. code-block:: java
 
    game.dropToken(0, 1); // first player, column 1
 
 .. image:: img/GamePhase.PLAYABLE.3.png
+   :width: 100%
 
 .. code-block:: java
 
    game.dropToken(1, 2); // second player, column 2
 
 .. image:: img/GamePhase.PLAYABLE.4.png
+   :width: 100%
 
 ``GamePhase.OVER``
 ~~~~~~~~~~~~~~~~~~
@@ -420,7 +427,7 @@ are met:
 Consider the following illustration of a game object that is currently in the
 ``GamePhase.PLAYABLE`` phase:
 
-.. image:: img/GamePhase.OVER.PRE.svg
+.. image:: img/GamePhase.OVER.PRE.png
    :width: 100%
 
 Below is an example of some code that drops a winning token into the grid of the game object
@@ -438,6 +445,7 @@ phase immediately after the last call to ``isLastDropConnectFour()`` has execute
    } // if
 
 .. image:: img/GamePhase.OVER.POST.png
+   :width: 100%
 
 Specific Requirements
 *********************
