@@ -53,7 +53,7 @@ knowledge so that you can tackle those gaps early in the semester. We also recom
 This project will also require you to apply some of the new concepts covered in |course|, including
 named packages, exception (creating and handling), and Java development in a Unix environment. If
 you have actively engaged with the |course| course content offered so far this semester, then you
-should be able to comfortably, but not necesarilly quickly, complete those aspects of the project by
+should be able to comfortably, but not necessarily quickly, complete those aspects of the project by
 applying what you have practiced and learned from your content engagement.
 
 Finally, this project may require you to do things that you have never been given explicit
@@ -120,9 +120,9 @@ Introduction
 
 In this project, you will implement and test a class that represents the popular board game
 `Connect Four <https://en.wikipedia.org/wiki/Connect_Four>`_. Connect Four is a two-player connection game involving
-a two-dimenstional grid of tokens. Here are the basic rules for Connect Four:
+a two-dimensional grid of tokens. Here are the basic rules for Connect Four:
 
-* To prepare a new game of Connect Four, the grid is setup to accomodate an acceptable number
+* To prepare a new game of Connect Four, the grid is setup to accommodate an acceptable number
   of rows and columns; however, it should not yet contain any tokens.
 * To get ready to play, both players are assigned a unique token.
 * To play the game, both players take turns "dropping" copies of their token into non-full
@@ -135,7 +135,7 @@ a two-dimenstional grid of tokens. Here are the basic rules for Connect Four:
 The class that you will implement and test will be expected to provide the high-level
 functionality described above via its constructor and instance methods -- the specific details
 about what is required are included later in this document. What you are about to read may
-seem counterintuitive, but **you will not be writing any code for this project to let users
+seem counter-intuitive, but **you will not be writing any code for this project to let users
 interactively play a game of Connect Four**; instead, you will implement and test a class that,
 once fully implemented, can be used to make writing such an interactive program easier.
 
@@ -149,7 +149,7 @@ requirements. To download the starter code, follow these instructions:
 1. Login to |server|.
 2. If you have not done so, create a directory to store all of your |course| projects.
 3. Change to your |course| projects directory.
-4. Execute the following command to download the starter code into a subdirectory called |ttslug|::
+4. Execute the following command to download the starter code into a sub-directory called |ttslug|::
 
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-c4-alpha.git
 
@@ -179,7 +179,7 @@ requirement's point total is added to your submission grade.
 ---------------------------
 
 The ``cs1302.game.ConnectFour`` class is one of the classes that you are responsible for
-implementing and testng. When you downloaded the starter code, a partially implemented version of
+implementing and testing. When you downloaded the starter code, a partially implemented version of
 this class was included under the project's ``src`` directory:
 
 :Source: ``src/cs1302/game/ConnectFour.java``
@@ -327,9 +327,9 @@ The details for each game phase are provided below:
       :width: 100%
 
    Below is an example of some code that drops a winning token into the grid of the game object
-   depricted above, then checks for that win using the object's ``isWinner`` method. The code is
+   depicted above, then checks for that win using the object's ``isWinner`` method. The code is
    followed by an illustration of what the inside of that object should look like immediately after
-   the code has executed -- please note that the object moves inro the ``GamePhase.OVER`` phase
+   the code has executed -- please note that the object moves into the ``GamePhase.OVER`` phase
    immediately after the call to ``isWinner(1)`` has executed:
 
    .. code-block:: java
@@ -374,8 +374,8 @@ implemented version of this class was included under the project's ``src`` direc
 :Simple Name: ``ConnectFourDriver``
 
 You should use this driver class to help you test the constructor and methods of
-your ``ConectFour`` class under different scenarios. In many respects, you have a lot
-og lee way The specific details regarding what you are explicitly not permitted to do are explained
+your ``ConnectFour`` class under different scenarios. In many respects, you have a lot
+of lee way The specific details regarding what you are explicitly not permitted to do are explained
 later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
 
 It should also be noted that the ``ConnectFourDriver`` class depends on some classes that we have included
@@ -462,7 +462,7 @@ Project Checklist
 To help you with planning out this project, here are some suggested steps you can take that your
 instructors believe will help you complete the project more easily. Some of the items in this
 checklist may not make sense until you have read the entire project description. These steps are
-suggesions and, therefore, do not constitute an exhaustive list of the steps that you may need to
+suggestions and, therefore, do not constitute an exhaustive list of the steps that you may need to
 take to complete the project.
 
 Preparation
@@ -497,14 +497,14 @@ Planning
 4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``, then
    modify the ``main`` method so that it calls ``testConstructor()``. After that, compile
    ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
-   aspects of the ``ConectFour(int, int)`` constructor once you begin to implement it.
+   aspects of the ``ConnectFour(int, int)`` constructor once you begin to implement it.
 
 Implementing
 ++++++++++++
 
 :Target: Finish before Monday, Feb. 7th
 
-1. Implement the ``ConectFour(int, int)`` constructor, ensure it's written with good code style,
+1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good code style,
    then test it by running the ``cs1302.game.ConnectFourDriver`` class.
 
    * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
