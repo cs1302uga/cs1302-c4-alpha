@@ -132,6 +132,21 @@ then this section will be updated to include a summary of those updates and, if 
 instructions that describe how to update your working copy of the project with
 the latest versions of any changed files.
 
+2022-09-07
+----------
+
+The starter code has been updated to include an additional ``ConnectFourTester.java`` file.
+This file contains a public tester that you can utilize to test your ``ConectFour``
+implementation.
+
+* **If you downloaded the starter code for this project before the date for this update, then
+  you need to update your local copy of the project to include the new file.** To update your
+  local copy, run the following command directly inside your |ttslug| directory::
+
+    $ git pull
+
+* Information about the public tester can be found `here <#cs1302gameconnectfourtester>`_.
+
 Project Description
 ===================
 
@@ -524,6 +539,40 @@ Specific Requirements
 There are no functional requirements for ``cs1302.game.ConnectFourDriver``. Just keep in mind that
 you are expected to use it to help you test your code.
 
+cs1302.game.ConnectFourTester
+-----------------------------
+
+The ``cs1302.game.ConnectFourTester`` class provides the public tester program.
+When you downloaded the starter code, an implemented version of this program was
+included under the project's ``src`` directory:
+
+:Source: ``src/cs1302/game/ConnectFourTester.java``
+:FQN: ``cs1302.game.ConnectFourTester``
+:Package Name: ``cs1302.game``
+:Simple Name: ``ConnectFourTester``
+
+This tester does not replace the testing that you are asked to do in ``ConnectFourDriver`` -- instead,
+it is provided to give you more example test cases that you can look at, compile, and run to help
+you when you debug your code.
+
+How to Compile and Run
+**********************
+
+To compile ``ConnectFourTester.java``, you need to first (re)compile ``ConnectFour.java``, then
+run the following command directly inside the |ttslug| directory::
+
+   $ javac -cp bin:lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFourTester.java
+
+Once compiled, you can run ``cs1302.game.ConnectFourTester`` using ``java``::
+
+  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourTester
+
+Specific Requirements
+*********************
+
+There are no functional requirements for ``cs1302.game.ConnectFourTester``. Just keep in mind that
+you are expected to use it to help you test your code.
+
 .. _nfreqs:
 
 Non-Functional Requirements
@@ -553,9 +602,9 @@ package structure should match the structure of the starter code.
 * The location of the default package for source code should be a direct sub-directory of
   |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
   versions of the ones in the starter code -- **you should NOT add any additional source code files**.
-  Both ``ConnectFour.java`` and ``ConnectFourDriver.java`` are expected to compile on |server|
-  using the commands provided in the compilation instructions that are included earlier in this
-  document.
+  Both ``ConnectFour.java``, ``ConnectFourDriver.java``, and ``ConnectFourTester.java``  are expected
+  to compile on |server| using the commands provided in the compilation instructions that are
+  included earlier in this document.
 
 * The location of the default package for compiled code should be a sub-directory of |ttslug|
   called ``bin``. If you include compiled code with your submission, then it will be ignored.
@@ -568,7 +617,7 @@ problem is compilation-related or structure-related and NOT explicitly described
 it will be handled on an individual basis.
 
 Code Style (|style_points_max|)
-----------------------------------
+-------------------------------
 
 Every ``.java`` file that you include as part of your submission for this project must
 be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
