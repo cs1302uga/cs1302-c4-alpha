@@ -662,7 +662,8 @@ Appendices
 Frequently Asked Questions
 ++++++++++++++++++++++++++
 
-* **What is a Java ARchive (JAR) file?**
+What is a Java ARchive (JAR) file?
+----------------------------------
 
 In Java, ``.jar`` files are Java™ Archive (JAR) files that bundle multiple files into a single
 compressed file. Typically a JAR file contains the package directories and ``.class`` files for
