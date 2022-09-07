@@ -137,7 +137,7 @@ the latest versions of any changed files.
 
 On **2022-09-07 (Sep. 7)**, the starter code was updated to include an additional
 ``ConnectFourTester.java`` file containing a public tester that you can utilize to
-help you test your ``ConectFour`` implementation. More information about the public
+help you test your ``ConnectFour`` implementation. More information about the public
 tester can be found `here <#cs1302gameconnectfourtester>`_.
 
 * **If you downloaded the starter code for this project before the date associated
