@@ -135,17 +135,17 @@ the latest versions of any changed files.
 2022-09-07
 ----------
 
-The starter code has been updated to include an additional ``ConnectFourTester.java`` file.
-This file contains a public tester that you can utilize to test your ``ConectFour``
-implementation.
+On **2022-09-07 (Sep. 7)**, the starter code was updated to include an additional
+``ConnectFourTester.java`` file containing a public tester that you can utilize to
+help you test your ``ConectFour`` implementation. More information about the public
+tester can be found `here <#cs1302gameconnectfourtester>`_.
 
-* **If you downloaded the starter code for this project before the date for this update, then
-  you need to update your local copy of the project to include the new file.** To update your
-  local copy, run the following command directly inside your |ttslug| directory::
+* **If you downloaded the starter code for this project before the date associated
+  with this update, then you need to update your local copy of the project to include
+  the new file.** To update your local copy, run the following command directly inside
+  your |ttslug| directory on |server|::
 
     $ git pull
-
-* Information about the public tester can be found `here <#cs1302gameconnectfourtester>`_.
 
 Project Description
 ===================
