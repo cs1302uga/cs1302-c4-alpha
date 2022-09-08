@@ -372,8 +372,8 @@ then initialize the object's instance variables to the the values described belo
 :``grid``:            a two-dimensional ``Token`` array with ``rows``-many rows and ``cols``-many columns
 :``player``:          a one-dimensional ``Token`` array of length ``2``
 :``numDropped``:      the ``int`` value ``0``
-:``lastDroppedRow``:  the ``int`` value ``-1``
-:``lastDroppedCol``:  the ``int`` value ``-1``
+:``lastDropRow``:     the ``int`` value ``-1``
+:``lastDropCol``:     the ``int`` value ``-1``
 :``phase``:           ``GamePhase.NEW``
 
 Below is an example of some code that constructs a game object with six rows and seven columns followed
