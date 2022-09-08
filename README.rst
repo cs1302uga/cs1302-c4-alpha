@@ -142,10 +142,11 @@ tester can be found `here <#cs1302gameconnectfourtester>`_.
 
 * **If you downloaded the starter code for this project before the date associated
   with this update, then you need to update your local copy of the project to include
-  the new file.** To update your local copy, run the following command directly inside
+  the new file.** To update your local copy, run the following commands directly inside
   your |ttslug| directory on |server|::
-
-    $ git pull
+  
+    $ git commit -am "work in progress"
+    $ git pull -ff
 
 Project Description
 ===================
