@@ -244,10 +244,7 @@ Plan
    methods, then consider factoring out the common parts into a single method that you can
    call in several places -- that's code reuse and refactoring!
 
-4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``, then
-   modify the ``main`` method so that it calls ``testConstructor()``. After that, compile
-   ``ConnectFourDriver.java``, but do not run it. You are now prepared to test some
-   aspects of the ``ConnectFour(int, int)`` constructor once you begin to implement it.
+4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``.
 
 Implement
 +++++++++
@@ -258,9 +255,10 @@ Implement
    |code_style|_, then test it by running the ``cs1302.game.ConnectFourDriver`` class.
 
    * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
-     implementation under different scenarios -- be sure to call those methods in
-     ``testConstructor()`` so that they get executed along with the other tests. Repeat this as
-     needed.
+     implementation under different scenarios -- create a method for each scenario, then
+     one method that calls those methods, then update your `main` method to call that 
+     one method. If you are not sure where to begin, then you can see what is provided in
+     the `ConnectFourTester.java` file and base what you write on that. 
 
    * There are some aspects of the constructor that you should test later. For example, you
      can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
