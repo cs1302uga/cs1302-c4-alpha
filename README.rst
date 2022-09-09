@@ -146,7 +146,7 @@ tester can be found `here <#cs1302gameconnectfourtester>`_.
   your |ttslug| directory on |server|::
   
     $ git commit -am "work in progress"
-    $ git pull -ff
+    $ git pull --rebase
 
 Project Description
 ===================
