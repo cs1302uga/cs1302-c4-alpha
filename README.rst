@@ -19,8 +19,8 @@
 .. checklist dates
 .. |date_target_prep| replace:: Wednesday, Sep. 7th
 .. |date_target_plan| replace:: Sunday, Sep. 11th
-.. |date_target_impl| replace:: Friday, Sep. 17th
-.. |date_target_revu| replace:: Saturday, Sep. 18th
+.. |date_target_impl| replace:: Saturday, Sep. 17th
+.. |date_target_revu| replace:: Sunday, Sep. 18th
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
