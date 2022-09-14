@@ -147,6 +147,22 @@ tester can be found `here <#cs1302gameconnectfourtester>`_.
   
     $ git commit -am "work in progress"
     $ git pull --rebase
+    
+2022-09-14
+----------
+
+On **2022-09-14 (Sep. 14)**, the starter code was updated to include an additional
+``ConnectFourCLI.java`` file containing a command-line program that you can utilize to
+play your ``ConnectFour`` implementation. More information about the public
+tester can be found `here <#cs1302gameconnectfourcli>`_.
+
+* **If you downloaded the starter code for this project before the date associated
+  with this update, then you need to update your local copy of the project to include
+  the new file.** To update your local copy, run the following commands directly inside
+  your |ttslug| directory on |server|::
+  
+    $ git commit -am "work in progress"
+    $ git pull --rebase
 
 Project Description
 ===================
@@ -572,6 +588,40 @@ Specific Requirements
 There are no functional requirements for ``cs1302.game.ConnectFourTester``. Just keep in mind that
 you are expected to use it to help you test your code.
 
+cs1302.game.ConnectFourCLI
+--------------------------
+
+The ``cs1302.game.ConnectFourCLI`` class provides a command-line program to let users play your
+game. When you downloaded the starter code, an implemented version of this program was
+included under the project's ``src`` directory:
+
+:Source: ``src/cs1302/game/ConnectFourCLI.java``
+:FQN: ``cs1302.game.ConnectFourCLI``
+:Package Name: ``cs1302.game``
+:Simple Name: ``ConnectFourCLI``
+
+This command-line program does not replace the testing that you are asked to do in ``ConnectFourDriver`` -- instead,
+it is provided to give you a way to play your game, assuming it is implemented properly. It may also help you 
+when you debug your code.
+
+How to Compile and Run
+**********************
+
+To compile ``ConnectFourCLI.java``, you need to first (re)compile ``ConnectFour.java``, then
+run the following command directly inside the |ttslug| directory::
+
+   $ javac -cp bin:lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFourCLI.java
+
+Once compiled, you can run ``cs1302.game.ConnectFourCLI`` using ``java``::
+
+  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourCLI
+
+Specific Requirements
+*********************
+
+There are no functional requirements for ``cs1302.game.ConnectFourCLI``. Just keep in mind that
+you are expected to use it to help you test your code.
+
 .. _nfreqs:
 
 Non-Functional Requirements
@@ -601,9 +651,9 @@ package structure should match the structure of the starter code.
 * The location of the default package for source code should be a direct sub-directory of
   |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
   versions of the ones in the starter code -- **you should NOT add any additional source code files**.
-  Both ``ConnectFour.java``, ``ConnectFourDriver.java``, and ``ConnectFourTester.java``  are expected
-  to compile on |server| using the commands provided in the compilation instructions that are
-  included earlier in this document.
+  Both ``ConnectFour.java``, ``ConnectFourDriver.java``, ``ConnectFourTester.java``, and
+  ``ConnectFourCLI.java`` are expected to compile on |server| using the commands provided in 
+  the compilation instructions that are included earlier in this document.
 
 * The location of the default package for compiled code should be a sub-directory of |ttslug|
   called ``bin``. If you include compiled code with your submission, then it will be ignored.
