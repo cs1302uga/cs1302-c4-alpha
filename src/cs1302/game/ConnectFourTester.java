@@ -484,7 +484,7 @@ public class ConnectFourTester {
         if (lastToken == game.getPlayerToken(player)) {
             pass("getTokenAt correctly returned the last dropped token");
         } else {
-            String message = String.format("FAIL: getTokenAt incorrectly returned %d after " +
+            String message = String.format("FAIL: getTokenAt incorrectly returned %s after " +
                                            "token dropped in column %d", lastToken,
                                            lastDropCol);
 
