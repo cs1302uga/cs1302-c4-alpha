@@ -14,7 +14,7 @@
 .. |due_date_2| replace:: Monday, Sep. 19th
 .. |due_date_2_points| replace:: +5
 .. |due_date_3| replace:: Tuesday, Sep. 20th
-.. |due_date_3_points| replace:: +0
+.. |due_date_3_points| replace:: +5
 
 .. checklist dates
 .. |date_target_prep| replace:: Wednesday, Sep. 7th
