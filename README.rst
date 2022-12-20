@@ -570,6 +570,11 @@ This tester does not replace the testing that you are asked to do in ``ConnectFo
 it is provided to give you more example test cases that you can look at, compile, and run to help
 you when you debug your code.
 
+**NOTE:** The tester is not guaranteed to catch all bugs in your code. In fact, there are multiple recommendations 
+in the provided comments that describe other important scenarios that students should test. 
+We expect that you will add appropriate code to test those scenarios along with any other scenarios you
+identify while implementing this project. 
+
 How to Compile and Run
 **********************
 
