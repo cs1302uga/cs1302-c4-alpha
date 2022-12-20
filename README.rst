@@ -303,8 +303,11 @@ Review
 
 1. Do one final pass through the project document to make sure that you didn't miss anything.
 2. Run your code through your test cases one last time.
-3. Check your |code_style|_ one last time.
-4. `Submit your code <#submission-instructions>`_ on Odin.
+3. Check your |code_style|_.
+4. Run your code through the provided ``ConnectFourTester.java`` program and ensure that all test cases are passed.
+5. Play your game using the provided ``ConnectFourCLI.java`` program.
+6. Check your |code_style|_ one last time.
+7. `Submit your code <#submission-instructions>`_ on Odin.
 
 Project Requirements
 ====================
