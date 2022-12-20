@@ -11,6 +11,11 @@ import cs1302.gameutil.GamePhase;
  */
 public class ConnectFourTester {
 
+    private static int CONSTRUCTOR_POINTS = 2;
+    private static int GETROWS_POINTS = 2;
+    private static int GETCOLS_POINTS = 2;
+    private static int OTHER_POINTS = 2;
+
     // These variables are used in some of the test methods to store what
     // the values of each variable should be when returned from a valid
     // game object. In other words, they hold the "right answer". What you
@@ -20,6 +25,9 @@ public class ConnectFourTester {
     private static int lastDropCol =  -1;
     private static int lastDropRow =  -1;
     private static boolean isWon = false;
+
+    // The total points earned by the student.
+    private static int totalPoints = 0;
 
     /**
      * Print a nice header with the supplied {@code title}.
@@ -46,6 +54,7 @@ public class ConnectFourTester {
         testGamePlay();
         testFullBoard();
         testNoStatic();
+        System.out.println("Total Points Earned: " + totalPoints);
     } // main
 
     //----------------------------------------------------------------------------------------------
@@ -76,7 +85,7 @@ public class ConnectFourTester {
         System.out.print("testConstructor1: ");
         try {
             ConnectFour game = new ConnectFour(6, 7);
-            System.out.println("PASS");
+            pass("testConstructor1", CONSTRUCTOR_POINTS);
         } catch (IllegalArgumentException iae) {
             exceptionNotExpected(iae);
         } // try
@@ -93,7 +102,7 @@ public class ConnectFourTester {
             System.out.println("FAIL");
             System.out.println("- an IllegalArgumentException was expected but not thrown");
         } catch (IllegalArgumentException iae) {
-            System.out.println("PASS");
+            pass("testConstructor2", CONSTRUCTOR_POINTS);
         } // try
     } // testConstructor2
 
@@ -108,11 +117,11 @@ public class ConnectFourTester {
             System.out.println("FAIL");
             System.out.println("- an IllegalArgumentException was expected but not thrown");
         } catch (IllegalArgumentException iae) {
-            System.out.println("PASS");
+            pass("testConstructor3", CONSTRUCTOR_POINTS);
         } // try
     } // testConstructor3
 
-    // Recommendation to students: Add a textConstructor4 and testConstrucor5 method that makes
+    // Recommendation to students: Add a textConstructor4 and testConstructor5 method that makes
     // sure the constructor throws an IllegalArgumentException when cols is too small and too
     // big, respectively.
 
@@ -142,7 +151,7 @@ public class ConnectFourTester {
         ConnectFour game = newValidGame(size, size);
         if (game != null) {
             if (game.getRows() == size) {
-                System.out.println("PASS");
+                pass("testGetRows", GETROWS_POINTS);
             } else {
                 String message =
                     String.format("getRows returned %d on a board " +
@@ -177,7 +186,7 @@ public class ConnectFourTester {
         ConnectFour game = newValidGame(size, size);
         if (game != null) {
             if (game.getCols() == size) {
-                System.out.println("PASS");
+                pass("testGetCols", GETCOLS_POINTS);
             } else {
                 String message = String.format("getCols returned %d on a board " +
                                                "of size %dx%d", game.getCols(), size, size);
@@ -220,14 +229,14 @@ public class ConnectFourTester {
                                                "input of -1 on an %dx%d board", rows, cols);
                 fail(message);
             } else {
-                System.out.println("testIsInBounds1: PASS");
+                pass("testIsInBounds1", OTHER_POINTS);
             } // if
             if (game.isInBounds(rows - 1, -1)) {
                 String message = String.format("isInBounds returned true for a col " +
                                                "input of -1 on an %dx%d board", rows, cols);
                 fail(message);
             } else {
-                System.out.println("testIsInBounds1: PASS");
+                pass("testIsInBounds1", OTHER_POINTS);
             } // if
         } // if
     } // testIsInBounds1
@@ -248,14 +257,14 @@ public class ConnectFourTester {
                                                "input of %d on an %dx%d board", cols, rows, cols);
                 fail(message);
             } else {
-                System.out.println("testIsInBounds2: PASS");
+                pass("testIsInBounds2", OTHER_POINTS);
             } // if
             if (game.isInBounds(rows, cols - 1)) {
                 String message = String.format("isInBounds returned true for a row " +
                                                "input of %d on an %dx%d board", rows, rows, cols);
                 fail(message);
             } else {
-                System.out.println("testIsInBounds2: PASS");
+                pass("testIsInBounds2", OTHER_POINTS);
             } // if
         } // if
     } // testIsInBounds2
@@ -343,14 +352,16 @@ public class ConnectFourTester {
         if (game.getPhase() != GamePhase.OVER) {
             fail("testGameOver: game phase should be set to OVER when the game is over.");
         } else {
-            pass("testGameOver: game properly set to OVER when the game ended.");
+            pass("testGameOver: game properly set to OVER when the game ended.",
+                 OTHER_POINTS);
         } // if
 
         try {
             game.dropToken(0, 0);
             fail("testGameOver: game should not allow a token to drop after the game is over");
         } catch (IllegalStateException ise) {
-            pass("testGameOver: throws IllegalStateException when token dropped after game over.");
+            pass("testGameOver: throws IllegalStateException when token dropped after game over.",
+                  OTHER_POINTS);
         } // try
     } // testGameOver
 
@@ -370,7 +381,7 @@ public class ConnectFourTester {
             return false;
         } catch (IllegalStateException iae) {
             pass("getLastDropRow properly threw an IllegalStateException " +
-                 "when called on a game in the NEW phase");
+                 "when called on a game in the NEW phase", OTHER_POINTS);
         } // try
 
         try {
@@ -380,7 +391,7 @@ public class ConnectFourTester {
             return false;
         } catch (IllegalStateException iae) {
             pass("getLastDropCol properly threw an IllegalStateException " +
-                 "when called on a game in the NEW phase");
+                 "when called on a game in the NEW phase", OTHER_POINTS);
         } // try
 
         try {
@@ -390,7 +401,7 @@ public class ConnectFourTester {
             return false;
         } catch (IllegalStateException iae) {
             pass("getNumDropped properly threw an IllegalStateException " +
-                 "when called on a game in the NEW phase");
+                 "when called on a game in the NEW phase", OTHER_POINTS);
         } // try
         return true;
     } // testNewGame
@@ -412,7 +423,7 @@ public class ConnectFourTester {
         game.setPlayerTokens(Token.RED, Token.BLUE);
 
         if (game.getPhase() == GamePhase.READY) {
-            pass("GamePhase set to ready after tokens set.");
+            pass("GamePhase set to ready after tokens set.", OTHER_POINTS);
         } else {
             fail("GamePhase should be set to " +
                  " ready after call to setPlayerTokens");
@@ -426,7 +437,7 @@ public class ConnectFourTester {
             return false;
         } catch (IllegalStateException iae) {
             pass("getLastDropRow properly threw an IllegalStateException " +
-                 "when called on a game in the READY phase");
+                 "when called on a game in the READY phase", OTHER_POINTS);
         } // try
 
         try {
@@ -446,7 +457,7 @@ public class ConnectFourTester {
             return false;
         } catch (IllegalStateException iae) {
             pass("getNumDropped properly threw an IllegalStateException " +
-                 "when called on a game in the READY phase");
+                 "when called on a game in the READY phase", OTHER_POINTS);
         } // try
         return true;
     } // testReadyGame
@@ -471,6 +482,7 @@ public class ConnectFourTester {
                                            "a token was dropped into valid column %d\n",
                                            dropCol);
             fail(message, game);
+            t.printStackTrace();
             return false;
         } // try
 
@@ -495,9 +507,9 @@ public class ConnectFourTester {
         if (game.isLastDropConnectFour() == isWon) {
             if (!isWon) {
                 pass("isLastDropConnectFour correctly says game is " +
-                     "not yet won.");
+                     "not yet won.", OTHER_POINTS);
             } else {
-                pass("isLastDropConnectFour correctly says game is won.");
+                pass("isLastDropConnectFour correctly says game is won.", OTHER_POINTS);
             } // if
         } else {
             fail("isLastDropConnectFour gave the wrong answer.", game);
@@ -521,7 +533,7 @@ public class ConnectFourTester {
             fail("game phase should be PLAYABLE after a token is dropped.");
             return false;
         } else {
-            pass("game phase is PLAYABLE after a token is dropped.");
+            pass("game phase is PLAYABLE after a token is dropped.", OTHER_POINTS);
         } // if
 
         // test drop row and drop col
@@ -529,7 +541,7 @@ public class ConnectFourTester {
             String message = String.format("last drop row correctly set to %d after " +
                                            "token dropped in column %d", lastDropRow,
                                            lastDropCol);
-            pass(message);
+            pass(message, OTHER_POINTS);
         } else {
             String message = String.format("last drop row incorrectly set to %d after " +
                                            "token dropped in column %d", game.getLastDropRow()
@@ -542,7 +554,7 @@ public class ConnectFourTester {
             String message = String.format("last drop col correctly set to %d after " +
                                            "token dropped in column %d", lastDropCol,
                                            lastDropCol);
-            pass(message);
+            pass(message, OTHER_POINTS);
         } else {
             String message = String.format("last drop col incorrectly set to %d after " +
                                            "token dropped in column %d", game.getLastDropCol()
@@ -556,7 +568,7 @@ public class ConnectFourTester {
             String message = String.format("numDropped correctly set to %d after " +
                                            "token dropped in column %d", numDropped,
                                            lastDropCol);
-            pass(message);
+            pass(message, OTHER_POINTS);
         } else {
             String message = String.format("numDropped incorrectly set to %d after " +
                                            "token dropped in column %d", game.getNumDropped(),
@@ -592,7 +604,7 @@ public class ConnectFourTester {
         if (g1Token == g2Token) {
             fail("testNoStatic: values in the boards should not be equal.");
         } else {
-            pass("testNoStatic: values in the boards are different.");
+            pass("testNoStatic: values in the boards are different.", OTHER_POINTS);
         } // if
 
     } // testNoStatic
@@ -618,7 +630,7 @@ public class ConnectFourTester {
                 game.dropToken(player, j);
                 if (!game.isLastDropConnectFour()) {
                     pass("testFullBoard: isLastDropConnectFour correctly says game is " +
-                         "not yet won.");
+                         "not yet won.", OTHER_POINTS);
                 } else {
                     fail("testFullBoard: isLastDropConnectFour incorrectly says game is won", game);
                     return;
@@ -632,7 +644,7 @@ public class ConnectFourTester {
 
         if (!game.isLastDropConnectFour()) {
             pass("testFullBoard: isLastDropConnectFour correctly says game is " +
-                 "not yet won.");
+                 "not yet won.", OTHER_POINTS);
         } else {
             fail("testFullBoard: isLastDropConnectFour incorrectly says game is won", game);
             return;
@@ -673,6 +685,7 @@ public class ConnectFourTester {
     private static void exceptionNotExpected(Throwable t) {
         fail("an Exception was thrown but not expected");
         System.out.println("  " + t);
+        t.printStackTrace();
     } // exceptionNotExpected
 
     /**
@@ -683,6 +696,20 @@ public class ConnectFourTester {
      */
     private static void pass(String message) {
         System.out.println("PASS: " + message);
+    } // pass
+
+    /**
+     * Prints a message to indicate that a test was passed. The method prints
+     * "PASS" followed by the provided message along with the points earned for
+     * passing the test.
+     *
+     * @param message the message to print.
+     * @param points the points earned for this test.
+     */
+    private static void pass(String message, int points) {
+        System.out.println("PASS: " + message);
+        System.out.println("Points earned: " + points);
+        totalPoints += points;
     } // pass
 
     /**
