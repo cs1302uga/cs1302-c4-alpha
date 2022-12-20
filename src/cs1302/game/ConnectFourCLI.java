@@ -48,16 +48,25 @@ public class ConnectFourCLI {
                 Token player2 = Token.valueOf(STD_IN.nextLine().toUpperCase());
                 game.setPlayerTokens(player1, player2);
                 return game;
-            } catch (Exception e) {
-                System.out.println("\n*** Please enter valid entries for the board and" +
-                    "player tokens ***");
+            } catch (NumberFormatException nfe) {
+                System.out.println("\n*** Rows and columns must be valid integers. ***\n");
+                nfe.printStackTrace();
+            } catch (IllegalArgumentException iae) {
+                System.out.println(
+                    "\n*** Could not construct the game. " +
+                    "Either the number of rows/cols is too large/small " +
+                    "or a selected player color is invalid. ***\n");
+                iae.printStackTrace();
+            } catch (IllegalStateException ise) {
+                System.out.println(
+                    "\n*** Game must be in the NEW phase when initially " +
+                    "setting the player tokens. ***\n");
             } // try
         } // while
     } // manualSetUp
 
-
     /**
-     * Prints all lines from the file.
+     * Print all lines from the file.
      * @param filename the file to print
      */
     public static void printFileLines(String filename) {
@@ -71,6 +80,7 @@ public class ConnectFourCLI {
         } catch (FileNotFoundException fnfe) {
             System.out.println("Missing " + filename + ". Make sure it is in the" +
                 "resource folder in the projects home directory.");
+            fnfe.printStackTrace();
             System.exit(1);
         } // try
     } // printFileLines
@@ -119,8 +129,13 @@ public class ConnectFourCLI {
                 game.dropToken(player, col);
                 player = (player + 1) % 2;
                 isWon = game.isLastDropConnectFour();
-            } catch (Exception e) {
+            } catch (IndexOutOfBoundsException e) {
                 System.out.println("\n *** Invalid column entry, try again ***");
+                e.printStackTrace();
+            } catch (IllegalStateException ise) {
+                System.out.println("\n *** Token cannot be dropped either because the column is "
+                                   + "full or the game is not in the READY or PLAYABLE phase");
+                ise.printStackTrace();
             } // try
         } // while
         ConnectFourCLI.printGameOver();
