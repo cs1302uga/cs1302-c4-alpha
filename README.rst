@@ -3,8 +3,8 @@
 .. |slug| replace:: cs1302-c4-alpha
 .. |ttslug| replace:: ``cs1302-c4-alpha``
 .. |course| replace:: CSCI 1302
-.. |semester| replace:: Fall 2022
-.. |version| replace:: v2022.fa
+.. |semester| replace:: Spring 2023
+.. |version| replace:: v2023.sp
 .. |server| replace:: Odin
 .. |discussion_board| replace:: Piazza
 
