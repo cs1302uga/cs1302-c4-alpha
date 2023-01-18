@@ -71,7 +71,7 @@ If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequ
 you already have most of the Java programming knowledge required to complete this project;
 otherwise, this assignment will help you identify the gaps in your prerequisite programming
 knowledge so that you can tackle those gaps early in the semester. We also recommend completing the
-`Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw00>`_ before beginning this project.
+`Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw0.5>`_ before beginning this project.
 
 This project will also require you to apply some of the new concepts covered in |course|, including
 named packages, exception (creating and handling), and Java development in a Unix environment. If
