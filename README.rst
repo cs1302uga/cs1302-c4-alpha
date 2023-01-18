@@ -9,18 +9,18 @@
 .. |discussion_board| replace:: Piazza
 
 .. due dates
-.. |due_date_1| replace:: Sunday, Sep. 18th
+.. |due_date_1| replace:: Sunday, Feb. 5th
 .. |due_date_1_points| replace:: +10
-.. |due_date_2| replace:: Monday, Sep. 19th
+.. |due_date_2| replace:: Monday, Feb. 6th
 .. |due_date_2_points| replace:: +5
-.. |due_date_3| replace:: Tuesday, Sep. 20th
-.. |due_date_3_points| replace:: +5
+.. |due_date_3| replace:: Tuesday, Feb. 7th
+.. |due_date_3_points| replace:: +0
 
 .. checklist dates
-.. |date_target_prep| replace:: Wednesday, Sep. 7th
-.. |date_target_plan| replace:: Sunday, Sep. 11th
-.. |date_target_impl| replace:: Saturday, Sep. 17th
-.. |date_target_revu| replace:: Sunday, Sep. 18th
+.. |date_target_prep| replace:: Wednesday, Jan. 25th
+.. |date_target_plan| replace:: Sunday, Jan. 29th
+.. |date_target_impl| replace:: Saturday, Feb. 4th
+.. |date_target_revu| replace:: Sunday, Feb. 5th
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
@@ -131,38 +131,6 @@ If your instructor updates the project's requirements or starter code before the
 then this section will be updated to include a summary of those updates and, if needed,
 instructions that describe how to update your working copy of the project with
 the latest versions of any changed files.
-
-2022-09-07
-----------
-
-On **2022-09-07 (Sep. 7)**, the starter code was updated to include an additional
-``ConnectFourTester.java`` file containing a public tester that you can utilize to
-help you test your ``ConnectFour`` implementation. More information about the public
-tester can be found `here <#cs1302gameconnectfourtester>`_.
-
-* **If you downloaded the starter code for this project before the date associated
-  with this update, then you need to update your local copy of the project to include
-  the new file.** To update your local copy, run the following commands directly inside
-  your |ttslug| directory on |server|::
-  
-    $ git commit -am "work in progress"
-    $ git pull --rebase
-    
-2022-09-14
-----------
-
-On **2022-09-14 (Sep. 14)**, the starter code was updated to include an additional
-``ConnectFourCLI.java`` file containing a command-line program that you can utilize to
-play your ``ConnectFour`` implementation. More information about the public
-tester can be found `here <#cs1302gameconnectfourcli>`_.
-
-* **If you downloaded the starter code for this project before the date associated
-  with this update, then you need to update your local copy of the project to include
-  the new file.** To update your local copy, run the following commands directly inside
-  your |ttslug| directory on |server|::
-  
-    $ git commit -am "work in progress"
-    $ git pull --rebase
 
 Project Description
 ===================
