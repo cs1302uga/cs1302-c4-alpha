@@ -185,7 +185,10 @@ requirements. To download the starter code, follow these instructions:
      └── cs1302
          └── game
              ├── ConnectFour.java
+             ├── ConnectFourTester.java
+             ├── ConnectFourCLI.java
              └── ConnectFourDriver.java
+             
 
 Project Checklist
 =================
