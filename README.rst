@@ -3,30 +3,30 @@
 .. |slug| replace:: cs1302-c4-alpha
 .. |ttslug| replace:: ``cs1302-c4-alpha``
 .. |course| replace:: CSCI 1302
-.. |semester| replace:: Spring 2023
-.. |version| replace:: v2023.sp
+.. |semester| replace:: Fall 2023
+.. |version| replace:: v2023.fa
 .. |server| replace:: Odin
 .. |discussion_board| replace:: Piazza
 
 .. due dates
-.. |due_date_1| replace:: Sunday, Feb. 5th
+.. |due_date_1| replace:: Friday, Sept. 15th
 .. |due_date_1_points| replace:: +10
-.. |due_date_2| replace:: Monday, Feb. 6th
+.. |due_date_2| replace:: Sunday, Sept. 17th
 .. |due_date_2_points| replace:: +5
-.. |due_date_3| replace:: Tuesday, Feb. 7th
+.. |due_date_3| replace:: Monday, Sept. 18th
 .. |due_date_3_points| replace:: +0
 
 .. checklist dates
-.. |date_target_prep| replace:: Wednesday, Jan. 25th
-.. |date_target_plan| replace:: Sunday, Jan. 29th
-.. |date_target_impl| replace:: Saturday, Feb. 4th
-.. |date_target_revu| replace:: Sunday, Feb. 5th
+.. |date_target_prep| replace:: Monday, Sept. 4th
+.. |date_target_plan| replace:: Friday, Sept. 8th
+.. |date_target_impl| replace:: Thursday, Sept. 14th
+.. |date_target_revu| replace:: Friday, Sept. 15th
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
    :alt: cs1302uga.github.io/cs1302-c4-alpha
 .. _website: https://cs1302uga.github.io/cs1302-c4-alpha/
-.. |approved_notice| image:: https://img.shields.io/badge/Approved%20for-Spring%202023-magenta
+.. |approved_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202023-green
    :alt: Approved for: |version|
 .. |not_approved_notice| image:: https://img.shields.io/badge/In%20development-Not%20yet%20approved-red
    :alt: In development - Not yet approved
