@@ -239,7 +239,7 @@ public class ConnectFour {
      * applicable, is ``phase``.
      *
      * <p>
-     * <strong>NOTE:</strong> If you want to use this method to determin a winner, then you must
+     * <strong>NOTE:</strong> If you want to use this method to determine a winner, then you must
      * call it after each call to {@link #dropToken}.
      *
      * @return {@code true} if the last token dropped created a <em>connect four</em>, else
