@@ -540,7 +540,7 @@ included under the project's ``src`` directory:
 :Package Name: ``cs1302.game``
 :Simple Name: ``ConnectFourTester``
 
-This tester does not replace the testing that you are asked to do in ``ConnectFourDriver`` — instead,
+This tester does not replace the testing that you are asked to do in ``ConnectFourDriver``. Instead,
 it is provided to give you more example test cases that you can look at, compile, and run to help
 you when you debug your code.
 
@@ -704,7 +704,7 @@ archive::
   $ jar -tf lib/cs1302-gameutil.jar
 
 You should notice that the top-level directory in the JAR file is ``cs1302``, which means that
-the JAR file itself can serve as the default package for compiled code. This is why we use ``-cp``
+the JAR file itself can serve as the default package for compiled code — this is why we use ``-cp``
 in examples given elsewhere in this project description.
 
 .. #############################################################################
