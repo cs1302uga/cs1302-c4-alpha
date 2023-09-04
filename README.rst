@@ -80,10 +80,10 @@ should be able to comfortably, but not necessarily quickly, complete those aspec
 applying what you have practiced and learned from your content engagement.
 
 Finally, this project may require you to do things that you have never been given explicit
-directions or instructions for -- this is just a part of software development. In such cases, you
+directions or instructions for — this is just a part of software development. In such cases, you
 may need need to do some research to help you plan your solution. That being said, we have
 carefully prepared this project description document so that it hopefully answers the majority of
-your questions -- if not, then please do not hesitate to ask a question on the course
+your questions. If not, then please do not hesitate to ask a question on the course
 |discussion_board| or during office hours.
 
 Academic Honesty
@@ -152,11 +152,11 @@ a two-dimensional grid of tokens. Here are the basic rules for Connect Four:
   columns in the grid. When a token is dropped, it falls to the lowest position in the
   column that does not yet contain a token.
 * To win the game, a player must strategically drop their tokens so that four of them connect
-  inside the grid -- they are allowed to connect horizontally, vertically, and diagonally.
+  inside the grid — they are allowed to connect horizontally, vertically, and diagonally.
 * The game is over once all positions in the grid a filled or when a player wins the game.
 
 The class that you will implement and test will be expected to provide the high-level
-functionality described above via its constructor and instance methods -- the specific details
+functionality described above via its constructor and instance methods — the specific details
 about what is required are included later in this document. What you are about to read may
 seem counter-intuitive, but **you will not be writing any code for this project to let users
 interactively play a game of Connect Four**; instead, you will implement and test a class that,
@@ -227,9 +227,9 @@ Plan
 
 3. Read through the notes you just wrote. If you see that the steps you wrote for one method
    include a sequence of steps in another method, then consider whether you can have one
-   method can call the other -- that's code reuse! If you see the exact same steps in several
+   method can call the other — that's code reuse! If you see the exact same steps in several
    methods, then consider factoring out the common parts into a single method that you can
-   call in several places -- that's code reuse and refactoring!
+   call in several places — that's code reuse and refactoring!
 
 4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``.
 
@@ -242,7 +242,7 @@ Implement
    |code_style|_, then test it by running the ``cs1302.game.ConnectFourDriver`` class.
 
    * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
-     implementation under different scenarios -- create a method for each scenario, then
+     implementation under different scenarios — create a method for each scenario, then
      one method that calls those methods, then update your `main` method to call that 
      one method. If you are not sure where to begin, then you can see what is provided in
      the `ConnectFourTester.java` file and base what you write on that. 
@@ -313,7 +313,7 @@ code reuse. The specific details regarding what you are explicitly not permitted
 later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
 
 It should also be noted that the ``ConnectFour`` class depends on some classes that we have included
-in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
+in ``lib/cs1302-gameutil.jar``. You do not have access to source code for the classes in that Java
 ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
@@ -337,7 +337,7 @@ Game Phases
 
 Your implementation of ``cs1302.game.ConnectFour`` is expected to support the multiple phases
 defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, its
-said to be in the ``GamePhase.NEW`` phase -- that just means that ``GamePhase.NEW`` is assigned
+said to be in the ``GamePhase.NEW`` phase — that just means that ``GamePhase.NEW`` is assigned
 to the object's ``phase`` instance variable. The game object may move into other phases as methods
 are called on it. The behavior of some methods depend on the phase the object is in when called.
 Here is a high-level overview of all the required phases and the methods that trigger a game
@@ -405,8 +405,8 @@ phase when its ``dropToken`` method is called for the first time.
 
 Below in example of some code that drops several tokens into the grid of a game object
 in the ``GamePhase.READY`` phase. Each line of code is followed by an illustration of what
-the inside of that object should look like immediately after the line has executed
--- please note that the object is in ``GamePhase.PLAYABLE`` phase immediately after
+the inside of that object should look like immediately after the line has executed.
+Please note that the object is in the ``GamePhase.PLAYABLE`` phase immediately after
 the first line has executed:
 
 .. code-block:: java
@@ -446,7 +446,7 @@ A game object that is in the ``GamePhase.PLAYABLE`` phase should move into the `
 phase when its ``isLastDropConnectFour`` method is called and one of the following conditions
 are met:
 
-* the grid full; or
+* the grid is full; or
 * the method is about to return ``true`` because the last drop created a *connect four*.
 
 Consider the following illustration of a game object that is currently in the
@@ -458,7 +458,7 @@ Consider the following illustration of a game object that is currently in the
 Below is an example of some code that drops a winning token into the grid of the game object
 depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
 The code is followed by an illustration of what the inside of that object should look like
-immediately after the code has executed -- please note that the object moves into the ``GamePhase.OVER``
+immediately after the code has executed. Please note that the object moves into the ``GamePhase.OVER``
 phase immediately after the last call to ``isLastDropConnectFour()`` has executed:
 
 .. code-block:: java
@@ -479,7 +479,7 @@ Specific Requirements
    Your ``cs1302.game.ConnectFour`` implementation is expected to function as described in the API
    documentation included in the starter code and as described in the `Game Phases <#game-phases>`_
    section presented earlier in this document. To be clear, your program should not only meet these
-   expectations under normal conditions; it should also meet them under exceptional conditions -- some
+   expectations under normal conditions; it should also meet them under exceptional conditions — some
    of the sample test cases we provided in the starter code demonstrate how to test a behavior when
    an exception is involved.
 
@@ -501,11 +501,11 @@ implemented version of this class was included under the project's ``src`` direc
 
 You should use this driver class to help you test the constructor and methods of
 your ``ConnectFour`` class under different scenarios. In many respects, you have a lot
-of lee way The specific details regarding what you are explicitly not permitted to do are explained
+of leeway. The specific details regarding what you are explicitly not permitted to do are explained
 later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
 
 It should also be noted that the ``ConnectFourDriver`` class depends on some classes that we have included
-in ``lib/cs1302-gameutil.jar`` -- you do not have access to source code for the classes in that Java
+in ``lib/cs1302-gameutil.jar``. You do not have access to source code for the classes in that Java
 ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
 compilation instructions that we include below will ensure that these dependencies are available
 on the class path so that the compiler can find them.
@@ -540,7 +540,7 @@ included under the project's ``src`` directory:
 :Package Name: ``cs1302.game``
 :Simple Name: ``ConnectFourTester``
 
-This tester does not replace the testing that you are asked to do in ``ConnectFourDriver`` -- instead,
+This tester does not replace the testing that you are asked to do in ``ConnectFourDriver`` — instead,
 it is provided to give you more example test cases that you can look at, compile, and run to help
 you when you debug your code.
 
@@ -579,7 +579,7 @@ included under the project's ``src`` directory:
 :Package Name: ``cs1302.game``
 :Simple Name: ``ConnectFourCLI``
 
-This command-line program does not replace the testing that you are asked to do in ``ConnectFourDriver`` -- instead,
+This command-line program does not replace the testing that you are asked to do in ``ConnectFourDriver``. Instead,
 it is provided to give you a way to play your game, assuming it is implemented properly. It may also help you 
 when you debug your code.
 
@@ -629,7 +629,7 @@ package structure should match the structure of the starter code.
 
 * The location of the default package for source code should be a direct sub-directory of
   |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
-  versions of the ones in the starter code -- **you should NOT add any additional source code files**.
+  versions of the ones in the starter code — **you should NOT add any additional source code files**.
   Both ``ConnectFour.java``, ``ConnectFourDriver.java``, ``ConnectFourTester.java``, and
   ``ConnectFourCLI.java`` are expected to compile on |server| using the commands provided in 
   the compilation instructions that are included earlier in this document.
@@ -662,11 +662,11 @@ Submission Instructions
 +++++++++++++++++++++++
 
 You will submit your project on |server|. Before you submit, make sure that your project files are
-located in a directory called |ttslug| -- if you followed the instructions provided earlier in this
+located in a directory called |ttslug|. If you followed the instructions provided earlier in this
 document to download the project, then that is your directory name. To submit, change into the
 parent of your project directory (i.e., one directory above it), then complete the steps below:
 
-1. Check your code style -- we know that you have done this frequently, but it does not hurt to
+1. Check your code style — we know that you have done this frequently, but it does not hurt to
    double check it before you submit::
 
      $ check1302 cs1302-c4-alpha
@@ -704,7 +704,7 @@ archive::
   $ jar -tf lib/cs1302-gameutil.jar
 
 You should notice that the top-level directory in the JAR file is ``cs1302``, which means that
-the JAR file itself can serve as the default package for compiled code -- this is why we use ``-cp``
+the JAR file itself can serve as the default package for compiled code. This is why we use ``-cp``
 in examples given elsewhere in this project description.
 
 .. #############################################################################
