@@ -648,9 +648,10 @@ Code Style (|style_points_max|)
 -------------------------------
 
 Every ``.java`` file that you include as part of your submission for this project must
-be in valid style as defined in the `CS1302 Code Style Guide <styleguide>`_. All of the
-individual code style guidelines listed in the style guide document are considered for
-this requirement.
+be in valid style as defined in the 
+`CS1302 Code Style Guide <https://github.com/cs1302uga/cs1302-styleguide/#when-and-how-to-check>`_. 
+All of the individual code style guidelines listed in the style guide document are considered 
+for this requirement.
 
 If ``check1302`` on |server| reports any style violations for your submission, then
 |style_points_each| points will be subtracted from your earned point total **for each
