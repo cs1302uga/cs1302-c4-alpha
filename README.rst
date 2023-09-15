@@ -336,7 +336,7 @@ Game Phases
 .. _GamePhase: https://cs1302uga.github.io/cs1302-c4-alpha/doc/cs1302/gameutil/GamePhase.html
 
 Your implementation of ``cs1302.game.ConnectFour`` is expected to support the multiple phases
-defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, its
+defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, it's
 said to be in the ``GamePhase.NEW`` phase — that just means that ``GamePhase.NEW`` is assigned
 to the object's ``phase`` instance variable. The game object may move into other phases as methods
 are called on it. The behavior of some methods depend on the phase the object is in when called.
@@ -366,7 +366,7 @@ then initialize the object's instance variables to the the values described belo
 :``phase``:           ``GamePhase.NEW``
 
 Below is an example of some code that constructs a game object with six rows and seven columns followed
-by an illustration of what the inside of that object should look like when its done being constructed:
+by an illustration of what the inside of that object should look like when it's done being constructed:
 
 .. code-block:: java
 
