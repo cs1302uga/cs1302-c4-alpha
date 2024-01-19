@@ -243,14 +243,17 @@ Implement
 
    * There are some example tests given in `ConnectFourTester.java` to partially test this constructor. 
      However, you should not assume that the prewritten tests cover all of the input scenarios that need
-     to be tested.
+     to be tested. Take a look at the ``main`` method in ``ConnectFourTester.java``. The first method
+     call made from ``main`` is to the method ``runConstructorTests``. There are two given test
+     cases that test the proper functionality of two board sizes. Also, note that each test case is
+     written in a separate method.
 
-   * Using the existing test cases in ``ConnectFourTester.java`` as examples of how to write/format 
+   * Using the existing constructor test cases in ``ConnectFourTester.java`` as examples of how to write/format 
      test cases, add additional 
      methods to ``ConnectFourTester.java`` to test your constructor
      implementation under different input scenarios — create a method for each scenario you would like to test 
      and then
-     call your new method from the `main` method in a way that's consistent with the existing examples.
+     call your new method from the `runConstructorTests` method in a way that's consistent with the existing examples.
 
    * There are some aspects of the constructor that you should test later. For example, you
      can test that the instance variable ``rows`` is assigned correctly when you implement and test your ``getRows()``
