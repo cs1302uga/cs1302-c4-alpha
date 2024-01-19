@@ -9,11 +9,11 @@
 .. |discussion_board| replace:: Piazza
 
 .. due dates
-.. |due_date_1| replace:: Friday, Sept. 15th
+.. |due_date_1| replace:: Wednesday, February 7th (Old: Friday, Sept. 15th)
 .. |due_date_1_points| replace:: +10
-.. |due_date_2| replace:: Sunday, Sept. 17th
+.. |due_date_2| replace:: Thursday, February 8th (Old: Sunday, Sept. 17th)
 .. |due_date_2_points| replace:: +5
-.. |due_date_3| replace:: Monday, Sept. 18th
+.. |due_date_3| replace:: Friday, February 9th (Old: Monday, Sept. 18th)
 .. |due_date_3_points| replace:: +0
 
 .. checklist dates
