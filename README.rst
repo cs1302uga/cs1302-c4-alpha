@@ -208,12 +208,11 @@ Prepare
 
 :Target: Finish before |date_target_prep|.
 
-1. Start reading the project description.
-
-2. Read through the entire project description, including any `appendices <#appendices>`_,
+1. Read through the entire project description, including any `appendices <#appendices>`_,
    **and write down questions as you go**.
 
-3. Read it again! This time, you may be able to answer some of your own questions.
+2. We recommend reading the project description again. A second read-through will help you fill in gaps in your
+   understanding and you may be able to answer some of the questions you wrote down during your first read-through.
 
 Plan
 ++++
@@ -224,15 +223,17 @@ Plan
 
 2. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
    **do not write any code yet!** Instead, try to list out the high-level steps for
-   the constructor and methods using bullet points.
+   the constructor and methods using a sequence of distinct steps that you can turn into
+   code later.
 
 3. Read through the notes you just wrote. If you see that the steps you wrote for one method
    include a sequence of steps in another method, then consider whether you can have one
-   method can call the other — that's code reuse! If you see the exact same steps in several
-   methods, then consider factoring out the common parts into a single method that you can
-   call in several places — that's code reuse and refactoring!
+   method can call the other — that's code reuse which will greatly minimize bugs in your code! 
+   If you see the exact same steps in several methods, you should consider factoring out the 
+   common parts into a single, separate method that you can call from both places — that's 
+   code reuse and refactoring!
 
-4. Read all of the comments included in ``src/cs1302/game/ConnectFourDriver.java``.
+4. Read all of the comments included in ``src/cs1302/game/ConnectTester.java``.
 
 Implement
 +++++++++
@@ -240,29 +241,34 @@ Implement
 :Target: Finish before |date_target_impl|.
 
 1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good
-   |code_style|_, then test it by running the ``cs1302.game.ConnectFourDriver`` class.
+   |code_style|_, then test it by running the ``cs1302.game.ConnectFourTester`` class.
 
-   * You should add additional methods to ``ConnectFourDriver.java`` to test your constructor
-     implementation under different scenarios — create a method for each scenario, then
-     one method that calls those methods, then update your `main` method to call that 
-     one method. If you are not sure where to begin, then you can see what is provided in
-     the `ConnectFourTester.java` file and base what you write on that. 
+   * There are some example tests given in `ConnectFourTester.java` to partially test this constructor. 
+     However, you should not assume that the prewritten tests cover all of the input scenarios that need
+     to be tested.
+
+   * Using the existing test cases in ``ConnectFourTester.java`` as examples of how to write/format 
+     test cases, add additional 
+     methods to ``ConnectFourTester.java`` to test your constructor
+     implementation under different input scenarios — create a method for each scenario you would like to test 
+     and then
+     call your new method from the `main` method in a way that's consistent with the existing examples.
 
    * There are some aspects of the constructor that you should test later. For example, you
-     can test that ``rows`` is assigned correctly when you implement and test your ``getRows()``
+     can test that the instance variable ``rows`` is assigned correctly when you implement and test your ``getRows()``
      method.
 
 2. Implement the ``getRows()`` method, ensure it's written with good |code_style|_, then test it
-   by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
+   by adding test methods to the ``cs1302.game.ConnectFourTester`` class in a manner that is
    consistent with your constructor tests.
 
-   * When you add and call your test method(s) for ``getRows()``, you should NOT
+   * When you add and call your test method(s) for ``getRows()``, you should not
      comment out existing tests. You should always run all tests that you have each time you
-     run ``cs1302.game.ConnectFourDriver`` just in case a recent change breaks something that
+     run ``cs1302.game.ConnectFourTester`` just in case a recent change breaks something that
      you previously thought was working.
 
 3. Implement the ``getCols()`` method, ensure that it's written with good |code_style|_, then test
-   it by adding test methods to the ``cs1302.game.ConnectFourDriver`` class in a manner that is
+   it by adding test methods to the ``cs1302.game.ConnectFourTester`` class in a manner that is
    consistent with your existing tests.
 
 4. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
@@ -276,7 +282,7 @@ Review
 1. Do one final pass through the project document to make sure that you didn't miss anything.
 2. Run your code through your test cases one last time.
 3. Check your |code_style|_.
-4. Run your code through the provided ``ConnectFourTester.java`` program and ensure that all test cases are passed.
+4. Run your code through the ``ConnectFourTester.java`` program and ensure that all of your test cases are passed.
 5. Play your game using the provided ``ConnectFourCLI.java`` program.
 6. Check your |code_style|_ one last time.
 7. `Submit your code <#submission-instructions>`_ on Odin.
@@ -314,10 +320,10 @@ code reuse. The specific details regarding what you are explicitly not permitted
 later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
 
 It should also be noted that the ``ConnectFour`` class depends on some classes that we have included
-in ``lib/cs1302-gameutil.jar``. You do not have access to source code for the classes in that Java
+in ``lib/cs1302-gameutil.jar``. You do not have access to the source code for the classes in that Java
 ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
 compilation instructions that we include below will ensure that these dependencies are available
-on the class path so that the compiler can find them.
+on the classpath so that the compiler can find them.
 
 How to Compile
 **************
@@ -340,7 +346,7 @@ Your implementation of ``cs1302.game.ConnectFour`` is expected to support the mu
 defined by the |GamePhase|_ enumeration. When a ``ConnectFour`` game object is constructed, it's
 said to be in the ``GamePhase.NEW`` phase — that just means that ``GamePhase.NEW`` is assigned
 to the object's ``phase`` instance variable. The game object may move into other phases as methods
-are called on it. The behavior of some methods depend on the phase the object is in when called.
+are called on it. The behavior of some methods depends on the phase the object is in when called.
 Here is a high-level overview of all the required phases and the methods that trigger a game
 object to change what phase it is in:
 
@@ -355,7 +361,7 @@ The details for each game phase are provided below:
 **A newly constructed game is in this phase.**
 
 When a ``ConnectFour`` object is created, the constructor should check for any exceptional cases,
-then initialize the object's instance variables to the the values described below:
+then initialize the object's instance variables to the values described below:
 
 :``rows``:            the supplied value of the ``rows`` constructor parameter
 :``cols``:            the supplied value of the ``cols`` constructor parameter
@@ -404,9 +410,9 @@ should look like immediately after the code has executed and the object is in th
 A game object that is in the ``GamePhase.READY`` phase should move into the ``GamePhase.PLAYABLE``
 phase when its ``dropToken`` method is called for the first time.
 
-Below in example of some code that drops several tokens into the grid of a game object
+Below is an example of some code that drops several tokens into the grid of a game object
 in the ``GamePhase.READY`` phase. Each line of code is followed by an illustration of what
-the inside of that object should look like immediately after the line has executed.
+the inside of that object should look like immediately after the line has been executed.
 Please note that the object is in the ``GamePhase.PLAYABLE`` phase immediately after
 the first line has executed:
 
@@ -459,7 +465,7 @@ Consider the following illustration of a game object that is currently in the
 Below is an example of some code that drops a winning token into the grid of the game object
 depicted above, then checks for that win using the object's ``isLastDropConnectFour`` method.
 The code is followed by an illustration of what the inside of that object should look like
-immediately after the code has executed. Please note that the object moves into the ``GamePhase.OVER``
+immediately after the code has been executed. Please note that the object moves into the ``GamePhase.OVER``
 phase immediately after the last call to ``isLastDropConnectFour()`` has executed:
 
 .. code-block:: java
@@ -488,67 +494,28 @@ Specific Requirements
    of time. The test methods that you write in your ``cs1302.game.ConnectFourDriver`` class will help you
    prepare your implementation, but they will not be used to determine your grade.
 
-cs1302.game.ConnectFourDriver
------------------------------
-
-The ``cs1302.game.ConnectFourDriver`` class is where you will write code to test your
-``cs1302.game.ConnectFour`` class. When you downloaded the starter code, a partially
-implemented version of this class was included under the project's ``src`` directory:
-
-:Source: ``src/cs1302/game/ConnectFourDriver.java``
-:FQN: ``cs1302.game.ConnectFourDriver``
-:Package Name: ``cs1302.game``
-:Simple Name: ``ConnectFourDriver``
-
-You should use this driver class to help you test the constructor and methods of
-your ``ConnectFour`` class under different scenarios. In many respects, you have a lot
-of leeway. The specific details regarding what you are explicitly not permitted to do are explained
-later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
-
-It should also be noted that the ``ConnectFourDriver`` class depends on some classes that we have included
-in ``lib/cs1302-gameutil.jar``. You do not have access to source code for the classes in that Java
-ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
-compilation instructions that we include below will ensure that these dependencies are available
-on the class path so that the compiler can find them.
-
-How to Compile and Run
-**********************
-
-To compile ``ConnectFourDriver.java``, you need to first (re)compile ``ConnectFour.java``, then
-run the following command directly inside the |ttslug| directory::
-
-   $ javac -cp bin:lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFourDriver.java
-
-Once compiled, you can run ``cs1302.game.ConnectFourDriver`` using ``java``::
-
-  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
-
-Specific Requirements
-*********************
-
-There are no functional requirements for ``cs1302.game.ConnectFourDriver``. Just keep in mind that
-you are expected to use it to help you test your code.
-
 cs1302.game.ConnectFourTester
 -----------------------------
 
-The ``cs1302.game.ConnectFourTester`` class provides the public tester program.
-When you downloaded the starter code, an implemented version of this program was
-included under the project's ``src`` directory:
+The ``cs1302.game.ConnectFourTester`` class is where you will write code to test your
+``cs1302.game.ConnectFour`` class. When you downloaded the starter code, a partially
+implemented version of this class was included under the project's ``src`` directory:
 
 :Source: ``src/cs1302/game/ConnectFourTester.java``
 :FQN: ``cs1302.game.ConnectFourTester``
 :Package Name: ``cs1302.game``
 :Simple Name: ``ConnectFourTester``
 
-This tester does not replace the testing that you are asked to do in ``ConnectFourDriver``. Instead,
-it is provided to give you more example test cases that you can look at, compile, and run to help
-you when you debug your code.
+You should use this tester class to help you test the constructor and methods of
+your ``ConnectFour`` class under different scenarios. In many respects, you have a lot
+of leeway. The specific details regarding what you are explicitly not permitted to do are explained
+later in the `Non-Functional Requirements <#non-functional-requirements>`_ section.
 
-**NOTE:** The tester is not guaranteed to catch all bugs in your code. In fact, there are multiple recommendations 
-in the provided comments that describe other important scenarios that students should test. 
-We expect that you will add appropriate code to test those scenarios along with any other scenarios you
-identify while implementing this project. 
+It should also be noted that the ``ConnectFourTester`` class depends on some classes that we have included
+in ``lib/cs1302-gameutil.jar``. You do not have access to the source code for the classes in that Java
+ARchive (JAR) file; however, API documentation for those classes is provided |gameutil_api_here|_. The
+compilation instructions that we include below will ensure that these dependencies are available
+on the classpath so that the compiler can find them.
 
 How to Compile and Run
 **********************
@@ -560,7 +527,7 @@ run the following command directly inside the |ttslug| directory::
 
 Once compiled, you can run ``cs1302.game.ConnectFourTester`` using ``java``::
 
-  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourTester
+  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
 
 Specific Requirements
 *********************
@@ -620,7 +587,7 @@ this section, then the requirement's point total is deducted from your submissio
 Environment and Structure (|compile_points|)
 ----------------------------------------------
 
-This project must must compile and run correctly on |server| using the specific version of
+This project must compile and run correctly on |server| using the specific version of
 Java that is enabled by the CSCI 1302 shell profile, and your directory structure and
 package structure should match the structure of the starter code.
 
@@ -637,7 +604,7 @@ package structure should match the structure of the starter code.
 
 * The location of the default package for compiled code should be a sub-directory of |ttslug|
   called ``bin``. If you include compiled code with your submission, then it will be ignored.
-  Graders are instructed to recompile your submission on |server| code prior to testing your
+  Graders are instructed to recompile your submission on |server| code before testing your
   submission.
 
 If a problem is encountered for your submission that is explicitly described above, then
@@ -669,7 +636,7 @@ document to download the project, then that is your directory name. To submit, c
 parent of your project directory (i.e., one directory above it), then complete the steps below:
 
 1. Check your code style — we know that you have done this frequently, but it does not hurt to
-   double check it before you submit::
+   double-check it before you submit::
 
      $ check1302 cs1302-c4-alpha
 
