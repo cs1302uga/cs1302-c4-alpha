@@ -167,11 +167,12 @@ Getting Started
 +++++++++++++++
 
 **You will not be starting from scratch.** Instead, starter code is provided that you will
-need to download in order to get started, then modify and test to meet the project's
+need to download to get started, then modify and test to meet the project's
 requirements. To download the starter code, follow these instructions:
 
 1. Login to |server|.
-2. If you have not done so, create a directory to store all of your |course| projects.
+2. If you have not done so, we recommend creating a separate directory inside of your home directory to store all of your |course| projects instead of having them all directly
+   inside of your home directory.
 3. Change to your |course| projects directory.
 4. Execute the following command to download the starter code into a sub-directory called |ttslug|::
 
