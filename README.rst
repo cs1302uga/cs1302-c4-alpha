@@ -172,7 +172,7 @@ requirements. To download the starter code, follow these instructions:
 
 1. Login to |server|.
 2. If you have not done so, we recommend creating a separate directory inside of your home directory to store all of your |course| projects instead of having them all directly
-   inside of your home directory.
+   inside your home directory.
 3. Change to your |course| projects directory.
 4. Execute the following command to download the starter code into a sub-directory called |ttslug|::
 
@@ -186,10 +186,8 @@ requirements. To download the starter code, follow these instructions:
      └── cs1302
          └── game
              ├── ConnectFour.java
-             ├── ConnectFourTester.java
              ├── ConnectFourCLI.java
-             └── ConnectFourDriver.java
-             
+             └── ConnectFourTester.java
 
 Project Checklist
 =================
@@ -334,7 +332,7 @@ To compile ``ConnectFour.java``, execute the following command while directly in
    $ javac -cp lib/cs1302-gameutil.jar -d bin src/cs1302/game/ConnectFour.java
 
 Once compiled, you can begin to test the ``ConnectFour`` class by modifying and running the
-`provided driver class <#cs1302gameconnectfourdriver>`_.
+`provided tester class <#cs1302gameconnectfourtester>`_.
 
 Game Phases
 ***********
@@ -491,7 +489,7 @@ Specific Requirements
    an exception is involved.
 
    After the due date, it will be tested using several test cases that you will not have access to ahead
-   of time. The test methods that you write in your ``cs1302.game.ConnectFourDriver`` class will help you
+   of time. The test methods that you write in your ``cs1302.game.ConnectFourTester`` class will help you
    prepare your implementation, but they will not be used to determine your grade.
 
 cs1302.game.ConnectFourTester
@@ -527,7 +525,7 @@ run the following command directly inside the |ttslug| directory::
 
 Once compiled, you can run ``cs1302.game.ConnectFourTester`` using ``java``::
 
-  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourDriver
+  $ java -cp bin:lib/cs1302-gameutil.jar cs1302.game.ConnectFourTester
 
 Specific Requirements
 *********************
@@ -547,7 +545,7 @@ included under the project's ``src`` directory:
 :Package Name: ``cs1302.game``
 :Simple Name: ``ConnectFourCLI``
 
-This command-line program does not replace the testing that you are asked to do in ``ConnectFourDriver``. Instead,
+This command-line program does not replace the testing that you are asked to do in ``ConnectFourTester``. Instead,
 it is provided to give you a way to play your game, assuming it is implemented properly. It may also help you 
 when you debug your code.
 
@@ -598,7 +596,7 @@ package structure should match the structure of the starter code.
 * The location of the default package for source code should be a direct sub-directory of
   |ttslug| called ``src``. The only ``.java`` files that you should include are your modified
   versions of the ones in the starter code — **you should NOT add any additional source code files**.
-  Both ``ConnectFour.java``, ``ConnectFourDriver.java``, ``ConnectFourTester.java``, and
+  Both ``ConnectFour.java``, ``ConnectFourTester.java``, and
   ``ConnectFourCLI.java`` are expected to compile on |server| using the commands provided in 
   the compilation instructions that are included earlier in this document.
 
