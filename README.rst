@@ -239,41 +239,28 @@ Implement
 :Target: Finish before |date_target_impl|.
 
 1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good
-   |code_style|_, then test it by running the ``cs1302.game.ConnectFourTester`` class.
+   |code_style|_, then test it by writing a few lines of code in the ``cs1302.game.ConnectFourTester`` class
+   to make sure the constructor only throws an exception when the board size is too large/too small. Also, your
+   code should print out the instance variables of the ``ConnectFour`` object to make sure they are consistent
+   with the diagrams in this document.
 
-   * There are some example tests given in `ConnectFourTester.java` to partially test this constructor. 
-     However, you should not assume that the prewritten tests cover all of the input scenarios that need
-     to be tested. Take a look at the ``main`` method in ``ConnectFourTester.java``. The first method
-     call made from ``main`` is to the method ``runConstructorTests``. There are two given test
-     cases that test the proper functionality of two board sizes. Also, note that each test case is
-     written in a separate method.
+   * There are a few example test methods given in ``ConnectFourTester.java``. However, those methods are not
+     currently called from the ``main`` method. The provided tests are meant to test
+     the full gameplay which requires all methods to be implemented. We will revisit this in a later step below.
 
-   * Using the existing constructor test cases in ``ConnectFourTester.java`` as examples of how to write/format 
-     test cases, add additional 
-     methods to ``ConnectFourTester.java`` to test your constructor
-     implementation under different input scenarios — create a method for each scenario you would like to test 
-     and then
-     call your new method from the `runConstructorTests` method in a way that's consistent with the existing examples.
+2. Implement the ``getRows()`` and ``getCols()`` methods, ensure they are written with good |code_style|_, then 
+   test them by adding test code to the ``cs1302.game.ConnectFourTester`` class in a manner that is
+   consistent with your constructor test code. You will want to, at a minimum, print out the return value from
+   valid calls to ``getRows`` and ``getCols`` along with the instance variables from the ``ConnectFour`` object 
+   to make sure they are consistent.
 
-   * There are some aspects of the constructor that you should test later. For example, you
-     can test that the instance variable ``rows`` is assigned correctly when you implement and test your ``getRows()``
-     method.
+3. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
+   order that they appear in the ``ConnectFour.java`` starter code.
 
-2. Implement the ``getRows()`` method, ensure it's written with good |code_style|_, then test it
-   by adding test methods to the ``cs1302.game.ConnectFourTester`` class in a manner that is
-   consistent with your constructor tests.
-
-   * When you add and call your test method(s) for ``getRows()``, you should not
-     comment out existing tests. You should always run all tests that you have each time you
-     run ``cs1302.game.ConnectFourTester`` just in case a recent change breaks something that
-     you previously thought was working.
-
-3. Implement the ``getCols()`` method, ensure that it's written with good |code_style|_, then test
-   it by adding test methods to the ``cs1302.game.ConnectFourTester`` class in a manner that is
-   consistent with your existing tests.
-
-4. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
-   order that they appear in the starter code.
+4. As mentioned in the comments in ``ConnectFourTester.java``, the provided tests do not cover all of the 
+   input scenarios that need to be tested. You should add methods to test additional scenarios. Please
+   note that you can also test your code using the ``cs1302.game.ConnectFourCLI`` class and by using
+   input redirection as discussed in class.
 
 Review
 ++++++
