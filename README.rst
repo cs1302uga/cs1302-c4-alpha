@@ -3,24 +3,24 @@
 .. |slug| replace:: cs1302-c4-alpha
 .. |ttslug| replace:: ``cs1302-c4-alpha``
 .. |course| replace:: CSCI 1302
-.. |semester| replace:: Spring 2024
-.. |version| replace:: v2024.sp
+.. |semester| replace:: Fall 2024
+.. |version| replace:: v2024.fa
 .. |server| replace:: Odin
 .. |discussion_board| replace:: Piazza
 
 .. due dates
-.. |due_date_1| replace:: Wednesday, February 7th
+.. |due_date_1| replace:: Wednesday, September 11th
 .. |due_date_1_points| replace:: +10
-.. |due_date_2| replace:: Thursday, February 8th
+.. |due_date_2| replace:: Thursday, September 12th
 .. |due_date_2_points| replace:: +5
-.. |due_date_3| replace:: Friday, February 9th
+.. |due_date_3| replace:: Friday, September 13th
 .. |due_date_3_points| replace:: +0
 
 .. checklist dates
-.. |date_target_prep| replace:: Thursday, Jan. 25th
-.. |date_target_plan| replace:: Monday, Jan. 29th
-.. |date_target_impl| replace:: Sunday, Feb. 4th
-.. |date_target_revu| replace:: Wednesday, Feb. 7th
+.. |date_target_prep| replace:: Thursday, August 29th
+.. |date_target_plan| replace:: Monday, September 2nd
+.. |date_target_impl| replace:: Sunday, September 8th
+.. |date_target_revu| replace:: Wednesday, September 11th
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
