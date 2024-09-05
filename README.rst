@@ -231,7 +231,7 @@ Plan
    common parts into a single, separate method that you can call from both places — that's 
    code reuse and refactoring!
 
-4. Read all of the comments included in ``src/cs1302/game/ConnectTester.java``.
+4. Read all of the comments included in ``src/cs1302/game/ConnectFourTester.java``.
 
 Implement
 +++++++++
