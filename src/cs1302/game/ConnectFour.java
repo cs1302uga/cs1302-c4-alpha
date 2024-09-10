@@ -212,6 +212,10 @@ public class ConnectFour {
      * Drop a player's token into a specific column in the grid. This method should not enforce turn
      * order -- that is the players' responsibility should they desire an polite and honest game.
      *
+     * <strong>NOTE:</strong> This method does not call {@link #isLastDropConnectFour}. If you
+     * want to use {@link #isLastDropConnectFour} to determine a winner after each token is dropped,
+     * you must call it separately.
+     * 
      * @param player the player ({@code 0} for first player and {@code 1} for second player)
      * @param col the grid column where the token will be dropped
      * @throws IndexOutOfBoundsException if {@code col} is not a valid column index
