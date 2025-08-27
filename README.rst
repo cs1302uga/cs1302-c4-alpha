@@ -26,7 +26,7 @@
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
    :alt: cs1302uga.github.io/cs1302-c4-alpha
 .. _website: https://cs1302uga.github.io/cs1302-c4-alpha/
-.. |approved_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202024-green
+.. |approved_notice| image:: https://img.shields.io/badge/Approved%20for-Fall%202025-green
    :alt: Approved for: |version|
 .. |not_approved_notice| image:: https://img.shields.io/badge/In%20development-Not%20yet%20approved-red
    :alt: In development - Not yet approved
