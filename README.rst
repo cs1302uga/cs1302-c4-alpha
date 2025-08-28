@@ -71,7 +71,7 @@ If you are competent with the learning outcomes for CSCI 1301 (i.e., the prerequ
 you already have most of the Java programming knowledge required to complete this project;
 otherwise, this assignment will help you identify the gaps in your prerequisite programming
 knowledge so that you can tackle those gaps early in the semester. We also recommend completing the
-`Tic-Tac-Toe Assignment <https://github.com/cs1302uga/cs1302-hw0.5>`_ before beginning this project.
+`Tic-Tac-Toe Assignment <https://cs1302uga.github.io/cs1302-book/activities/tic-tac-toe.html#a8082c2-e94e-4e46-9c60-9f89bdaa8a74>`_ before beginning this project.
 
 This project will also require you to apply some of the new concepts covered in |course|, including
 named packages, exception (creating and handling), and Java development in a Unix environment. If
@@ -161,7 +161,7 @@ about what is required are included later in this document. What you are about t
 seem counter-intuitive, but **you will not be writing any code for this project to let users
 interactively play a game of Connect Four**; instead, you will implement and test a class that,
 once fully implemented, can be used to make writing such an interactive program easier. This is
-similar to what you did in the Tic-Tac-Toe assignment earlier this semester.
+similar to what we did in the Tic-Tac-Toe assignment earlier this semester.
 
 Getting Started
 +++++++++++++++
