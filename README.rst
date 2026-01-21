@@ -9,9 +9,9 @@
 .. |discussion_board| replace:: Piazza
 
 .. due dates
-.. |due_date_1| replace:: DAY, DATE (1)
-.. |due_date_2| replace:: DAY, DATE (2)
-.. |due_date_3| replace:: DAY, DATE (3)
+.. |due_date_1| replace:: Sunday, February 1
+.. |due_date_2| replace:: Thursday, February 5
+.. |due_date_3| replace:: Wednesday, February 11
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
