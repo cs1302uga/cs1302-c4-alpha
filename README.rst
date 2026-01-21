@@ -9,14 +9,9 @@
 .. |discussion_board| replace:: Piazza
 
 .. due dates
-.. |due_date_1| replace:: Wednesday, September 10th
-.. |due_date_2| replace:: Thursday, September 11th
-.. |due_date_3| replace:: Friday, September 12th
-
-.. checklist dates
-.. |date_target_prep| replace:: Friday, August 29th
-.. |date_target_impl| replace:: Sunday, September 7th
-.. |date_target_revu| replace:: Wednesday, September 10th
+.. |due_date_1| replace:: DAY, DATE (1)
+.. |due_date_2| replace:: DAY, DATE (2)
+.. |due_date_3| replace:: DAY, DATE (3)
 
 .. notices (need to manually update the urls)
 .. |website| image:: https://img.shields.io/badge/cs1302uga.github.io-cs1302--c4--alpha-58becd
@@ -38,14 +33,14 @@ This document contains the description for the |title| project assigned to the s
 |semester| |course| classes at the University of Georgia. **Students who are assigned this project
 are expected to read the entirety of this project description file before beginning their project.**
 
-This project is broken up into three parts, and each part has its own deadline. Students who perform 
+This project is broken up into three parts, and each part has its own deadline. **Students who perform 
 their final submission for a particular part via the ``submit1302`` command before the date/times 
-listed for that part automatically receive +5 points of Submission-Based (SB) extra credit. The late 
+listed for that part automatically receive +5 points of Submission-Based (SB) extra credit.** The late 
 penalty does not start applying until after the final date/time listed.
 
-* |due_date_1|  @ 11:55 PM EST (|due_date_1_points| SB Extra Credit)
-* |due_date_2|  @ 11:55 PM EST (|due_date_2_points| SB Extra Credit)
-* |due_date_3|  @ 11:55 PM EST (|due_date_3_points| SB Extra Credit)
+* |due_date_1|  @ 11:55 PM EST
+* |due_date_2|  @ 11:55 PM EST
+* |due_date_3|  @ 11:55 PM EST
 
 ----
 
