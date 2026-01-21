@@ -33,9 +33,9 @@ This document contains the description for the |title| project assigned to the s
 |semester| |course| classes at the University of Georgia. **Students who are assigned this project
 are expected to read the entirety of this project description file before beginning their project.**
 
-This project is broken up into three parts, and each part has its own deadline. **Students who perform 
+This project is broken up into three parts, and each part has its own deadline. Students who perform 
 their final submission for a particular part via the ``submit1302`` command before the date/times 
-listed for that part automatically receive +5 points of Submission-Based (SB) extra credit.** The late 
+listed for that part automatically receive +5 points of Submission-Based (SB) extra credit. The late 
 penalty does not start applying until after the final date/time listed.
 
 * |due_date_1|  @ 11:55 PM EST
