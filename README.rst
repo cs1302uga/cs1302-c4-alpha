@@ -3,22 +3,18 @@
 .. |slug| replace:: cs1302-c4-alpha
 .. |ttslug| replace:: ``cs1302-c4-alpha``
 .. |course| replace:: CSCI 1302
-.. |semester| replace:: Fall 2025
-.. |version| replace:: v2025.fa
+.. |semester| replace:: Spring 2026
+.. |version| replace:: v2026.sp
 .. |server| replace:: Odin
 .. |discussion_board| replace:: Piazza
 
 .. due dates
 .. |due_date_1| replace:: Wednesday, September 10th
-.. |due_date_1_points| replace:: +10
 .. |due_date_2| replace:: Thursday, September 11th
-.. |due_date_2_points| replace:: +5
 .. |due_date_3| replace:: Friday, September 12th
-.. |due_date_3_points| replace:: +0
 
 .. checklist dates
 .. |date_target_prep| replace:: Friday, August 29th
-.. |date_target_plan| replace:: Tuesday, September 2nd
 .. |date_target_impl| replace:: Sunday, September 7th
 .. |date_target_revu| replace:: Wednesday, September 10th
 
@@ -42,10 +38,10 @@ This document contains the description for the |title| project assigned to the s
 |semester| |course| classes at the University of Georgia. **Students who are assigned this project
 are expected to read the entirety of this project description file before beginning their project.**
 
-There are different deadline options for this project. Students who perform their final submission
-via the ``submit`` command before the date/times listed below automatically receive some
-Submission-Based (SB) extra credit. The late penalty does not start applying until after the final
-date listed.
+This project is broken up into three parts, and each part has its own deadline. Students who perform 
+their final submission for a particular part via the ``submit1302`` command before the date/times 
+listed for that part automatically receive +5 points of Submission-Based (SB) extra credit. The late 
+penalty does not start applying until after the final date/time listed.
 
 * |due_date_1|  @ 11:55 PM EST (|due_date_1_points| SB Extra Credit)
 * |due_date_2|  @ 11:55 PM EST (|due_date_2_points| SB Extra Credit)
@@ -201,10 +197,10 @@ take to complete the project.
 .. |code_style| replace:: code style
 .. _code_style: https://github.com/cs1302uga/cs1302-styleguide/#when-and-how-to-check
 
-Prepare
-+++++++
+Prepare & Plan
+++++++++++++++
 
-:Target: Finish before |date_target_prep|.
+:Target: Finish before |due_date_1|.
 
 1. Read through the entire project description, including any `appendices <#appendices>`_,
    **and write down questions as you go**.
@@ -212,31 +208,38 @@ Prepare
 2. We recommend reading the project description again. A second read-through will help you fill in gaps in your
    understanding and you may be able to answer some of the questions you wrote down during your first read-through.
 
-Plan
-++++
+3. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
 
-:Target: Finish before |date_target_plan|.
-
-1. If you have not yet done so, `download the starter code <#getting-started>`_ on |server|.
-
-2. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
+4. Read all of the comments included in ``src/cs1302/game/ConnectFour.java``, but
    **do not write any code yet!** Instead, try to list out the high-level steps for
    the constructor and methods using a sequence of distinct steps that you can turn into
    code later.
 
-3. Read through the notes you just wrote. If you see that the steps you wrote for one method
+5. Read through the notes you just wrote. If you see that the steps you wrote for one method
    include a sequence of steps in another method, then consider whether you can have one
    method can call the other — that's code reuse which will greatly minimize bugs in your code! 
    If you see the exact same steps in several methods, you should consider factoring out the 
    common parts into a single, separate method that you can call from both places — that's 
-   code reuse and refactoring!
+   code reuse and refactoring! 
 
-4. Read all of the comments included in ``src/cs1302/game/ConnectFourTester.java``.
+6. Read all of the comments included in ``src/cs1302/game/ConnectFourTester.java``.
+
+7. Remember, you haven't been tasked with writing any code just yet. For each method, write
+   down your plan for that method as a comment inside the method, taking into account 
+   what you think will be tested. 
+
+8. Make sure your commented code compiles without any errors or warnings and that no
+   style violations appear when running the ``check1302``, then submit what you have before 
+   |due_date_1|. If your submission contains any implemented methods, then it will only
+   count for the second part's due date and not the first part's due date. Here is the 
+   specific submission command to use for this part::
+
+     $ submit1302 cs1302-c4-alpha part1
 
 Implement
 +++++++++
 
-:Target: Finish before |date_target_impl|.
+:Target: Submit before |due_date_2|.
 
 1. Implement the ``ConnectFour(int, int)`` constructor, ensure it's written with good
    |code_style|_, then test it by writing a few lines of code in the ``cs1302.game.ConnectFourTester`` class
@@ -254,26 +257,36 @@ Implement
    valid calls to ``getRows`` and ``getCols`` along with the instance variables from the ``ConnectFour`` object 
    to make sure they are consistent.
 
-3. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
+3. Make sure your commented code compiles without any errors or warnings and that no
+   style violations appear when running the ``check1302``, then submit what you have before 
+   |due_date_2|. Here is the specific submission command to use for this part::
+
+     $ submit1302 cs1302-c4-alpha part2
+
+Review and Finalize
++++++++++++++++++++
+
+:Target: Finish before |due_date_3|.
+
+1. Repeat this process to implement, check |code_style|_, and test the remaining methods in the
    order that they appear in the ``ConnectFour.java`` starter code.
 
-4. As mentioned in the comments in ``ConnectFourTester.java``, the provided tests do not cover all of the 
+2. As mentioned in the comments in ``ConnectFourTester.java``, the provided tests do not cover all of the 
    input scenarios that need to be tested. You should add methods to test additional scenarios. Please
    note that you can also test your code using the ``cs1302.game.ConnectFourCLI`` class and by using
    input redirection as discussed in class.
 
-Review
-++++++
+3. Do one final pass through the project document to make sure that you didn't miss anything.
+4. Run your code through your test cases one last time.
+5. Check your |code_style|_.
+6. Run your code through the ``ConnectFourTester.java`` program and ensure that all of your test cases are passed.
+7. Play your game using the provided ``ConnectFourCLI.java`` program.
 
-:Target: Finish before |date_target_revu|.
+8. Make sure your commented code compiles without any errors or warnings and that no
+   style violations appear when running the ``check1302``, then submit what you have before 
+   |due_date_2|. Here is the specific submission command to use for this part::
 
-1. Do one final pass through the project document to make sure that you didn't miss anything.
-2. Run your code through your test cases one last time.
-3. Check your |code_style|_.
-4. Run your code through the ``ConnectFourTester.java`` program and ensure that all of your test cases are passed.
-5. Play your game using the provided ``ConnectFourCLI.java`` program.
-6. Check your |code_style|_ one last time.
-7. `Submit your code <#submission-instructions>`_ on Odin.
+     $ submit1302 cs1302-c4-alpha part3
 
 Project Requirements
 ====================
@@ -621,7 +634,8 @@ Submission Instructions
 You will submit your project on |server|. Before you submit, make sure that your project files are
 located in a directory called |ttslug|. If you followed the instructions provided earlier in this
 document to download the project, then that is your directory name. To submit, change into the
-parent of your project directory (i.e., one directory above it), then complete the steps below:
+parent of your project directory (i.e., one directory above it), then complete the steps below, 
+replacing ``N`` with the part of the project you are submitting:
 
 1. Check your code style — we know that you have done this frequently, but it does not hurt to
    double-check it before you submit::
@@ -633,7 +647,7 @@ parent of your project directory (i.e., one directory above it), then complete t
 2. Once you have no style guide violations and your code compiles and works, you can submit your
    work using the following command::
 
-     $ submit cs1302-c4-alpha csci-1302
+     $ submit1302 cs1302-c4-alpha partN
 
 3. Inspect the output of the last command to verify that your project was submitted. Your
    |ttslug| directory should now contain a ``rec`` (receipt) file.
