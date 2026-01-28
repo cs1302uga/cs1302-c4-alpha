@@ -129,6 +129,7 @@ public class ConnectFour {
      * @throws IllegalStateException if {@link #getPhase getPhase()} returns
      *     {@link cs1302.gameutil.GamePhase#PLAYABLE} or {@link cs1302.gameutil.GamePhase#OVER}.
      */
+
     public void setPlayerTokens(Token token0, Token token1) {
         //
         // replace the entire contents of this method with your implementation
@@ -215,7 +216,7 @@ public class ConnectFour {
      * <strong>NOTE:</strong> This method does not call {@link #isLastDropConnectFour}. If you
      * want to use {@link #isLastDropConnectFour} to determine a winner after each token is dropped,
      * you must call it separately.
-     * 
+     *
      * @param player the player ({@code 0} for first player and {@code 1} for second player)
      * @param col the grid column where the token will be dropped
      * @throws IndexOutOfBoundsException if {@code col} is not a valid column index
@@ -261,8 +262,9 @@ public class ConnectFour {
     // space provided below.
     //----------------------------------------------------------------------------------------------
 
-
-
+    //
+    // ADDITIONAL METHODS CAN GO HERE
+    //
 
     //----------------------------------------------------------------------------------------------
     // DO NOT MODIFY THE METHODS BELOW!
@@ -279,5 +281,41 @@ public class ConnectFour {
     public void printGrid() {
         TokenGrid.println(this.grid);
     } // printGrid
+
+    /**
+     * <strong>DO NOT MODIFY:</strong>
+     * Display debug information about the object's instance variables.
+     *
+     * <p>
+     * <strong>NOTE:</strong> This method should not be modified!
+     */
+    public void debug() {
+
+        System.out.println("**BEGIN DEBUG**");
+
+        System.out.printf("this.rows = %d\n", this.rows);
+        System.out.printf("this.cols = %d\n", this.cols);
+
+        if (this.grid == null) {
+            System.out.println("this.grid = null");
+        } else {
+            System.out.println("this.grid = (see below)");
+            TokenGrid.println(this.grid);
+        } // if
+
+        if (this.player == null) {
+            System.out.println("this.player = null");
+        } else {
+            System.out.println("this.player = (see below)");
+            System.out.printf("[ %s, %s ]\n", this.player[0], this.player[1]);
+        } // if
+
+        System.out.printf("this.numDropped = %d\n", this.numDropped);
+        System.out.printf("this.lastDropRow = %d\n", this.lastDropRow);
+        System.out.printf("this.lastDropCol = %d\n", this.lastDropCol);
+
+        System.out.println("**END DEBUG**");
+
+    } // debug
 
 } // ConnectFour

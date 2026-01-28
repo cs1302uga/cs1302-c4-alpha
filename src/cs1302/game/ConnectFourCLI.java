@@ -16,7 +16,7 @@ public class ConnectFourCLI {
     private static final Scanner STD_IN = new Scanner(System.in);
 
     /**
-     * Entry point to the {@link cs1302.game.ConnectFourDriver} program.
+     * Entry point to the {@link cs1302.game.ConnectFourCLI} program.
      * @param args the command-line arguments (not used)
      */
     public static void main(String[] args) {
