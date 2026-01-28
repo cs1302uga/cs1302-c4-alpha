@@ -95,7 +95,8 @@ public class ConnectFourTester {
         System.out.printf("expect: this.lastDropRow = %d\n", -1);
         System.out.printf("expect: this.lastDropCol = %d\n", -1);
 
-         // Create a new game, then use the debug method provided in the starter code to spot check it.
+         // Create a new game, then use the debug method provided in the starter
+         // code to spot check it.
         ConnectFour game = new ConnectFour(ROWS, COLS);
         game.debug();
 
@@ -357,7 +358,9 @@ public class ConnectFourTester {
      * @param col The column to check.
      * @param expected The expected return value of {@code isInBounds()}.
      */
-    private static void checkIsInBoundsNoThrow(ConnectFour game, int row, int col, boolean expected) {
+    private static void checkIsInBoundsNoThrow(
+        ConnectFour game, int row, int col, boolean expected
+    ) {
 
         try {
 
@@ -579,7 +582,10 @@ public class ConnectFourTester {
         } catch (Exception cause) {
 
             // This check assumes getLastDropRow() does not throw an exception.
-            String message = String.format("Fail: getLastDropRow(): threw %s unexpectedly\n", cause);
+            String message = String.format(
+                "Fail: getLastDropRow(): threw %s unexpectedly\n",
+                cause
+            );
             throw new AssertionError(message, cause);
 
         } // try
@@ -667,7 +673,10 @@ public class ConnectFourTester {
         } catch (Exception cause) {
 
             // This check assumes getLastDropCol() does not throw an exception.
-            String message = String.format("Fail: getLastDropCol(): threw %s unexpectedly\n", cause);
+            String message = String.format(
+                "Fail: getLastDropCol(): threw %s unexpectedly\n",
+                cause
+            );
             throw new AssertionError(message, cause);
 
         } // try
