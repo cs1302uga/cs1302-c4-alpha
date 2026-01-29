@@ -147,7 +147,7 @@ public class ConnectFourTester {
         checkGetPhaseNoThrow(game, GamePhase.NEW);
 
         System.out.print("Pass: ");
-        System.out.print("The constructor and getter methods look good!");
+        System.out.print("The constructor and getter methods look good!\n");
 
     } // testConstructor02
 
@@ -368,13 +368,20 @@ public class ConnectFourTester {
 
             if (actual != expected) {
                 String assertionMessage = String.format(
-                    "Fail: isInBounds() = %d, but %d expected",
+                    "Fail: isInBounds(%d, %d) = %s, but %s expected",
+                    row,
+                    col,
                     actual,
                     expected
                 );
                 throw new AssertionError(assertionMessage);
             } else {
-                System.out.printf("Pass: isInBounds() correctly returned %d\n", expected);
+                System.out.printf(
+                    "Pass: isInBounds(%d, %d) correctly returned %s\n",
+                    row,
+                    col,
+                    expected
+                );
             } // if
 
         } catch (AssertionError assertionCause) {
@@ -386,13 +393,20 @@ public class ConnectFourTester {
 
             // Remember, we typically throw UnsupportedOperationException to communicate that
             // a method is not yet implemented.
-            String message = "Fail: isInBounds(): looks like it is not yet implemented";
+            String message = String.format(
+                "Fail: isInBounds(%d, %d): looks like it is not yet implemented",
+                row,
+                col
+            );
             throw new AssertionError(message, unsupportedCause);
 
         } catch (Exception cause) {
 
             // This check assumes isInBounds() does not throw an exception.
-            String message = String.format("Fail: isInBounds(): threw %s unexpectedly\n", cause);
+            String message = String.format(
+                "Fail: isInBounds(%d, %d): threw %s unexpectedly\n",
+                cause
+            );
             throw new AssertionError(message, cause);
 
         } // try
@@ -415,13 +429,20 @@ public class ConnectFourTester {
 
             if (actual != expected) {
                 String assertionMessage = String.format(
-                    "Fail: getTokenAt() = %d, but %d expected",
+                    "Fail: getTokenAt(%d, %d) = %s, but %s expected",
+                    row,
+                    col,
                     actual,
                     expected
                 );
                 throw new AssertionError(assertionMessage);
             } else {
-                System.out.printf("Pass: getTokenAt() correctly returned %d\n", expected);
+                System.out.printf(
+                    "Pass: getTokenAt(%d, %d) correctly returned %s\n",
+                    row,
+                    col,
+                    expected
+                );
             } // if
 
         } catch (AssertionError assertionCause) {
@@ -433,13 +454,22 @@ public class ConnectFourTester {
 
             // Remember, we typically throw UnsupportedOperationException to communicate that
             // a method is not yet implemented.
-            String message = "Fail: getTokenAt(): looks like it is not yet implemented";
+            String message = String.format(
+                "Fail: getTokenAt(): looks like it is not yet implemented",
+                row,
+                col
+            );
             throw new AssertionError(message, unsupportedCause);
 
         } catch (Exception cause) {
 
             // This check assumes getTokenAt() does not throw an exception.
-            String message = String.format("Fail: getTokenAt(): threw %s unexpectedly\n", cause);
+            String message = String.format(
+                "Fail: getTokenAt(%d, %d): threw %s unexpectedly\n",
+                row,
+                col,
+                cause
+            );
             throw new AssertionError(message, cause);
 
         } // try
@@ -740,13 +770,13 @@ public class ConnectFourTester {
 
             if (actual != expected) {
                 String assertionMessage = String.format(
-                    "Fail: getPhase() = %d, but %d expected",
+                    "Fail: getPhase() = %s, but %s expected",
                     actual,
                     expected
                 );
                 throw new AssertionError(assertionMessage);
             } else {
-                System.out.printf("Pass: getPhase() correctly returned %d\n", expected);
+                System.out.printf("Pass: getPhase() correctly returned %s\n", expected);
             } // if
 
         } catch (AssertionError assertionCause) {
